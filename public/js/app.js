@@ -29,6 +29,14 @@
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   }
 
+  // Shared by the Reference tables and article table-sections (e.g. a
+  // convention's chapter/article index) so both render identically.
+  function renderTableHtml(table) {
+    const thead = `<thead><tr>${table.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join('')}</tr></thead>`;
+    const tbody = `<tbody>${table.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody>`;
+    return `<table class="ref-table">${thead}${tbody}</table>`;
+  }
+
   async function getJson(url) {
     const res = await fetch(url);
     if (!res.ok) {
@@ -235,10 +243,13 @@
       }
       a.sections.forEach((s) => {
         const isTarget = wanted && s.anchor === wanted;
+        const bodyHtml = s.table
+          ? `<div class="ref-table-wrap">${renderTableHtml(s.table)}</div>`
+          : s.body.split('\n\n').map((p) => `<p>${escapeHtml(p)}</p>`).join('');
         const block = el(`
           <section class="section-block${isTarget ? ' highlight' : ''}" id="${s.anchor}">
             <h2>${escapeHtml(s.heading)}</h2>
-            ${s.body.split('\n\n').map((p) => `<p>${escapeHtml(p)}</p>`).join('')}
+            ${bodyHtml}
           </section>
         `);
         app.appendChild(block);
@@ -278,14 +289,7 @@
       const data = await getJson(`/api/reference/${active}`);
       content.innerHTML = '';
       data.tables.forEach((t) => {
-        const wrap = el(`<div class="ref-table-wrap"><h3>${escapeHtml(t.name)}</h3></div>`);
-        const table = document.createElement('table');
-        table.className = 'ref-table';
-        const thead = `<thead><tr>${t.columns.map((c) => `<th>${escapeHtml(c)}</th>`).join('')}</tr></thead>`;
-        const tbody = `<tbody>${t.rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody>`;
-        table.innerHTML = thead + tbody;
-        wrap.appendChild(table);
-        content.appendChild(wrap);
+        appendHtml(content, `<div class="ref-table-wrap"><h3>${escapeHtml(t.name)}</h3>${renderTableHtml(t)}</div>`);
       });
     } catch (err) {
       content.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;

@@ -94,6 +94,13 @@ install script itself, not just the app.
 - **Publications** (`/api/articles`) — original, plain-English summaries of
   major IMO/ILO instruments, organized by convention/code, each broken into
   cited sections. See [Content scope & limitations](#content-scope--limitations) below.
+  Every publication also carries a **structured index table** — chapter/
+  annex/title/part number, its title, and a one-line description of its
+  contents (e.g. SOLAS's 14 chapters, MARPOL's 6 Annexes, MLC's 5 Titles
+  broken down to all 22 numbered Regulations, STCW's 8 chapters, IMDG's 7
+  Parts) — searchable and clickable straight to that row like any other
+  section. These are original structural summaries, not reproductions of
+  convention text — see [Content scope & limitations](#content-scope--limitations).
 - **Reference** (`/api/reference/{conversions,deck,engine,galley}`) — unit
   conversions, Beaufort scale, IALA buoyage, COLREG lights/shapes, phonetic
   alphabet, rope strength tables, ISO 8217 fuel grades, lube oil viscosity
@@ -166,7 +173,12 @@ install/
 Data lives in a single SQLite file (`data/marine-knows.db`, git-ignored).
 Search uses two FTS5 virtual tables (one over article title/summary/tags,
 one over section headings/bodies) so results can point at the exact
-section that matched, not just the article.
+section that matched, not just the article. A section is either prose
+(`body`) or a structured table (`table_json` — same `{columns, rows}`
+shape the Reference pages use, flattened to plain text alongside it so
+FTS can still match and snippet it); `db.js` migrates existing databases
+in place (`ALTER TABLE ... ADD COLUMN`) so `install/update.sh` upgrades
+an already-running install without needing to delete its database.
 
 ## Local development
 
@@ -204,6 +216,16 @@ environment.
   (`data/articles/*.json`, one file per topic group) so more can be added
   without touching any code — the seed script re-scans the directory and
   upserts by slug.
+- **Index tables go to chapter/annex/title/part level** (structural facts —
+  numbers and titles — which aren't copyrightable expression), not down to
+  every individual regulation of the largest instruments (SOLAS, MARPOL,
+  STCW). MLC 2006 is the exception and is broken down to all 22 numbered
+  Regulations, since that structure is compact and well-defined. Going
+  regulation-by-regulation for something the size of SOLAS would mean
+  100+ rows per convention with real risk of numbering errors given how
+  granular that gets — the chapter/annex level is what's reliably
+  citable; treat "Contents" as an original one-line description of scope,
+  not a paraphrase of the regulation's operative text.
 - **News feed URLs are the standard/documented endpoints** for each source
   (mostly WordPress `/feed/` conventions) but could not be live-verified
   from this development sandbox, whose outbound network is restricted to an

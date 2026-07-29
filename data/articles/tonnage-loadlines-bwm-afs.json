@@ -17,6 +17,17 @@
         "body": "The load line mark (colloquially the 'Plimsoll mark' after Samuel Plimsoll, who campaigned for it in the 19th century UK Parliament) is a circle with a horizontal line through its center indicating the summer freeboard, accompanied by a set of additional lines indicating maximum draughts in different conditions: Tropical Fresh Water (TF), Fresh Water (F), Tropical (T), Summer (S), Winter (W), and Winter North Atlantic (WNA), reflecting seasonal zones and the differing behaviour of fresh versus salt water."
       },
       {
+        "heading": "Annex Index",
+        "table": {
+          "columns": ["Annex", "Title", "Contents"],
+          "rows": [
+            ["I", "Regulations for Determining Load Lines", "Conditions of assignment, freeboard tables/corrections, structural strength requirements, minimum bow height, deck line and load line marks"],
+            ["II", "Zones, Areas and Seasonal Periods", "Charts and boundary definitions for the permanent Tropical/Summer/Winter zones and the Seasonal Tropical/Summer/Winter Areas"],
+            ["III", "Certificates", "Form of the International Load Line Certificate and the International Load Line Exemption Certificate"]
+          ]
+        }
+      },
+      {
         "heading": "Zones and seasonal areas",
         "body": "The world's oceans are divided into permanent Tropical, Summer and Winter zones, and Seasonal Tropical/Summer/Winter Areas, each with defined boundaries and time periods, published as charts in the Convention's annex. A ship must not be loaded so that the appropriate line for the zone/season it is entering is submerged, and officers must track zone/date boundaries during passage planning on long voyages that cross seasonal zone limits."
       }
@@ -38,6 +49,16 @@
       {
         "heading": "GT vs NT vs deadweight vs displacement",
         "body": "Gross Tonnage (GT) reflects the ship's total enclosed volume (all spaces). Net Tonnage (NT) reflects the volume of the ship's cargo-carrying/passenger spaces and is generally used as the basis for port dues since it approximates earning capacity. Neither should be confused with Deadweight Tonnage (DWT) — the weight (in metric tonnes) a ship can carry (cargo, fuel, fresh water, stores, crew) when loaded to its maximum permitted draught — or Lightship weight (the ship's own weight, empty), or Displacement (the total weight of water the ship displaces, equal to lightship plus everything currently on board)."
+      },
+      {
+        "heading": "Annex Index",
+        "table": {
+          "columns": ["Annex", "Title", "Contents"],
+          "rows": [
+            ["I", "Regulations for Determining Gross and Net Tonnages", "The mathematical formulae (based on total moulded volume for GT, and cargo/passenger space volume plus draught-related factors for NT) and the technical rules for applying them"],
+            ["II", "Form of International Tonnage Certificate (1969)", "The standard certificate format recording a ship's GT and NT"]
+          ]
+        }
       },
       {
         "heading": "Certification",
@@ -63,6 +84,19 @@
         "body": "The Convention sets two standards. The D-1 standard requires ballast water exchange, generally at least 200 nautical miles from land and in water at least 200 metres deep, replacing water carried from one region with open-ocean water. The D-2 standard is a performance standard limiting the concentration of viable organisms and indicator microbes discharged, requiring an approved Ballast Water Management System (BWMS) — typically filtration combined with UV or electrochlorination treatment — to be fitted, with an implementation schedule phasing D-2 compliance in based on a ship's International Oil Pollution Prevention (IOPP) Certificate renewal survey date."
       },
       {
+        "heading": "Annex Section Index",
+        "table": {
+          "columns": ["Section", "Title", "Contents"],
+          "rows": [
+            ["A", "General Provisions", "Definitions, application, exemptions"],
+            ["B", "Management and Control Requirements for Ships", "Requires a ship-specific Ballast Water Management Plan, a Ballast Water Record Book, and (for most ships) an approved Ballast Water Management System"],
+            ["C", "Special Requirements in Certain Areas", "Allows a Party to require additional measures in waters under its jurisdiction, with notice to IMO and affected States"],
+            ["D", "Standards for Ballast Water Management", "The D-1 exchange standard and the D-2 performance (treatment) standard"],
+            ["E", "Survey and Certification Requirements for Ballast Water Management", "Initial, renewal, annual and additional surveys leading to the International Ballast Water Management Certificate"]
+          ]
+        }
+      },
+      {
         "heading": "Documentation",
         "body": "Ships must carry a ship-specific Ballast Water Management Plan, a Ballast Water Record Book logging every ballast operation, and (once compliant) an International Ballast Water Management Certificate. PSC inspectors routinely check the Ballast Water Record Book and may sample discharged ballast water in some regions."
       }
@@ -80,6 +114,16 @@
       {
         "heading": "Overview",
         "body": "The International Convention on the Control of Harmful Anti-fouling Systems on Ships (AFS Convention) was adopted in 2001 and entered into force in 2008. It prohibits the use of organotin compounds (notably tributyltin, or TBT) that act as biocides in anti-fouling paint systems, which were found to persist in the marine environment, accumulate in marine life, and cause severe biological effects including endocrine disruption in shellfish. A 2023 amendment extended controls to cybutryne."
+      },
+      {
+        "heading": "Structure Index",
+        "table": {
+          "columns": ["Part", "Title", "Contents"],
+          "rows": [
+            ["Articles", "General obligations", "Definitions, application, surveys/certification obligations, Parties' enforcement duties, and the amendment procedure used to add newly controlled substances"],
+            ["Annex 1", "Controls on Anti-fouling Systems", "Lists the specific anti-fouling systems that are banned or restricted — organotin compounds (TBT) since 2003/2008, and cybutryne since the 2023 amendment"]
+          ]
+        }
       },
       {
         "heading": "Practical effect and certification",

@@ -17,6 +17,25 @@
         "body": "The Assembly is IMO's highest governing body, meeting every two years with all Member States, and approves the work programme and budget. The Council acts as the executive organ between Assembly sessions.\n\nTechnical work is carried out by five main Committees: the Maritime Safety Committee (MSC), the Marine Environment Protection Committee (MEPC), the Legal Committee, the Technical Co-operation Committee, and the Facilitation Committee (FAL), supported by a number of sub-committees covering areas such as human element/training/watchkeeping (HTW), pollution prevention and response (PPR), ship systems and equipment (SSE), navigation/communication/search and rescue (NCSR), ship design and construction (SDC), and carriage of cargoes and containers (CCC)."
       },
       {
+        "heading": "Committee & Sub-Committee Index",
+        "table": {
+          "columns": ["Body", "Full name", "Remit"],
+          "rows": [
+            ["MSC", "Maritime Safety Committee", "IMO's senior technical body on safety — SOLAS, STCW, COLREG, Load Lines, and their codes"],
+            ["MEPC", "Marine Environment Protection Committee", "MARPOL, BWM, AFS, and IMO's decarbonization/GHG measures"],
+            ["Legal Committee", "Legal Committee", "Legal matters within IMO's scope, e.g. liability and compensation regimes"],
+            ["TC Committee", "Technical Co-operation Committee", "Technical assistance to help States implement IMO instruments"],
+            ["FAL Committee", "Facilitation Committee", "The FAL Convention and reducing formalities in shipping"],
+            ["HTW", "Human Element, Training and Watchkeeping Sub-Committee", "STCW, seafarer training/certification, fatigue and human factors"],
+            ["PPR", "Pollution Prevention and Response Sub-Committee", "Technical work supporting MEPC on pollution prevention and response"],
+            ["SSE", "Ship Systems and Equipment Sub-Committee", "Life-saving appliances, fire protection systems, other shipboard systems"],
+            ["NCSR", "Navigation, Communications and Search and Rescue Sub-Committee", "GMDSS, SAR, navigation systems and equipment"],
+            ["SDC", "Ship Design and Construction Sub-Committee", "Stability, subdivision, load lines, tonnage, ship construction standards"],
+            ["CCC", "Carriage of Cargoes and Containers Sub-Committee", "IMDG Code, IBC/IGC Codes, container/cargo carriage rules"]
+          ]
+        }
+      },
+      {
         "heading": "The major IMO conventions at a glance",
         "body": "IMO administers around 50 international conventions and protocols, alongside hundreds of codes, guidelines and resolutions. The instruments a working seafarer will encounter most often are: SOLAS (safety of life at sea), MARPOL (pollution prevention), STCW (training, certification and watchkeeping), COLREG (collision regulations), the Load Lines Convention, the Tonnage Convention, the ISM Code (safety management), the ISPS Code (ship and port facility security), the BWM Convention (ballast water), the AFS Convention (anti-fouling systems), the FAL Convention (facilitation of traffic) and the SAR Convention (search and rescue). The Maritime Labour Convention (MLC 2006) covering seafarers' working and living conditions is administered by the International Labour Organization (ILO), not IMO, but is treated by the industry as a 'fourth pillar' alongside SOLAS, MARPOL and STCW."
       },
@@ -42,6 +61,28 @@
       {
         "heading": "Chapter structure",
         "body": "SOLAS is organized into chapters, each addressing a specific safety topic: Chapter I (General provisions, surveys and certificates); Chapter II-1 (Construction — subdivision and stability, machinery and electrical installations); Chapter II-2 (Fire protection, detection and extinction); Chapter III (Life-saving appliances and arrangements); Chapter IV (Radiocommunications, including GMDSS); Chapter V (Safety of navigation, applicable to all ships including non-SOLAS vessels in some respects); Chapter VI (Carriage of cargoes and oil fuels); Chapter VII (Carriage of dangerous goods, incorporating the IMDG and IBC/IGC Codes by reference); Chapter VIII (Nuclear ships); Chapter IX (Management for the Safe Operation of Ships — gives the ISM Code mandatory force); Chapter X (Safety measures for high-speed craft); Chapter XI-1 (Special measures to enhance maritime safety); Chapter XI-2 (Special measures to enhance maritime security — gives the ISPS Code mandatory force); and Chapter XII (Additional safety measures for bulk carriers)."
+      },
+      {
+        "heading": "Chapter Index",
+        "table": {
+          "columns": ["Chapter", "Title", "Contents"],
+          "rows": [
+            ["I", "General Provisions", "Application, definitions, and the surveys/certification requirements common to the whole convention"],
+            ["II-1", "Construction — Subdivision & Stability, Machinery & Electrical Installations", "Damage stability/subdivision standards; machinery and electrical installation safety requirements"],
+            ["II-2", "Fire Protection, Detection and Extinction", "Structural fire protection, detection/alarm systems, fixed fire-fighting systems, means of escape"],
+            ["III", "Life-Saving Appliances and Arrangements", "Lifeboats, liferafts, lifejackets, immersion suits, launching arrangements, and drills"],
+            ["IV", "Radiocommunications", "GMDSS equipment carriage requirements by sea area (A1-A4)"],
+            ["V", "Safety of Navigation", "Voyage/passage planning, bridge watchkeeping, carriage of ECDIS/AIS/VDR — applies broadly, including to many non-SOLAS ships"],
+            ["VI", "Carriage of Cargoes and Oil Fuels", "Stowage and securing of cargo; oil fuel carriage requirements"],
+            ["VII", "Carriage of Dangerous Goods", "Incorporates the IMDG Code (packaged goods) and IBC/IGC Codes (chemical/gas tankers) by reference"],
+            ["VIII", "Nuclear Ships", "Special safety requirements for nuclear-powered ships"],
+            ["IX", "Management for the Safe Operation of Ships", "Gives the ISM Code mandatory force"],
+            ["X", "Safety Measures for High-Speed Craft", "Incorporates the HSC Code"],
+            ["XI-1", "Special Measures to Enhance Maritime Safety", "Authorization of recognized organizations, enhanced surveys, ship identification number scheme"],
+            ["XI-2", "Special Measures to Enhance Maritime Security", "Gives the ISPS Code mandatory force"],
+            ["XII", "Additional Safety Measures for Bulk Carriers", "Structural strength requirements specific to bulk carriers"]
+          ]
+        }
       },
       {
         "heading": "Key day-to-day requirements for crew",

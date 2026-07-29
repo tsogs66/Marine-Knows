@@ -2,25 +2,53 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2545">
 <title>Marine Knows — Maritime Publications, Reference &amp; News</title>
 <link rel="stylesheet" href="/css/style.css">
+<script>
+  (function () {
+    var saved = localStorage.getItem('mk-theme');
+    document.documentElement.setAttribute('data-theme', saved || 'deep-sea');
+  })();
+</script>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="#/">⚓ Marine&nbsp;Knows</a>
-    <nav class="main-nav">
-      <a href="#/publications">Publications</a>
-      <a href="#/reference">Reference</a>
-      <a href="#/news">News</a>
-      <a href="#/currency">Currency</a>
-    </nav>
-    <form class="header-search" id="header-search-form">
-      <input type="search" id="header-search-input" placeholder="Search SOLAS, MARPOL, STCW…" autocomplete="off">
-    </form>
+    <a class="brand" href="#/"><span class="brand-icon">⚓</span> Marine&nbsp;Knows</a>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="main-nav">
+        <a href="#/publications"><span class="nav-icon">📚</span>Publications</a>
+        <a href="#/explore"><span class="nav-icon">🧭</span>Explore</a>
+        <a href="#/reference"><span class="nav-icon">📐</span>Reference</a>
+        <a href="#/news"><span class="nav-icon">📰</span>News</a>
+        <a href="#/currency"><span class="nav-icon">💱</span>Currency</a>
+      </nav>
+      <div class="theme-switcher" id="theme-switcher" role="group" aria-label="Theme">
+        <button type="button" data-theme-choice="deep-sea" title="Deep Sea theme">🌊</button>
+        <button type="button" data-theme-choice="lighthouse" title="Lighthouse theme">🏖️</button>
+        <button type="button" data-theme-choice="old-chart" title="Old Chart theme">🗺️</button>
+      </div>
+      <form class="header-search" id="header-search-form">
+        <input type="search" id="header-search-input" placeholder="Search SOLAS, MARPOL, STCW…" autocomplete="off">
+      </form>
+    </div>
+  </div>
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
+      <path class="wv1" d="M0,20 C150,45 350,-5 600,20 C850,45 1050,-5 1200,20 L1200,40 L0,40 Z" />
+      <path class="wv2" d="M0,25 C150,5 350,45 600,25 C850,5 1050,45 1200,25 L1200,40 L0,40 Z" />
+      <path class="wv3" d="M0,30 C150,15 350,40 600,28 C850,12 1050,38 1200,26 L1200,40 L0,40 Z" />
+    </svg>
   </div>
 </header>
+<div class="menu-backdrop" id="menu-backdrop"></div>
 
 <main id="app" class="wrap"></main>
 

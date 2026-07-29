@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    { "id": "imo", "label": "IMO", "type": "org", "adopted": 1948, "inForce": 1958, "articleSlug": "imo-overview", "source": "https://www.imo.org", "history": "The International Maritime Organization was established by a convention adopted in Geneva in 1948, entering into force in 1958; the Organization first met in London in 1959. It is the UN specialized agency responsible for the safety, security and environmental performance of international shipping." },
+    { "id": "ilo", "label": "ILO", "type": "org", "adopted": 1919, "inForce": 1919, "articleSlug": null, "source": "https://www.ilo.org", "history": "Founded in 1919 under the Treaty of Versailles, the International Labour Organization became the first specialized agency of the United Nations in 1946. Its tripartite structure of governments, employers and workers is unique among UN agencies; it develops and oversees international labour standards, including those for seafarers." },
+    { "id": "imo-convention-1948", "label": "Convention on the IMO (1948)", "type": "amendment", "adopted": 1948, "inForce": 1958, "articleSlug": null, "history": "The founding treaty establishing what was then called the Inter-Governmental Maritime Consultative Organization (IMCO), renamed IMO in 1982. Negotiated at a UN conference in Geneva in 1948, it took a decade to gather enough ratifications to enter into force." },
+    { "id": "ilo-constitution-1919", "label": "ILO Constitution (1919)", "type": "amendment", "adopted": 1919, "inForce": 1919, "articleSlug": null, "history": "Part of the Treaty of Versailles that ended the First World War, reflecting the belief that social justice is essential to universal and lasting peace. It predates the United Nations itself by more than two decades." },
+
+    { "id": "solas-1974", "label": "SOLAS", "type": "convention", "org": "imo", "adopted": 1974, "inForce": 1980, "articleSlug": "solas-1974", "history": "The principal treaty on ship safety, adopted in 1974 to replace an ageing patchwork of earlier versions and kept current since through a continuous amendment cycle rather than renegotiation of the whole text." },
+    { "id": "solas-1914", "label": "SOLAS 1914 (first version)", "type": "amendment", "adopted": 1914, "articleSlug": null, "history": "The first SOLAS convention, adopted in 1914 following the loss of the Titanic in 1912. Its implementation was disrupted by the First World War; SOLAS was subsequently re-adopted in 1929, 1948 and 1960 before today's 1974 version." },
+    { "id": "solas-1978-protocol", "label": "1978 SOLAS Protocol", "type": "amendment", "adopted": 1978, "inForce": 1981, "articleSlug": null, "history": "Adopted after tanker accidents (Torrey Canyon 1967, Amoco Cadiz 1978) intensified pressure for stronger tanker safety rules; its measures were absorbed into the consolidated text most ships operate under today, which is why the convention is dated 'SOLAS 1974, as modified by the 1978 Protocol'." },
+
+    { "id": "marpol-73-78", "label": "MARPOL", "type": "convention", "org": "imo", "adopted": 1973, "inForce": 1983, "articleSlug": "marpol-73-78", "history": "The main treaty on pollution prevention from ships, combining the 1973 Convention with its 1978 Protocol into a single instrument structured around six technical Annexes covering oil, noxious liquids, packaged goods, sewage, garbage and air pollution." },
+    { "id": "marpol-1978-protocol", "label": "1978 MARPOL Protocol", "type": "amendment", "adopted": 1978, "inForce": 1983, "articleSlug": null, "history": "Absorbed the original 1973 MARPOL convention, which had not yet entered into force, after a spate of tanker accidents in the mid-1970s built political pressure for it — this is why the convention is always cited as 'MARPOL 73/78'." },
+    { "id": "marpol-annex-vi", "label": "MARPOL Annex VI (air pollution)", "type": "amendment", "adopted": 1997, "inForce": 2005, "articleSlug": null, "history": "Added air pollution controls to MARPOL, revised again in 2008 and 2020 to introduce the global 0.50% sulphur cap, and is the vehicle for IMO's ongoing greenhouse-gas measures (EEXI, CII, SEEMP)." },
+
+    { "id": "stcw-1978-manila", "label": "STCW", "type": "convention", "org": "imo", "adopted": 1978, "inForce": 1984, "articleSlug": "stcw-1978-manila", "history": "The first internationally agreed minimum standards for seafarer training, certification and watchkeeping, previously left entirely to individual governments. Modernized substantially in 1995 and again by the 2010 Manila Amendments." },
+    { "id": "stcw-1995-revision", "label": "1995 STCW Revision", "type": "amendment", "adopted": 1995, "inForce": 1997, "articleSlug": null, "history": "Introduced the detailed STCW Code of technical standards and a 'white list' of Parties demonstrated to be giving full effect to the convention — the first major overhaul since 1978." },
+    { "id": "stcw-manila-2010", "label": "2010 Manila Amendments", "type": "amendment", "adopted": 2010, "inForce": 2012, "articleSlug": null, "history": "A comprehensive modernization: updated competence tables, new hours-of-rest and alcohol limits, new certification (Able Seafarer, Electro-Technical Officer/Rating), and training for polar waters and low-flashpoint fuels." },
+
+    { "id": "isps-code", "label": "ISPS Code", "type": "code", "org": "imo", "adopted": 2002, "inForce": 2004, "articleSlug": "isps-code", "history": "Adopted in December 2002, in direct response to the September 2001 terrorist attacks, and given mandatory effect through a new SOLAS chapter (XI-2). Built around security levels and the Ship/Company/Port Facility Security Officer roles." },
+    { "id": "ism-code", "label": "ISM Code", "type": "code", "org": "imo", "adopted": 1993, "inForce": 1998, "articleSlug": "ism-code", "history": "Adopted in 1993 after major 1980s accidents (including the Herald of Free Enterprise capsize) were traced to systemic management failures rather than isolated technical error. Phased in as mandatory between 1998 and 2002 by ship type." },
+    { "id": "colreg-1972", "label": "COLREG", "type": "convention", "org": "imo", "adopted": 1972, "inForce": 1977, "articleSlug": "colreg-1972", "history": "The international 'rules of the road' at sea, largely unchanged in structure since 1972, codifying centuries of navigational custom into steering/sailing rules, lights, shapes and sound signals." },
+
+    { "id": "load-lines-convention", "label": "Load Lines (ICLL)", "type": "convention", "org": "imo", "adopted": 1966, "inForce": 1968, "articleSlug": "load-lines-convention", "history": "Set minimum freeboard and reserve-buoyancy rules, marked on the hull as the load line ('Plimsoll') mark — named for Samuel Plimsoll, whose 19th-century UK parliamentary campaign led to the original mark." },
+    { "id": "load-lines-1988-protocol", "label": "1988 Load Lines Protocol", "type": "amendment", "adopted": 1988, "inForce": 2000, "articleSlug": null, "history": "Harmonized load line survey and certification timing with the equivalent SOLAS and MARPOL survey cycles, reducing duplicate inspections for the same ship." },
+
+    { "id": "tonnage-convention-1969", "label": "Tonnage Convention", "type": "convention", "org": "imo", "adopted": 1969, "inForce": 1982, "articleSlug": "tonnage-convention-1969", "history": "Replaced a patchwork of national tonnage-measurement systems with a single universal formula for Gross and Net Tonnage, the volumetric measures used throughout maritime regulation and commerce." },
+
+    { "id": "ballast-water-management-convention", "label": "BWM Convention", "type": "convention", "org": "imo", "adopted": 2004, "inForce": 2017, "articleSlug": "ballast-water-management-convention", "history": "Took thirteen years from adoption to entry into force while the shipping industry and equipment makers developed workable treatment technology to meet its D-2 performance standard." },
+
+    { "id": "afs-convention", "label": "AFS Convention", "type": "convention", "org": "imo", "adopted": 2001, "inForce": 2008, "articleSlug": "afs-convention", "history": "Banned the organotin compound TBT in anti-fouling hull paints after it was found to persist in the marine environment and disrupt the endocrine systems of shellfish." },
+    { "id": "afs-2023-amendment", "label": "2023 AFS Amendment (cybutryne)", "type": "amendment", "adopted": 2023, "articleSlug": null, "history": "Extended AFS Convention controls to cybutryne, another anti-fouling biocide identified as harmful to the marine environment, following the same control model originally used for TBT." },
+
+    { "id": "gmdss", "label": "GMDSS", "type": "code", "org": "imo", "adopted": 1988, "inForce": 1999, "articleSlug": "gmdss", "history": "Adopted as amendments to SOLAS Chapter IV, phased in through the 1990s and fully effective from 1999, replacing dedicated Morse-code radio watchkeeping with an integrated satellite/terrestrial distress and safety system." },
+
+    { "id": "sar-convention-iamsar", "label": "SAR Convention", "type": "convention", "org": "imo", "adopted": 1979, "inForce": 1985, "articleSlug": "sar-convention-iamsar", "history": "Requires coastal States to organize search-and-rescue services in defined regions, independent of the separate SOLAS/UNCLOS duty on every master to render assistance to persons in distress." },
+    { "id": "sar-1998-revision", "label": "1998 SAR Revision", "type": "amendment", "adopted": 1998, "articleSlug": null, "history": "Substantially revised the convention to clarify States' search-and-rescue region responsibilities and strengthen cooperation, aligning it with the parallel IAMSAR Manual published jointly with ICAO." },
+
+    { "id": "imdg-code", "label": "IMDG Code", "type": "code", "org": "imo", "adopted": 1965, "inForce": 2004, "articleSlug": "imdg-code", "history": "Originally published in 1965 as a recommendatory code; made mandatory in 2004 through SOLAS Chapter VII amendments, aligned with the UN Recommendations on the Transport of Dangerous Goods so classification is consistent across sea, air, road and rail." },
+
+    { "id": "polar-code", "label": "Polar Code", "type": "code", "org": "imo", "adopted": 2014, "inForce": 2017, "articleSlug": "polar-code", "history": "Added mandatory safety and environmental chapters to both SOLAS and MARPOL for ships in the Arctic and Antarctic, addressing hazards — ice, extreme cold, remoteness from rescue — the base conventions didn't fully cover." },
+
+    { "id": "fal-convention", "label": "FAL Convention", "type": "convention", "org": "imo", "adopted": 1965, "inForce": 1967, "articleSlug": "fal-convention", "history": "The primary instrument addressing paperwork and formalities burden at ports, standardizing the documents (the IMO FAL Forms) that public authorities may require on a ship's arrival and departure." },
+    { "id": "fal-2019-amendments", "label": "2019 FAL Amendments", "type": "amendment", "adopted": 2016, "inForce": 2019, "articleSlug": null, "history": "Made electronic exchange of arrival/departure information mandatory — the 'Maritime Single Window' concept — cutting duplication between customs, immigration and port health authorities." },
+
+    { "id": "port-state-control", "label": "Port State Control", "type": "concept", "adopted": 1982, "articleSlug": "port-state-control", "history": "Not a treaty itself but a coordinated inspection regime — the Paris MoU (1982), Tokyo MoU (1993) and others — through which port States check foreign ships against SOLAS, MARPOL, STCW, MLC and Load Lines, forming a 'second line of defence' behind flag State control." },
+
+    { "id": "mlc-2006", "label": "MLC 2006", "type": "convention", "org": "ilo", "adopted": 2006, "inForce": 2013, "articleSlug": "mlc-2006", "history": "Often called the 'Seafarers' Bill of Rights' and treated as maritime regulation's fourth pillar alongside SOLAS, MARPOL and STCW, despite being an ILO rather than IMO instrument." },
+    { "id": "mlc-prior-instruments", "label": "65+ Prior ILO Maritime Labour Instruments", "type": "amendment", "articleSlug": null, "history": "MLC 2006 consolidated and updated more than 65 earlier ILO conventions and recommendations on seafarers' work into one instrument, replacing a fragmented patchwork built up since the ILO's early decades." },
+    { "id": "mlc-2014-amendments", "label": "2014 MLC Amendments", "type": "amendment", "adopted": 2014, "inForce": 2017, "articleSlug": null, "history": "Added mandatory financial security requirements (typically P&I insurance) guaranteeing seafarers or their families direct access to compensation for abandonment, and for death or long-term disability from occupational injury." }
+  ],
+  "edges": [
+    { "source": "imo", "target": "imo-convention-1948", "relation": "established by" },
+    { "source": "ilo", "target": "ilo-constitution-1919", "relation": "established by" },
+
+    { "source": "imo", "target": "solas-1974", "relation": "administers" },
+    { "source": "imo", "target": "marpol-73-78", "relation": "administers" },
+    { "source": "imo", "target": "stcw-1978-manila", "relation": "administers" },
+    { "source": "imo", "target": "isps-code", "relation": "administers" },
+    { "source": "imo", "target": "ism-code", "relation": "administers" },
+    { "source": "imo", "target": "colreg-1972", "relation": "administers" },
+    { "source": "imo", "target": "load-lines-convention", "relation": "administers" },
+    { "source": "imo", "target": "tonnage-convention-1969", "relation": "administers" },
+    { "source": "imo", "target": "ballast-water-management-convention", "relation": "administers" },
+    { "source": "imo", "target": "afs-convention", "relation": "administers" },
+    { "source": "imo", "target": "gmdss", "relation": "administers" },
+    { "source": "imo", "target": "sar-convention-iamsar", "relation": "administers" },
+    { "source": "imo", "target": "imdg-code", "relation": "administers" },
+    { "source": "imo", "target": "polar-code", "relation": "administers" },
+    { "source": "imo", "target": "fal-convention", "relation": "administers" },
+    { "source": "ilo", "target": "mlc-2006", "relation": "administers" },
+
+    { "source": "solas-1914", "target": "solas-1974", "relation": "superseded by" },
+    { "source": "solas-1978-protocol", "target": "solas-1974", "relation": "amends" },
+    { "source": "solas-1974", "target": "ism-code", "relation": "gives mandatory force to" },
+    { "source": "solas-1974", "target": "isps-code", "relation": "gives mandatory force to" },
+    { "source": "solas-1974", "target": "imdg-code", "relation": "gives mandatory force to" },
+    { "source": "solas-1974", "target": "gmdss", "relation": "established by" },
+    { "source": "solas-1974", "target": "polar-code", "relation": "gives mandatory force to" },
+
+    { "source": "marpol-1978-protocol", "target": "marpol-73-78", "relation": "amends" },
+    { "source": "marpol-annex-vi", "target": "marpol-73-78", "relation": "amends" },
+    { "source": "marpol-73-78", "target": "imdg-code", "relation": "cross-references" },
+    { "source": "marpol-73-78", "target": "polar-code", "relation": "gives mandatory force to" },
+
+    { "source": "stcw-1995-revision", "target": "stcw-1978-manila", "relation": "amends" },
+    { "source": "stcw-manila-2010", "target": "stcw-1978-manila", "relation": "amends" },
+    { "source": "stcw-1995-revision", "target": "stcw-manila-2010", "relation": "superseded by" },
+
+    { "source": "load-lines-1988-protocol", "target": "load-lines-convention", "relation": "amends" },
+    { "source": "afs-2023-amendment", "target": "afs-convention", "relation": "amends" },
+    { "source": "sar-1998-revision", "target": "sar-convention-iamsar", "relation": "amends" },
+    { "source": "fal-2019-amendments", "target": "fal-convention", "relation": "amends" },
+    { "source": "mlc-prior-instruments", "target": "mlc-2006", "relation": "consolidated into" },
+    { "source": "mlc-2014-amendments", "target": "mlc-2006", "relation": "amends" },
+
+    { "source": "port-state-control", "target": "solas-1974", "relation": "enforces compliance with" },
+    { "source": "port-state-control", "target": "marpol-73-78", "relation": "enforces compliance with" },
+    { "source": "port-state-control", "target": "stcw-1978-manila", "relation": "enforces compliance with" },
+    { "source": "port-state-control", "target": "mlc-2006", "relation": "enforces compliance with" },
+    { "source": "port-state-control", "target": "load-lines-convention", "relation": "enforces compliance with" }
+  ]
+}

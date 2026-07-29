@@ -11,6 +11,7 @@ app.use('/api/articles', require('./routes/articles'));
 app.use('/api/reference', require('./routes/reference'));
 app.use('/api/news', require('./routes/news'));
 app.use('/api/currency', require('./routes/currency'));
+app.use('/api/graph', require('./routes/graph'));
 
 app.get('/healthz', (req, res) => {
   const row = db.prepare('SELECT COUNT(*) AS n FROM articles').get();

@@ -1,0 +1,65 @@
+{
+  "title": "Galley & Catering Reference",
+  "tables": [
+    {
+      "name": "Kitchen Weight & Volume Conversions",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 US cup", "236.6 ml"],
+        ["1 tablespoon (tbsp)", "14.8 ml / 3 teaspoons"],
+        ["1 teaspoon (tsp)", "4.93 ml"],
+        ["1 fluid ounce (US fl oz)", "29.6 ml"],
+        ["1 kilogram", "2.20462 lb = 35.274 oz"],
+        ["1 pound (lb)", "453.6 g = 16 oz"],
+        ["1 litre", "1,000 ml = 33.814 US fl oz = 4.227 US cups"]
+      ]
+    },
+    {
+      "name": "HACCP Food Storage & Cooking Temperature Guidelines",
+      "columns": ["Item", "Recommended temperature"],
+      "rows": [
+        ["Refrigerator (chiller)", "0-5°C (32-41°F)"],
+        ["Freezer", "-18°C (0°F) or below"],
+        ["Danger zone (bacterial growth range)", "5°C - 60°C (41°F - 140°F) — minimise time food spends in this range"],
+        ["Cooked poultry, minimum internal temp", "74°C (165°F)"],
+        ["Cooked ground meats, minimum internal temp", "71°C (160°F)"],
+        ["Cooked whole cuts of beef/pork/fish, minimum internal temp", "63°C (145°F), with rest time"],
+        ["Hot holding", "At or above 63°C (145°F)"],
+        ["Reheating leftovers", "To at least 74°C (165°F) within 2 hours"],
+        ["Thawing", "In refrigerator, cold running water, or microwave (then cook immediately) — never at room temperature"]
+      ]
+    },
+    {
+      "name": "Provisioning — Rough Planning Guide (per person per day, general guidance only)",
+      "columns": ["Item", "Approx. quantity"],
+      "rows": [
+        ["Fresh drinking water (all uses)", "Company/flag-state and MLC minimum standards apply; potable water production/storage capacity is vessel-specific — follow ship's SMS and MLC Title 3 catering standards"],
+        ["Protein (meat/fish/eggs, combined)", "~200-300 g"],
+        ["Rice/pasta/grains (dry)", "~150-200 g"],
+        ["Vegetables (fresh/frozen, combined)", "~300-400 g"],
+        ["Fruit", "~150-250 g"],
+        ["Bread/flour", "~150-250 g"]
+      ]
+    },
+    {
+      "name": "MLC 2006 Title 3 — Food & Catering Highlights",
+      "columns": ["Requirement", "Summary"],
+      "rows": [
+        ["Food quality & quantity", "Food must be of appropriate quality, nutritional value, and sufficient quantity for the voyage, taking into account crew number, religious/cultural requirements and length of voyage"],
+        ["Free of charge", "Food and drinking water must be provided to seafarers at no cost during their period of engagement"],
+        ["Ship's cook qualification", "Ships with a prescribed manning complement must carry a qualified ship's cook, trained and certified per flag State requirements"],
+        ["Inspections", "Food and catering, and galley hygiene, are subject to frequent inspection as part of shipboard MLC/ISM routines and are checked during PSC and flag inspections"]
+      ]
+    },
+    {
+      "name": "Galley Fire & Safety Checklist Themes",
+      "columns": ["Area", "Key points"],
+      "rows": [
+        ["Fire prevention", "Keep exhaust hood/ducting grease-free, deep fat fryers fitted with high-temp cut-out, galley fire blanket and appropriate extinguisher (Class F/K for cooking oil fires) readily accessible"],
+        ["Securing for sea", "All equipment, crockery storage and loose items secured/latched before getting underway or in heavy weather"],
+        ["Gas/electrical appliances", "Regular inspection of gas connections (LPG lockers vented overboard, remote shut-off) and electrical appliance earthing/RCD protection"],
+        ["Hygiene", "Colour-coded chopping boards, separate raw/cooked storage, hand-washing stations, pest control programme"]
+      ]
+    }
+  ]
+}

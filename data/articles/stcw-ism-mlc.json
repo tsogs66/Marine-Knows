@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "stcw-1978-manila",
+    "title": "STCW — Standards of Training, Certification and Watchkeeping for Seafarers",
+    "category": "STCW",
+    "summary": "The convention setting minimum qualification standards for masters, officers and ratings, most recently overhauled by the 2010 Manila Amendments.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "STCW, certification, watchkeeping, competence, Manila amendments, rest hours, basic safety training",
+    "sections": [
+      {
+        "heading": "Purpose and 1995/2010 overhauls",
+        "body": "The International Convention on Standards of Training, Certification and Watchkeeping for Seafarers (STCW) was adopted in 1978 and was the first to establish basic minimum requirements on training, certification and watchkeeping for seafarers at an international level, previously left to individual governments. A major 1995 revision introduced the STCW Code with detailed technical standards, and the 2010 'Manila Amendments' modernized the convention further — updating competence tables, introducing requirements on hours of rest, alcohol limits, security training, and new certification for Able Seafarers, Electro-Technical Officers/Ratings, and training for work on ships operating in polar waters and on ships using gases or low-flashpoint fuels."
+      },
+      {
+        "heading": "Certification structure",
+        "body": "STCW certification is built around Certificates of Competency (CoC) for officers (deck and engine, by tonnage/power band and area of operation) and Certificates of Proficiency for specific functions (e.g. Basic Safety Training, Advanced Fire Fighting, Medical First Aid/Care, Survival Craft, GMDSS radio operator, Tanker familiarization). Certificates are issued or endorsed by the flag State (or a recognized institution on its behalf) once the seafarer has met the required sea service, training, and examination/assessment standards set out in the STCW Code Part A (mandatory) and guided by Part B (recommended)."
+      },
+      {
+        "heading": "Hours of rest",
+        "body": "STCW Regulation VIII/1 sets minimum hours of rest to combat fatigue: seafarers must have at least 10 hours of rest in any 24-hour period and 77 hours in any 7-day period, with rest divisible into no more than two periods (one of which must be at least 6 hours), and no more than 14 hours between consecutive rest periods. Limited exceptions exist for emergencies and drills, but records of daily hours of rest must be maintained and are a standard Port State Control and audit check point."
+      },
+      {
+        "heading": "Watchkeeping principles",
+        "body": "STCW Chapter VIII and the associated Code set out general principles for keeping a safe navigational and engineering watch, including bridge/engine resource management, taking over a watch only when fit for duty, and specific provisions for watchkeeping under different conditions of visibility, traffic density and weather. These principles underpin company Safety Management System (SMS) procedures required under the ISM Code."
+      }
+    ]
+  },
+  {
+    "slug": "ism-code",
+    "title": "ISM Code — International Safety Management Code",
+    "category": "ISM",
+    "summary": "The code requiring shipping companies to develop, implement and maintain a Safety Management System (SMS), made mandatory under SOLAS Chapter IX.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "ISM, safety management system, DOC, SMC, designated person ashore, non-conformity",
+    "sections": [
+      {
+        "heading": "Origin and legal basis",
+        "body": "The ISM Code was adopted by IMO in 1993 and made mandatory through SOLAS Chapter IX, entering into force progressively from 1998 to 2002 depending on ship type. It followed a series of major accidents in the 1980s (including the capsize of the Herald of Free Enterprise) that were traced to systemic management failures rather than isolated technical or human error. Its stated objective is to ensure safety at sea, prevent human injury or loss of life, and avoid damage to the environment and to property."
+      },
+      {
+        "heading": "Core elements of a Safety Management System (SMS)",
+        "body": "Every company operating SOLAS ships must implement a documented SMS covering: a safety and environmental protection policy; instructions and procedures for safe ship operation and environmental protection compliant with international and flag State law; defined levels of authority and lines of communication between and among shore and shipboard personnel; procedures for reporting accidents and non-conformities; procedures for responding to emergencies; and procedures for internal audits and management review. The company must designate a Designated Person Ashore (DPA) with direct access to the highest level of management, providing a link between the company and those on board."
+      },
+      {
+        "heading": "Certification: DOC and SMC",
+        "body": "Compliance is verified through two linked certificates: the Document of Compliance (DOC), issued to a company after audit showing its SMS meets the Code, and the Safety Management Certificate (SMC), issued to an individual ship showing the company and its shipboard management operate in accordance with the approved SMS. Both are subject to periodic external audits (typically annual/intermediate for DOC, and periodic for SMC) by the flag State or a Recognized Organization, in addition to internal audits the company itself must conduct."
+      },
+      {
+        "heading": "What it means for the crew",
+        "body": "In practice, the ISM Code is the reason ships run standing orders, permit-to-work systems, planned maintenance systems, non-conformity/near-miss reporting forms, and master's overriding authority statements. Masters have absolute authority and responsibility to make decisions on safety and pollution prevention and to request company assistance as necessary — a right the Code explicitly protects."
+      }
+    ]
+  },
+  {
+    "slug": "mlc-2006",
+    "title": "MLC 2006 — Maritime Labour Convention",
+    "category": "MLC",
+    "summary": "The ILO convention often called the 'Seafarers' Bill of Rights', consolidating minimum standards for seafarers' working and living conditions worldwide.",
+    "source_name": "International Labour Organization (ILO)",
+    "source_url": "https://www.ilo.org",
+    "tags": "MLC, ILO, seafarer employment agreement, repatriation, wages, accommodation, food, medical care, DMLC",
+    "sections": [
+      {
+        "heading": "Overview",
+        "body": "The Maritime Labour Convention, 2006 (MLC 2006) was adopted by the International Labour Organization and entered into force in 2013. It consolidates and updates more than 65 earlier international labour standards related to seafarers into a single instrument, and is widely referred to as the fourth pillar of international maritime regulation alongside SOLAS, MARPOL and STCW. It applies to seafarers working on ships ordinarily engaged in commercial activities (with narrow exceptions such as fishing vessels and traditionally built ships)."
+      },
+      {
+        "heading": "Structure: Titles 1–5",
+        "body": "MLC 2006 is organized into five Titles: Title 1 (Minimum requirements for seafarers to work on a ship — minimum age, medical certification, training, recruitment/placement); Title 2 (Conditions of employment — seafarers' employment agreements (SEA), wages, hours of work/rest, entitlement to leave, repatriation, career/skill development); Title 3 (Accommodation, recreational facilities, food and catering); Title 4 (Health protection, medical care, welfare and social security protection, including shipowner liability for sickness/injury and mandatory financial security for repatriation and contractual claims); and Title 5 (Compliance and enforcement — flag State and port State responsibilities, complaint-handling procedures)."
+      },
+      {
+        "heading": "Certification: DMLC and Maritime Labour Certificate",
+        "body": "Ships of 500 GT and above engaged in international voyages must carry a Maritime Labour Certificate and a Declaration of Maritime Labour Compliance (DMLC), consisting of Part I (drawn up by the flag State, listing the national requirements implementing MLC) and Part II (drawn up by the shipowner, describing the measures adopted to ensure ongoing compliance between inspections). These are the documents a seafarer or PSC inspector checks first to confirm MLC coverage on board."
+      },
+      {
+        "heading": "Seafarer complaint and repatriation rights",
+        "body": "MLC establishes an on-board complaint procedure that seafarers can use without fear of penalization, followed by rights to complain ashore to the flag State or, during a port call, to port State authorities. It guarantees repatriation at no cost to the seafarer in a wide range of circumstances (contract expiry, illness/injury, shipwreck, shipowner's inability to continue fulfilling obligations), backed since the 2014 amendments by mandatory financial security (typically P&I insurance) that must provide direct access for the seafarer or their family to compensation for abandonment, and for death or long-term disability due to occupational injury, illness or hazard."
+      }
+    ]
+  }
+]

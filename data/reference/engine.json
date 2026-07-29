@@ -1,0 +1,74 @@
+{
+  "title": "Engine Room Reference",
+  "tables": [
+    {
+      "name": "ISO 8217 Marine Fuel Grades (selected, distillate & residual)",
+      "columns": ["Grade", "Type", "Typical use"],
+      "rows": [
+        ["DMA (MGO)", "Distillate", "Marine gas oil, low-sulphur main/aux engines, ECA compliant grades widely used"],
+        ["DMB (MDO)", "Distillate", "Marine diesel oil, may contain small residual content"],
+        ["RMA - RMK (HFO grades)", "Residual", "Heavy fuel oil grades classified by viscosity (e.g. RMG 380 = approx. 380 cSt at 50°C); require heating for storage/handling"],
+        ["VLSFO", "Blend (compliant)", "Very Low Sulphur Fuel Oil, ≤0.50% sulphur, for MARPOL Annex VI global cap compliance outside ECAs"],
+        ["ULSFO", "Blend/distillate", "Ultra Low Sulphur Fuel Oil, ≤0.10% sulphur, for use inside ECAs without scrubber"]
+      ]
+    },
+    {
+      "name": "Fuel Oil Viscosity Reference",
+      "columns": ["Grade label", "Viscosity @ 50°C (cSt, approx.)"],
+      "rows": [
+        ["RMA 30 / IFO 30", "30"],
+        ["RMB 30", "30"],
+        ["RMD 80", "80"],
+        ["RME 180 / IFO 180", "180"],
+        ["RMG 380 / IFO 380", "380"],
+        ["RMK 500", "500"],
+        ["RMK 700", "700"]
+      ]
+    },
+    {
+      "name": "Lubricating Oil — SAE / ISO VG Cross Reference (approximate)",
+      "columns": ["ISO VG", "Approx. SAE (crankcase)", "Typical use"],
+      "rows": [
+        ["32", "10W", "Hydraulic systems, light machinery"],
+        ["46", "15W", "Hydraulic systems"],
+        ["68", "20W-20", "Hydraulic/general purpose"],
+        ["100", "30", "Medium-speed diesel engine crankcase (system oil)"],
+        ["150", "40", "Medium/low-speed diesel crankcase, cylinder oils (varies by BN)"],
+        ["220", "50", "Gear oils, some cylinder oils"]
+      ]
+    },
+    {
+      "name": "Common SI Units in the Engine Room",
+      "columns": ["Quantity", "SI Unit", "Common alternates"],
+      "rows": [
+        ["Power", "kW", "1 kW = 1.34102 hp (metric hp/PS: 1 kW = 1.35962 PS)"],
+        ["Pressure", "kPa / bar", "1 bar = 14.5038 psi"],
+        ["Torque", "N·m", "1 N·m = 0.737562 lb·ft"],
+        ["Density", "kg/m3", "Fuel typically ~980-991 kg/m3 @ 15°C for HFO; ~830-890 for MGO/MDO"],
+        ["Specific fuel oil consumption (SFOC)", "g/kWh", "Typical modern 2-stroke main engine: approx. 165-190 g/kWh"],
+        ["Flow", "m3/h", "1 m3/h = 4.403 US gpm"]
+      ]
+    },
+    {
+      "name": "Fuel Density/Volume Correction (concept)",
+      "columns": ["Step", "Notes"],
+      "rows": [
+        ["Observed density", "Measured at ambient temperature by hydrometer or densitometer"],
+        ["Density @ 15°C", "Observed density corrected to a standard reference temperature (15°C) using ASTM/API/ISO correction tables (VCF - Volume Correction Factor), essential for accurate bunker quantity accounting"],
+        ["Mass = Volume x Density", "Bunker mass (metric tonnes) is calculated from corrected volume (m3) and density @15°C (kg/m3), not raw sounded volume alone"]
+      ]
+    },
+    {
+      "name": "Watchkeeping / PMS Checklist Themes (engine room)",
+      "columns": ["Area", "Typical routine checks"],
+      "rows": [
+        ["Main engine", "Cylinder exhaust temps, jacket cooling water temp/pressure, lube oil pressure/temp, turbocharger rpm/exhaust, crankcase oil mist detector status"],
+        ["Auxiliary engines/generators", "Load sharing, cooling water/lube oil parameters, exhaust temps, running hours vs PMS due dates"],
+        ["Boiler", "Water level/gauge glass, steam pressure, water treatment (chemical dosing/TDS blowdown), safety valve test dates"],
+        ["Purifiers/separators", "Bowl condition, interface, sludge discharge, back-flush intervals"],
+        ["Oily water separator / ODMCS", "15 ppm alarm function test, valid calibration, bilge log entries matching Oil Record Book"],
+        ["Fire & safety systems", "Fixed fire-fighting system pressure/readiness, emergency fire pump, quick-closing valves/dampers free to operate"]
+      ]
+    }
+  ]
+}

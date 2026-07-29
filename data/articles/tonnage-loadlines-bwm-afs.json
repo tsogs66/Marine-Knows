@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "load-lines-convention",
+    "title": "ICLL 1966/1988 — International Convention on Load Lines",
+    "category": "Load Lines",
+    "summary": "Sets minimum freeboard and reserve buoyancy requirements for ships by establishing limits to which a ship may be loaded, marked on the hull as the load line (Plimsoll) mark.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "load lines, Plimsoll mark, freeboard, reserve buoyancy, zones and seasonal areas",
+    "sections": [
+      {
+        "heading": "Purpose",
+        "body": "The International Convention on Load Lines (ICLL), adopted in 1966 and updated by a 1988 Protocol aligning it with SOLAS/MARPOL survey and certification harmonization, sets limits on the draught to which a ship may be loaded, taking into account potential hazards in different zones and seasons, ensuring adequate freeboard and reserve buoyancy for damage stability and structural integrity in a seaway. Ships are surveyed and issued an International Load Line Certificate."
+      },
+      {
+        "heading": "The load line mark",
+        "body": "The load line mark (colloquially the 'Plimsoll mark' after Samuel Plimsoll, who campaigned for it in the 19th century UK Parliament) is a circle with a horizontal line through its center indicating the summer freeboard, accompanied by a set of additional lines indicating maximum draughts in different conditions: Tropical Fresh Water (TF), Fresh Water (F), Tropical (T), Summer (S), Winter (W), and Winter North Atlantic (WNA), reflecting seasonal zones and the differing behaviour of fresh versus salt water."
+      },
+      {
+        "heading": "Zones and seasonal areas",
+        "body": "The world's oceans are divided into permanent Tropical, Summer and Winter zones, and Seasonal Tropical/Summer/Winter Areas, each with defined boundaries and time periods, published as charts in the Convention's annex. A ship must not be loaded so that the appropriate line for the zone/season it is entering is submerged, and officers must track zone/date boundaries during passage planning on long voyages that cross seasonal zone limits."
+      }
+    ]
+  },
+  {
+    "slug": "tonnage-convention-1969",
+    "title": "Tonnage Convention 1969 — International Convention on Tonnage Measurement of Ships",
+    "category": "Tonnage",
+    "summary": "Establishes universal rules for calculating Gross Tonnage (GT) and Net Tonnage (NT), the volumetric measures used throughout maritime law, fees and regulation.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "tonnage, gross tonnage, net tonnage, deadweight, lightship, displacement",
+    "sections": [
+      {
+        "heading": "Why tonnage matters",
+        "body": "Adopted in 1969 and in force since 1982, this convention replaced a patchwork of national tonnage measurement systems with a single, universal system, expressed via mathematical formulae based on a ship's moulded volume. Gross Tonnage (GT) and Net Tonnage (NT) are not measures of weight but of volume, and are used throughout maritime regulation and commerce: as thresholds that trigger applicability of conventions (e.g. many SOLAS/MARPOL/ISM/ISPS/MLC provisions apply from 300, 500 or 5,000 GT), as the basis for manning levels, registration and port/canal dues, and for statistical purposes."
+      },
+      {
+        "heading": "GT vs NT vs deadweight vs displacement",
+        "body": "Gross Tonnage (GT) reflects the ship's total enclosed volume (all spaces). Net Tonnage (NT) reflects the volume of the ship's cargo-carrying/passenger spaces and is generally used as the basis for port dues since it approximates earning capacity. Neither should be confused with Deadweight Tonnage (DWT) — the weight (in metric tonnes) a ship can carry (cargo, fuel, fresh water, stores, crew) when loaded to its maximum permitted draught — or Lightship weight (the ship's own weight, empty), or Displacement (the total weight of water the ship displaces, equal to lightship plus everything currently on board)."
+      },
+      {
+        "heading": "Certification",
+        "body": "Ships subject to the convention are issued an International Tonnage Certificate (1969), based on survey and calculation in accordance with the Convention's Annex I regulations, which must be carried on board and is checked during PSC inspections and by port/canal authorities calculating dues."
+      }
+    ]
+  },
+  {
+    "slug": "ballast-water-management-convention",
+    "title": "BWM Convention 2004 — Ballast Water Management",
+    "category": "BWM",
+    "summary": "Requires ships to manage their ballast water and sediments to prevent the spread of harmful aquatic organisms and pathogens between regions.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "ballast water, invasive species, D-1, D-2, ballast water management plan, BWMS",
+    "sections": [
+      {
+        "heading": "The problem it addresses",
+        "body": "Ships take on ballast water to manage trim, stability and stress, and discharge it elsewhere, potentially transferring harmful aquatic organisms and pathogens (invasive species) between ecosystems — long recognized as one of the greatest threats to the world's oceans. The International Convention for the Control and Management of Ships' Ballast Water and Sediments was adopted in 2004 and entered into force in September 2017."
+      },
+      {
+        "heading": "D-1 and D-2 standards",
+        "body": "The Convention sets two standards. The D-1 standard requires ballast water exchange, generally at least 200 nautical miles from land and in water at least 200 metres deep, replacing water carried from one region with open-ocean water. The D-2 standard is a performance standard limiting the concentration of viable organisms and indicator microbes discharged, requiring an approved Ballast Water Management System (BWMS) — typically filtration combined with UV or electrochlorination treatment — to be fitted, with an implementation schedule phasing D-2 compliance in based on a ship's International Oil Pollution Prevention (IOPP) Certificate renewal survey date."
+      },
+      {
+        "heading": "Documentation",
+        "body": "Ships must carry a ship-specific Ballast Water Management Plan, a Ballast Water Record Book logging every ballast operation, and (once compliant) an International Ballast Water Management Certificate. PSC inspectors routinely check the Ballast Water Record Book and may sample discharged ballast water in some regions."
+      }
+    ]
+  },
+  {
+    "slug": "afs-convention",
+    "title": "AFS Convention — Control of Harmful Anti-fouling Systems on Ships",
+    "category": "AFS",
+    "summary": "Prohibits the use of harmful organotin compounds (such as TBT) in anti-fouling paints used on ships' hulls.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "AFS, anti-fouling, TBT, tributyltin, hull coating",
+    "sections": [
+      {
+        "heading": "Overview",
+        "body": "The International Convention on the Control of Harmful Anti-fouling Systems on Ships (AFS Convention) was adopted in 2001 and entered into force in 2008. It prohibits the use of organotin compounds (notably tributyltin, or TBT) that act as biocides in anti-fouling paint systems, which were found to persist in the marine environment, accumulate in marine life, and cause severe biological effects including endocrine disruption in shellfish. A 2023 amendment extended controls to cybutryne."
+      },
+      {
+        "heading": "Practical effect and certification",
+        "body": "Ships of 400 GT and above engaged in international voyages (excluding fixed/floating platforms, FSUs and FPSOs) must undergo survey and carry an International Anti-fouling System Certificate, supported by a Declaration on Anti-fouling System signed by the owner/master and (where relevant) the paint supplier confirming the type of anti-fouling system applied and its compliance status. Smaller ships not requiring the certificate must still carry the Declaration."
+      }
+    ]
+  }
+]

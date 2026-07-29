@@ -1,0 +1,109 @@
+[
+  {
+    "slug": "gmdss",
+    "title": "GMDSS — Global Maritime Distress and Safety System",
+    "category": "GMDSS",
+    "summary": "The internationally agreed set of safety procedures, equipment and communication protocols used to rescue ships, aircraft or people in distress at sea.",
+    "source_name": "International Maritime Organization (IMO) / ITU",
+    "source_url": "https://www.imo.org",
+    "tags": "GMDSS, distress, DSC, EPIRB, SART, NAVTEX, INMARSAT, sea areas A1-A4",
+    "sections": [
+      {
+        "heading": "Concept",
+        "body": "GMDSS was adopted as part of SOLAS Chapter IV and became fully effective in 1999, replacing reliance on Morse code and dedicated radio watchkeeping with an integrated system of satellite and terrestrial radiocommunication technologies designed to ensure that a distress alert will get through and be acted on, regardless of where a ship is or the specific circumstances of the emergency. It requires ships to carry equipment matched to the sea area(s) in which they operate."
+      },
+      {
+        "heading": "Sea areas A1–A4",
+        "body": "Coverage requirements are defined by four sea areas: A1 (within range of VHF coast station DSC coverage), A2 (within range of MF coast station DSC coverage, beyond A1), A3 (within coverage of a geostationary maritime communication satellite, e.g. Inmarsat, beyond A2 — most of the world's oceans between about 70°N and 70°S), and A4 (the remaining polar areas outside A1–A3, requiring HF equipment). A ship's required equipment fit is determined by the highest-numbered area it is certified to operate in."
+      },
+      {
+        "heading": "Core equipment",
+        "body": "Typical GMDSS equipment includes VHF/MF/HF radios with Digital Selective Calling (DSC) for automated distress alerting, NAVTEX receivers for maritime safety information (navigational and weather warnings) in coastal waters, an EPIRB (Emergency Position Indicating Radio Beacon) that automatically activates and transmits a distress signal with position via satellite if a ship sinks, a SART (Search and Rescue Transponder) or AIS-SART to help searching units home in on survival craft, and a portable/fixed two-way VHF for on-scene and survival craft communication. Certified GMDSS radio operators (holding a GOC or ROC) must be carried and equipment tested regularly per SOLAS Chapter IV requirements."
+      }
+    ]
+  },
+  {
+    "slug": "sar-convention-iamsar",
+    "title": "SAR Convention & IAMSAR Manual — Search and Rescue",
+    "category": "SAR",
+    "summary": "The international framework obliging States to provide search and rescue services and coordinate response to distress at sea, supported by the joint IMO/ICAO IAMSAR Manual.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "SAR, IAMSAR, MRCC, search pattern, master's obligation to assist",
+    "sections": [
+      {
+        "heading": "The SAR Convention",
+        "body": "The International Convention on Maritime Search and Rescue (SAR), adopted in 1979 and substantially revised in 1998, requires Parties to establish adequate search and rescue services in their coastal waters, divided into recognized SAR regions, coordinated through Maritime Rescue Co-ordination Centres (MRCCs), and to ensure assistance is provided to any person in distress at sea regardless of nationality or status, without charge to the survivor."
+      },
+      {
+        "heading": "SOLAS/UNCLOS master's duty to assist",
+        "body": "Independently of the SAR Convention, SOLAS Chapter V (Regulation 33) and the UN Convention on the Law of the Sea both impose a direct duty on the master of any ship at sea, on receiving a distress signal or sighting persons in distress, to proceed with all speed to render assistance if in a position to do so, subject only to release by the relevant rescue coordination authority or the persons themselves, or where the master reasonably considers the ship, crew or passengers would be exposed to serious danger by doing so."
+      },
+      {
+        "heading": "IAMSAR Manual",
+        "body": "The International Aeronautical and Maritime Search and Rescue (IAMSAR) Manual, published jointly by IMO and ICAO in three volumes (Organization and Management; Mission Co-ordination; Mobile Facilities), provides common guidance for States and for ships/aircraft assisting in SAR operations, including standardized search pattern types (expanding square, sector search, parallel track/creeping line) that a merchant ship master may be tasked to run by an MRCC while awaiting dedicated SAR assets."
+      }
+    ]
+  },
+  {
+    "slug": "imdg-code",
+    "title": "IMDG Code — International Maritime Dangerous Goods Code",
+    "category": "IMDG",
+    "summary": "The mandatory code (under SOLAS Chapter VII) for the safe carriage of dangerous, hazardous and harmful goods by sea in packaged form.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "IMDG, dangerous goods, UN number, class 1-9, segregation, DOC, dangerous goods manifest",
+    "sections": [
+      {
+        "heading": "Structure and legal status",
+        "body": "The IMDG Code is given mandatory effect through SOLAS Chapter VII and MARPOL Annex III, and provides a uniform international system for classifying, packing, marking, labelling and documenting dangerous goods carried by sea, and for their safe stowage and segregation aboard ship. It is aligned with the UN Recommendations on the Transport of Dangerous Goods so that classification is consistent across sea, air, road and rail transport."
+      },
+      {
+        "heading": "The nine hazard classes",
+        "body": "Dangerous goods are grouped into nine classes: Class 1 (Explosives), Class 2 (Gases — flammable, non-flammable/non-toxic, toxic), Class 3 (Flammable liquids), Class 4 (Flammable solids; substances liable to spontaneous combustion; substances that emit flammable gas when wet), Class 5 (Oxidizing substances; organic peroxides), Class 6 (Toxic and infectious substances), Class 7 (Radioactive material), Class 8 (Corrosive substances), and Class 9 (Miscellaneous dangerous substances/articles, including marine pollutants and, since recent amendments, provisions relevant to carriage of lithium batteries and vehicles with them)."
+      },
+      {
+        "heading": "Documentation and segregation on board",
+        "body": "Every consignment requires a Dangerous Goods Declaration, and the ship must have on board a Dangerous Goods Manifest or stowage plan identifying the class, UN number, proper shipping name and stowage location of each item, plus Emergency Response Procedures for Ships Carrying Dangerous Goods (EmS Guide) and a Medical First Aid Guide (MFAG). The Code's segregation tables dictate minimum separation between incompatible classes (e.g. keeping oxidizers away from flammables), and crew handling dangerous goods must be trained per STCW and company procedures."
+      }
+    ]
+  },
+  {
+    "slug": "polar-code",
+    "title": "Polar Code — International Code for Ships Operating in Polar Waters",
+    "category": "Polar Code",
+    "summary": "Mandatory safety and environmental requirements, adopted under SOLAS and MARPOL, for ships operating in the Arctic and Antarctic.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "polar code, ice class, PWOM, polar ship certificate, arctic, antarctic",
+    "sections": [
+      {
+        "heading": "Why polar waters need extra rules",
+        "body": "Ships operating in the Arctic and Antarctic face hazards not fully addressed by the base conventions: ice, extreme low temperatures affecting equipment and survivability, remoteness from SAR and repair facilities, potential lack of up-to-date charting, and sensitive ecosystems. The Polar Code, adopted in 2014/2015 and entering into force on 1 January 2017, added mandatory provisions to both SOLAS (safety) and MARPOL (environmental protection, extending discharge restrictions on oil, noxious liquids, sewage and garbage in polar waters)."
+      },
+      {
+        "heading": "Key requirements",
+        "body": "Ships intended to operate in defined polar waters must undergo an assessment and carry a Polar Ship Certificate (Category A, B or C depending on ice conditions the ship is designed for) and a Polar Water Operational Manual (PWOM) giving the master and crew operational, safety and environmental protection information and procedures specific to expected conditions on a given voyage. Additional requirements cover structural/stability standards for low temperature and ice loading, machinery reliability in cold conditions, enhanced life-saving appliance and survival equipment standards for prolonged exposure, and additional training for masters, chief mates and OOWs on ships operating in polar waters."
+      }
+    ]
+  },
+  {
+    "slug": "fal-convention",
+    "title": "FAL Convention — Convention on Facilitation of International Maritime Traffic",
+    "category": "FAL",
+    "summary": "Aims to simplify and standardize the formalities, documentary requirements and procedures for ships arriving at, staying in, and departing from ports.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "FAL, facilitation, single window, port clearance, IMO FAL forms",
+    "sections": [
+      {
+        "heading": "Purpose",
+        "body": "Adopted in 1965, the FAL Convention is the primary instrument addressing the reduction of formalities and paperwork burden in international shipping, aiming to prevent unnecessary delays in maritime traffic, aid cooperation between governments, and secure the highest practicable degree of uniformity in formalities and procedures. It standardizes documents port authorities may require on arrival/departure (the IMO FAL Forms, e.g. General Declaration, Cargo Declaration, Ship's Stores Declaration, Crew Effects Declaration, Crew List, Passenger List, Dangerous Goods Manifest)."
+      },
+      {
+        "heading": "Electronic data exchange / Maritime Single Window",
+        "body": "Amendments effective from 2019 made electronic exchange of the required FAL information mandatory (a 'Maritime Single Window' concept), requiring public authorities to accept information submitted electronically and to cooperate so a ship reports required information once, to a single point, for all agencies involved in port clearance, reducing duplication between customs, immigration, port health and port authorities."
+      }
+    ]
+  }
+]

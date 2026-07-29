@@ -1,0 +1,89 @@
+{
+  "title": "Deck Reference",
+  "tables": [
+    {
+      "name": "IALA Buoyage — Region A (Europe, Africa, most of Asia, Australia)",
+      "columns": ["Mark", "Colour", "Shape/Topmark", "Meaning"],
+      "rows": [
+        ["Lateral, Port hand", "Red", "Can/cylindrical, red can topmark", "Keep on port side when proceeding in the 'direction of buoyage'"],
+        ["Lateral, Starboard hand", "Green", "Conical, green cone topmark (point up)", "Keep on starboard side when proceeding in the 'direction of buoyage'"],
+        ["Cardinal, North", "Black over yellow", "Two black cones, points up", "Safe water to the north of the mark"],
+        ["Cardinal, South", "Yellow over black", "Two black cones, points down", "Safe water to the south of the mark"],
+        ["Cardinal, East", "Black-yellow-black", "Two black cones, base to base", "Safe water to the east of the mark"],
+        ["Cardinal, West", "Yellow-black-yellow", "Two black cones, points together (point to point)", "Safe water to the west of the mark"],
+        ["Isolated danger", "Black with red band(s)", "Two black spheres", "Marks an isolated danger with navigable water around it"],
+        ["Safe water", "Red and white vertical stripes", "Single red sphere", "Indicates navigable water all around, e.g. landfall/fairway mark"],
+        ["Special mark", "Yellow", "Single yellow X", "Marks a special area/feature (e.g. spoil ground, cable area, TSS)"]
+      ]
+    },
+    {
+      "name": "International Code of Signals — Phonetic Alphabet & Single-Letter Flags (selected)",
+      "columns": ["Letter", "Phonetic", "Single-flag meaning"],
+      "rows": [
+        ["A", "Alfa", "I have a diver down; keep well clear at slow speed"],
+        ["B", "Bravo", "I am taking in, discharging, or carrying dangerous goods"],
+        ["C", "Charlie", "Yes (affirmative)"],
+        ["D", "Delta", "Keep clear of me; I am manoeuvring with difficulty"],
+        ["E", "Echo", "I am altering my course to starboard"],
+        ["F", "Foxtrot", "I am disabled; communicate with me"],
+        ["G", "Golf", "I require a pilot"],
+        ["H", "Hotel", "I have a pilot on board"],
+        ["I", "India", "I am altering my course to port"],
+        ["J", "Juliett", "I am on fire / vessel on fire, keep clear"],
+        ["K", "Kilo", "I wish to communicate with you"],
+        ["L", "Lima", "You should stop your vessel instantly"],
+        ["M", "Mike", "My vessel is stopped and making no way through the water"],
+        ["N", "November", "No (negative)"],
+        ["O", "Oscar", "Man overboard"],
+        ["P", "Papa", "(In port) all persons should report on board; (at sea) my nets have come fast upon an obstruction"],
+        ["Q", "Quebec", "My vessel is healthy and I request free pratique"],
+        ["R", "Romeo", "-"],
+        ["S", "Sierra", "I am operating astern propulsion"],
+        ["T", "Tango", "Keep clear of me; engaged in pair trawling"],
+        ["U", "Uniform", "You are running into danger"],
+        ["V", "Victor", "I require assistance"],
+        ["W", "Whiskey", "I require medical assistance"],
+        ["X", "X-ray", "Stop carrying out your intentions and watch for my signals"],
+        ["Y", "Yankee", "I am dragging my anchor"],
+        ["Z", "Zulu", "I require a tug / (fishing vessels) I am shooting nets"]
+      ]
+    },
+    {
+      "name": "Fibre Rope — Approx. Minimum Breaking Load (3-strand, general guide only)",
+      "columns": ["Diameter (mm)", "Polypropylene (kN, approx.)", "Nylon (kN, approx.)"],
+      "rows": [
+        ["12", "17", "23"],
+        ["16", "29", "39"],
+        ["20", "45", "60"],
+        ["24", "64", "85"],
+        ["28", "86", "113"],
+        ["32", "112", "145"],
+        ["36", "140", "182"],
+        ["40", "173", "224"]
+      ]
+    },
+    {
+      "name": "Anchor & Chain Cable — General Guidance",
+      "columns": ["Item", "Guidance"],
+      "rows": [
+        ["Length of chain to veer (rule of thumb)", "Approx. 3-4x water depth in normal holding conditions; more in poor holding ground or heavy weather"],
+        ["Chain grades", "Grade U1, U2, U3 (increasing strength) per classification society rules; grade marked on links/certificates"],
+        ["Standard shackle length", "27.5 m (15 fathoms) per shackle, per most class/ISO conventions"],
+        ["Anchor types", "Stockless (most common on merchant ships), stock anchor, high-holding-power (HHP), super HHP"]
+      ]
+    },
+    {
+      "name": "COLREG Lights & Shapes — Quick Reference",
+      "columns": ["Situation", "Day shape", "Night lights (summary)"],
+      "rows": [
+        ["Vessel at anchor (<50m)", "Ball forward", "All-round white light"],
+        ["Vessel not under command (NUC)", "Two black balls", "Two all-round red lights vertical"],
+        ["Vessel restricted in ability to manoeuvre (RAM)", "Ball-diamond-ball", "Red-white-red all-round lights vertical"],
+        ["Vessel constrained by draught", "Cylinder", "Three all-round red lights vertical"],
+        ["Vessel engaged in fishing (trawling)", "Two cones apex together", "Green over white all-round lights"],
+        ["Vessel towing (tow >200m)", "Diamond", "Sidelights/sternlight + towing light + extra masthead light; diamond shape by day"],
+        ["Pilot vessel on duty", "-", "White over red all-round lights"]
+      ]
+    }
+  ]
+}

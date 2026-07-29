@@ -1,0 +1,101 @@
+{
+  "title": "General Conversions",
+  "tables": [
+    {
+      "name": "Distance / Length",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 nautical mile (nm)", "1.852 km = 1.15078 statute miles = 6,076.12 ft"],
+        ["1 cable", "1/10 nm = 185.2 m = 608 ft (UK) / 100 fathoms (US, approx.)"],
+        ["1 fathom", "6 ft = 1.8288 m"],
+        ["1 statute mile", "1.60934 km = 0.868976 nm"],
+        ["1 metre", "3.28084 ft = 1.09361 yd"],
+        ["1 foot", "0.3048 m = 12 in"],
+        ["1 yard", "0.9144 m = 3 ft"],
+        ["1 kilometre", "0.539957 nm = 0.621371 statute miles"]
+      ]
+    },
+    {
+      "name": "Speed",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 knot (kn)", "1 nm/h = 1.852 km/h = 1.15078 mph = 0.51444 m/s"],
+        ["1 km/h", "0.539957 kn = 0.277778 m/s = 0.621371 mph"],
+        ["1 mph", "0.868976 kn = 1.60934 km/h"],
+        ["1 m/s", "1.94384 kn = 3.6 km/h"]
+      ]
+    },
+    {
+      "name": "Mass / Weight",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 metric tonne (t)", "1,000 kg = 2,204.62 lb = 0.984207 long ton = 1.10231 short ton"],
+        ["1 long ton (UK, 'gross ton')", "1,016.05 kg = 2,240 lb"],
+        ["1 short ton (US, 'net ton')", "907.185 kg = 2,000 lb"],
+        ["1 kilogram", "2.20462 lb"],
+        ["1 pound (lb)", "0.453592 kg = 16 oz"]
+      ]
+    },
+    {
+      "name": "Volume",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 cubic metre (m3)", "1,000 litres = 35.3147 cu ft = 6.28981 barrels (oil) = 264.172 US gal"],
+        ["1 barrel (oil, bbl)", "158.987 litres = 42 US gal = 0.158987 m3"],
+        ["1 US gallon", "3.78541 litres"],
+        ["1 UK (imperial) gallon", "4.54609 litres = 1.20095 US gal"],
+        ["1 litre", "0.264172 US gal = 0.219969 UK gal"]
+      ]
+    },
+    {
+      "name": "Pressure",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 bar", "100 kPa = 14.5038 psi = 0.986923 atm"],
+        ["1 psi", "6.89476 kPa = 0.0689476 bar"],
+        ["1 atm", "101.325 kPa = 1.01325 bar = 14.6959 psi"],
+        ["1 kPa", "0.01 bar = 0.145038 psi"]
+      ]
+    },
+    {
+      "name": "Temperature",
+      "columns": ["Conversion", "Formula"],
+      "rows": [
+        ["Celsius to Fahrenheit", "F = (C x 9/5) + 32"],
+        ["Fahrenheit to Celsius", "C = (F - 32) x 5/9"],
+        ["Celsius to Kelvin", "K = C + 273.15"]
+      ]
+    },
+    {
+      "name": "Beaufort Wind Scale",
+      "columns": ["Force", "Wind (knots)", "Description", "Sea state / effect"],
+      "rows": [
+        ["0", "<1", "Calm", "Sea like a mirror"],
+        ["1", "1-3", "Light air", "Ripples, no foam"],
+        ["2", "4-6", "Light breeze", "Small wavelets"],
+        ["3", "7-10", "Gentle breeze", "Large wavelets, some crests break"],
+        ["4", "11-16", "Moderate breeze", "Small waves, frequent whitecaps"],
+        ["5", "17-21", "Fresh breeze", "Moderate waves, many whitecaps"],
+        ["6", "22-27", "Strong breeze", "Large waves, white foam crests, spray"],
+        ["7", "28-33", "Near gale", "Sea heaps up, foam blown in streaks"],
+        ["8", "34-40", "Gale", "Moderately high waves, well-marked streaks of foam"],
+        ["9", "41-47", "Strong gale", "High waves, dense foam, visibility reduced"],
+        ["10", "48-55", "Storm", "Very high waves, sea surface white, heavy tumbling"],
+        ["11", "56-63", "Violent storm", "Exceptionally high waves, visibility poor"],
+        ["12", "64+", "Hurricane", "Air filled with foam and spray, visibility greatly reduced"]
+      ]
+    },
+    {
+      "name": "Tonnage & Weight Terms (Quick Reference)",
+      "columns": ["Term", "Meaning"],
+      "rows": [
+        ["GT (Gross Tonnage)", "Volumetric measure of a ship's total enclosed spaces (no unit, dimensionless index)"],
+        ["NT (Net Tonnage)", "Volumetric measure of earning (cargo/passenger) spaces"],
+        ["DWT (Deadweight Tonnage)", "Max weight a ship can carry: cargo + fuel + water + stores + crew, in metric tonnes"],
+        ["Lightship", "Weight of the empty ship (hull, machinery, equipment), no cargo/fuel/stores"],
+        ["Displacement", "Total weight of water displaced = Lightship + everything currently on board"],
+        ["TEU", "Twenty-foot Equivalent Unit — standard container size measure"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "gCaptain",
+    "feedUrl": "https://gcaptain.com/feed/",
+    "defaultCategory": "other"
+  },
+  {
+    "name": "Maritime Executive",
+    "feedUrl": "https://www.maritime-executive.com/rss/all",
+    "defaultCategory": "other"
+  },
+  {
+    "name": "Safety4Sea",
+    "feedUrl": "https://safety4sea.com/feed/",
+    "defaultCategory": "other"
+  },
+  {
+    "name": "Splash247",
+    "feedUrl": "https://splash247.com/feed/",
+    "defaultCategory": "business"
+  },
+  {
+    "name": "Marine Insight",
+    "feedUrl": "https://www.marineinsight.com/feed/",
+    "defaultCategory": "other"
+  }
+]

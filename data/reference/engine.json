@@ -2,39 +2,110 @@
   "title": "Engine Room Reference",
   "tables": [
     {
-      "name": "ISO 8217 Marine Fuel Grades (selected, distillate & residual)",
-      "columns": ["Grade", "Type", "Typical use"],
+      "name": "ISO 8217 — Distillate Fuel Grades (Table 1)",
+      "columns": ["Grade", "Alt. designation", "Max viscosity", "Typical use"],
       "rows": [
-        ["DMA (MGO)", "Distillate", "Marine gas oil, low-sulphur main/aux engines, ECA compliant grades widely used"],
-        ["DMB (MDO)", "Distillate", "Marine diesel oil, may contain small residual content"],
-        ["RMA - RMK (HFO grades)", "Residual", "Heavy fuel oil grades classified by viscosity (e.g. RMG 380 = approx. 380 cSt at 50°C); require heating for storage/handling"],
-        ["VLSFO", "Blend (compliant)", "Very Low Sulphur Fuel Oil, ≤0.50% sulphur, for MARPOL Annex VI global cap compliance outside ECAs"],
-        ["ULSFO", "Blend/distillate", "Ultra Low Sulphur Fuel Oil, ≤0.10% sulphur, for use inside ECAs without scrubber"]
+        ["DMX", "-", "~5.5 cSt @ 40°C", "Emergency generators, lifeboat engines, very small high-speed diesels — not intended for main propulsion"],
+        ["DMA", "DFA", "~6.0 cSt @ 40°C", "Marine gas oil (MGO) — generators, ECA/port operation, low-sulphur trading, boiler pilot fuel"],
+        ["DMZ", "DFZ", "~6.0 cSt @ 40°C", "Similar to DMA with tighter cold-flow control; may include a permitted FAME (biodiesel) blend component"],
+        ["DMB", "DFB", "~11.0 cSt @ 40°C", "Marine diesel oil (MDO) — may contain trace residual content, used where DMA is unavailable"]
       ]
     },
     {
-      "name": "Fuel Oil Viscosity Reference",
-      "columns": ["Grade label", "Viscosity @ 50°C (cSt, approx.)"],
+      "name": "ISO 8217 — Residual Fuel Grades (Table 2), by viscosity",
+      "columns": ["Viscosity grade", "Max viscosity @ 50°C (cSt)", "Common designations", "Typical use"],
       "rows": [
-        ["RMA 30 / IFO 30", "30"],
-        ["RMB 30", "30"],
-        ["RMD 80", "80"],
-        ["RME 180 / IFO 180", "180"],
-        ["RMG 380 / IFO 380", "380"],
-        ["RMK 500", "500"],
-        ["RMK 700", "700"]
+        ["10", "10", "RMA 10", "Lighter residual blend, less common"],
+        ["30", "30", "RMB 30", "Lower-viscosity HFO, older/smaller medium-speed plants"],
+        ["80", "80", "RMD 80", "Intermediate fuel oil (IFO 80)"],
+        ["180", "180", "RME 180 / RMF 180 / RMG 180 (IFO 180)", "Widely used HFO grade for medium/low-speed main engines"],
+        ["380", "380", "RMG 380 / RMK 380 (IFO 380)", "Most common HFO grade historically bunkered for large 2-stroke main engines"],
+        ["500", "500", "RMG 500 / RMK 500", "Higher-viscosity residual, requires more heating"],
+        ["700", "700", "RMH 700 / RMK 700", "Heaviest common grade, significant heating/handling requirements"]
       ]
     },
     {
-      "name": "Lubricating Oil — SAE / ISO VG Cross Reference (approximate)",
-      "columns": ["ISO VG", "Approx. SAE (crankcase)", "Typical use"],
+      "name": "ISO 8217 — Key Fuel Quality Parameters Checked on a Bunker Test Report",
+      "columns": ["Parameter", "Why it matters"],
       "rows": [
-        ["32", "10W", "Hydraulic systems, light machinery"],
-        ["46", "15W", "Hydraulic systems"],
-        ["68", "20W-20", "Hydraulic/general purpose"],
-        ["100", "30", "Medium-speed diesel engine crankcase (system oil)"],
-        ["150", "40", "Medium/low-speed diesel crankcase, cylinder oils (varies by BN)"],
-        ["220", "50", "Gear oils, some cylinder oils"]
+        ["Density @ 15°C (kg/m3)", "Used with corrected volume to calculate bunkered mass; typical ISO 8217 max ~991.0 kg/m3 for most residual grades (up to ~1010.0 kg/m3 for RMK grades), ~890.0 kg/m3 for distillates"],
+        ["Kinematic viscosity", "Determines pumping and pre-injection heating requirements; too low or high versus the engine's design range risks injection pump/injector problems"],
+        ["Water content (% v/v)", "Typical residual grade limit ~0.5% v/v; excess water risks injection equipment damage, incomplete combustion and microbial growth in storage"],
+        ["Sulphur content (% m/m)", "Regulated under MARPOL Annex VI — 0.50% m/m global cap, 0.10% m/m inside ECAs (or use of an approved equivalent such as a scrubber)"],
+        ["CCAI (Calculated Carbon Aromaticity Index)", "Indicates ignition quality of residual fuel; higher CCAI means poorer ignition quality/longer ignition delay — values above roughly 870 are considered a concern for many engines"],
+        ["Flash point (°C)", "SOLAS Chapter II-2 sets a 60°C minimum for fuel oils used on board — a hard safety limit, not just a quality parameter"],
+        ["Pour point (°C)", "Lowest temperature at which the fuel remains pumpable; sets minimum storage/transfer temperature"],
+        ["CCR / MCR (Conradson / Micro Carbon Residue) (% m/m)", "Indicates coke-forming tendency in combustion, affecting deposits and ring/liner wear"],
+        ["Ash content (% m/m)", "Inorganic residue after combustion; contributes to abrasive wear and deposits"],
+        ["Vanadium (mg/kg)", "Trace metal from crude oil; contributes to high-temperature corrosion of exhaust valves and turbocharger components"],
+        ["Aluminium + Silicon 'cat fines' (mg/kg)", "Abrasive catalyst fines carried over from refinery processing; ISO 8217 sets a 60 mg/kg maximum as delivered — must be reduced further by onboard purification/settling before injection, as cat fines are a leading cause of severe cylinder liner and ring/piston wear"],
+        ["Acid number (mg KOH/g)", "Indicates fuel acidity/corrosivity"],
+        ["Total sediment, existing & potential (% m/m)", "Indicates fuel stability and the risk of sludge formation, especially when blending fuels from different sources"]
+      ]
+    },
+    {
+      "name": "Marine Fuel Sulphur Categories (post-2020, MARPOL Annex VI)",
+      "columns": ["Category", "Sulphur limit", "Notes"],
+      "rows": [
+        ["HSFO (High Sulphur Fuel Oil)", "> 0.50% m/m", "Only permitted with an approved equivalent means of compliance (typically an exhaust gas scrubber)"],
+        ["VLSFO (Very Low Sulphur Fuel Oil)", "≤ 0.50% m/m", "Default global-cap-compliant blend for use outside Emission Control Areas"],
+        ["ULSFO (Ultra Low Sulphur Fuel Oil)", "≤ 0.10% m/m", "Blend/residual-based product compliant for use inside Emission Control Areas without a scrubber"],
+        ["MGO/MDO (distillate, ECA-grade)", "≤ 0.10% m/m", "Distillate fuel meeting the ECA sulphur limit, also commonly used for boilers, generators and fuel changeover procedures"]
+      ]
+    },
+    {
+      "name": "Alternative & Future Marine Fuels — Overview",
+      "columns": ["Fuel", "Storage state", "Key handling/safety notes"],
+      "rows": [
+        ["LNG (Liquefied Natural Gas)", "Cryogenic liquid, ~-162°C", "Governed by the IGF Code; boil-off gas management, cryogenic burn hazard, gas detection and double-walled/inerted piping required"],
+        ["Methanol", "Ambient temperature liquid", "Toxic and burns with a nearly invisible flame; lower flash point than conventional fuel oil, needs dedicated fuel system and flame detection"],
+        ["Ammonia", "Liquid under pressure or refrigeration", "Toxic (inhalation hazard) and corrosive to some materials; combustion produces no CO2 but requires careful NOx and unburnt-ammonia (slip) control"],
+        ["Hydrogen", "Cryogenic liquid (~-253°C) or high-pressure gas", "Wide flammability range and very low ignition energy; leak detection and ventilation are critical; storage volume is a major design constraint"],
+        ["Biofuels / FAME blends", "Ambient temperature liquid, blended with conventional fuel", "Can be used as drop-in blends in existing fuel systems within blend limits; more prone to microbial growth and oxidation in long-term storage than fossil fuel"]
+      ]
+    },
+    {
+      "name": "Lubricating Oil — ISO VG Viscosity Grade Series (Standard)",
+      "columns": ["ISO VG", "Approx. SAE (crankcase)", "Typical application on board"],
+      "rows": [
+        ["15", "5W", "Some hydraulic systems, cold-climate applications"],
+        ["22", "10W (light)", "Hydraulic systems, control oil"],
+        ["32", "10W", "Hydraulic systems, light machinery, some turbine oils"],
+        ["46", "15W", "Hydraulic systems, turbine/turbocharger oil"],
+        ["68", "20W-20", "Hydraulic/general purpose, air compressors"],
+        ["100", "30", "Medium-speed diesel engine crankcase (system oil), some compressors"],
+        ["150", "40", "Medium/low-speed diesel crankcase, cylinder oils (varies by BN), some gear oils"],
+        ["220", "50", "Gear oils, some cylinder oils"],
+        ["320", "-", "Reduction gear oils (often EP-additised)"],
+        ["460", "-", "Heavy-duty gear oils"],
+        ["680", "-", "Very heavy-duty/low-speed gear applications"]
+      ]
+    },
+    {
+      "name": "Cylinder Oil — Base Number (BN) Selection Guide (general, follow engine maker's guidance)",
+      "columns": ["BN grade", "Typical fuel sulphur pairing"],
+      "rows": [
+        ["BN 15 - 25", "Very low sulphur fuel (< 0.10% S), e.g. ULSFO/MGO operation in ECAs"],
+        ["BN 40", "Low sulphur fuel (~0.50% S, VLSFO) — the common post-2020 default for most trading patterns"],
+        ["BN 70", "Legacy/traditional grade historically used for medium-sulphur HFO operation"],
+        ["BN 100 - 140", "Higher-sulphur HFO operation (e.g. with a scrubber, > 0.50% S) or per maker guidance for specific feed-rate strategies"]
+      ]
+    },
+    {
+      "name": "System (Crankcase) Oil — Trunk-Piston Engines, General Reference",
+      "columns": ["Fuel typically burned", "Typical TBN range"],
+      "rows": [
+        ["Distillate (MGO/MDO)", "~5 - 15 mg KOH/g"],
+        ["Residual (HFO) in trunk-piston medium-speed engines", "~20 - 40 mg KOH/g"]
+      ]
+    },
+    {
+      "name": "Lubricating Oil — Key Terms",
+      "columns": ["Term", "Meaning"],
+      "rows": [
+        ["TBN / BN (Total Base Number)", "Measure of an oil's reserve alkalinity (mg KOH/g), used to neutralise acidic combustion by-products formed from fuel sulphur — cylinder oil BN is selected to match the sulphur content of the fuel in use"],
+        ["Viscosity index (VI)", "Measure of how much an oil's viscosity changes with temperature — a higher VI means more stable viscosity across the engine's operating temperature range"],
+        ["API / ACEA classifications", "Industry performance classifications (e.g. API CF/CF-4/CI-4 for diesel engine oils) referenced by engine makers alongside their own specific lubricant approval lists"]
       ]
     },
     {

@@ -15,6 +15,54 @@
       ]
     },
     {
+      "name": "Kitchen Measurement Equivalents (US ladder)",
+      "columns": ["Equivalent"],
+      "rows": [
+        ["3 tsp = 1 tbsp"],
+        ["2 tbsp = 1 fl oz = 1/8 cup"],
+        ["4 tbsp = 1/4 cup = 2 fl oz"],
+        ["5 tbsp + 1 tsp = 1/3 cup"],
+        ["8 tbsp = 1/2 cup = 4 fl oz"],
+        ["16 tbsp = 1 cup = 8 fl oz"],
+        ["2 cups = 1 pint = 16 fl oz"],
+        ["2 pints = 1 quart = 32 fl oz"],
+        ["4 quarts = 1 gallon = 128 fl oz"]
+      ]
+    },
+    {
+      "name": "Oven Temperature Conversion",
+      "columns": ["°F", "°C", "Gas mark", "Description"],
+      "rows": [
+        ["250", "120", "1/2", "Very low / very slow"],
+        ["275", "140", "1", "Low / slow"],
+        ["300", "150", "2", "Low / slow"],
+        ["325", "160", "3", "Moderate"],
+        ["350", "180", "4", "Moderate"],
+        ["375", "190", "5", "Moderate-hot"],
+        ["400", "200", "6", "Hot"],
+        ["425", "220", "7", "Hot"],
+        ["450", "230", "8", "Very hot"],
+        ["475", "245", "9", "Very hot"],
+        ["500", "260", "10", "Extremely hot"]
+      ]
+    },
+    {
+      "name": "Common Ingredient Weight ↔ Volume (approx., 1 cup)",
+      "columns": ["Ingredient", "Approx. weight per US cup"],
+      "rows": [
+        ["All-purpose flour", "~120-125 g"],
+        ["Granulated sugar", "~200 g"],
+        ["Brown sugar (packed)", "~220 g"],
+        ["Butter", "~227 g (2 US sticks)"],
+        ["Rice, uncooked long grain", "~185-200 g"],
+        ["Rolled oats", "~90 g"],
+        ["Milk", "~240 g (240 ml)"],
+        ["Honey / syrup", "~340 g"],
+        ["Table salt", "~290 g"],
+        ["Cocoa powder", "~90 g"]
+      ]
+    },
+    {
       "name": "HACCP Food Storage & Cooking Temperature Guidelines",
       "columns": ["Item", "Recommended temperature"],
       "rows": [
@@ -27,6 +75,82 @@
         ["Hot holding", "At or above 63°C (145°F)"],
         ["Reheating leftovers", "To at least 74°C (165°F) within 2 hours"],
         ["Thawing", "In refrigerator, cold running water, or microwave (then cook immediately) — never at room temperature"]
+      ]
+    },
+    {
+      "name": "Meat Doneness — Sensory Temperature Guide (whole muscle cuts, e.g. beef/lamb steaks & roasts)",
+      "columns": ["Doneness", "Internal temperature"],
+      "rows": [
+        ["Rare", "49-52°C (120-125°F)"],
+        ["Medium rare", "54-57°C (130-135°F)"],
+        ["Medium", "60-63°C (140-145°F)"],
+        ["Medium well", "65-69°C (150-155°F)"],
+        ["Well done", "71°C+ (160°F+)"],
+        ["Important caveat", "This is a taste/doneness preference scale for whole cuts of beef/lamb only. Ground meats and poultry MUST reach the HACCP minimum safe temperatures above (71°C / 74°C) regardless of preferred doneness."]
+      ]
+    },
+    {
+      "name": "Food Storage Duration — General Guidance (refrigerator vs. freezer)",
+      "columns": ["Item", "Refrigerator (0-5°C)", "Freezer (-18°C)"],
+      "rows": [
+        ["Fresh poultry (raw)", "1-2 days", "9-12 months"],
+        ["Fresh beef/pork, whole cuts (raw)", "3-5 days", "4-12 months"],
+        ["Ground/minced meat (raw)", "1-2 days", "3-4 months"],
+        ["Fresh fish (raw)", "1-2 days", "2-6 months (leaner fish keeps longer)"],
+        ["Eggs, in shell", "3-5 weeks", "not recommended in shell"],
+        ["Milk", "5-7 days", "~3 months"],
+        ["Hard cheese", "several weeks", "~6 months"],
+        ["Cooked leftovers", "3-4 days", "2-3 months"],
+        ["Canned goods, after opening", "3-4 days", "not typically frozen in the can"],
+        ["Bread", "5-7 days", "~3 months"],
+        ["Butter", "1-3 months", "6-9 months"]
+      ]
+    },
+    {
+      "name": "Common Galley Substitutions (when a provision runs short mid-voyage)",
+      "columns": ["Recipe calls for", "Substitute"],
+      "rows": [
+        ["1 cup buttermilk", "1 cup milk + 1 tbsp lemon juice or vinegar, stand 5 minutes"],
+        ["1 tsp baking powder", "1/4 tsp baking soda + 1/2 tsp cream of tartar"],
+        ["1 egg (baking)", "1/4 cup unsweetened applesauce, or 1 tbsp ground flaxseed + 3 tbsp water"],
+        ["1 cup sugar", "3/4 cup packed brown sugar, or 1 cup honey with liquid reduced by 1/4 cup"],
+        ["1 cup butter", "1 cup margarine (1:1), or 3/4 cup vegetable oil"],
+        ["1 cup cake flour", "1 cup all-purpose flour minus 2 tbsp, plus 2 tbsp cornstarch"],
+        ["1 clove garlic", "1/8 tsp garlic powder"],
+        ["1 tbsp fresh herbs", "1 tsp dried herbs"]
+      ]
+    },
+    {
+      "name": "Major Food Allergens (14, EU/international reference list)",
+      "columns": ["Allergen"],
+      "rows": [
+        ["Cereals containing gluten (wheat, rye, barley, oats)"],
+        ["Crustaceans"],
+        ["Eggs"],
+        ["Fish"],
+        ["Peanuts"],
+        ["Soybeans"],
+        ["Milk (including lactose)"],
+        ["Tree nuts (almonds, hazelnuts, walnuts, cashews, etc.)"],
+        ["Celery"],
+        ["Mustard"],
+        ["Sesame seeds"],
+        ["Sulphur dioxide / sulphites (>10 mg/kg or per litre)"],
+        ["Lupin"],
+        ["Molluscs"]
+      ]
+    },
+    {
+      "name": "Raw-to-Cooked Yield — Approx. Shrinkage (for provisioning/portion planning)",
+      "columns": ["Item", "Approx. change when cooked"],
+      "rows": [
+        ["Beef (roasted)", "~25-30% weight loss"],
+        ["Poultry (roasted)", "~25% weight loss"],
+        ["Fish (baked/grilled)", "~20-25% weight loss"],
+        ["Bacon (fried)", "~50% weight loss"],
+        ["Ground meat (pan-fried)", "~25% weight loss"],
+        ["Rice (cooked)", "grows to ~3x raw weight/volume"],
+        ["Dried pasta (cooked)", "grows to ~2-2.5x raw weight"]
       ]
     },
     {

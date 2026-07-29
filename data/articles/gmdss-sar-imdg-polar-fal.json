@@ -17,6 +17,18 @@
         "body": "Coverage requirements are defined by four sea areas: A1 (within range of VHF coast station DSC coverage), A2 (within range of MF coast station DSC coverage, beyond A1), A3 (within coverage of a geostationary maritime communication satellite, e.g. Inmarsat, beyond A2 — most of the world's oceans between about 70°N and 70°S), and A4 (the remaining polar areas outside A1–A3, requiring HF equipment). A ship's required equipment fit is determined by the highest-numbered area it is certified to operate in."
       },
       {
+        "heading": "Sea Area Index",
+        "table": {
+          "columns": ["Sea Area", "Coverage", "Minimum equipment beyond the previous area"],
+          "rows": [
+            ["A1", "Within range of a VHF coast station with DSC (roughly 20-30 nm from shore)", "VHF radio with DSC, EPIRB, SART"],
+            ["A2", "Within range of an MF coast station with DSC, beyond A1 (roughly out to 100-150 nm)", "+ MF radio with DSC"],
+            ["A3", "Within coverage of a geostationary maritime communication satellite (e.g. Inmarsat), beyond A2 — most of the world's oceans between about 70°N and 70°S", "+ Satellite communication terminal (or HF DSC/radiotelex as an alternative)"],
+            ["A4", "The remaining polar areas outside A1-A3", "+ HF radio with DSC and radiotelex"]
+          ]
+        }
+      },
+      {
         "heading": "Core equipment",
         "body": "Typical GMDSS equipment includes VHF/MF/HF radios with Digital Selective Calling (DSC) for automated distress alerting, NAVTEX receivers for maritime safety information (navigational and weather warnings) in coastal waters, an EPIRB (Emergency Position Indicating Radio Beacon) that automatically activates and transmits a distress signal with position via satellite if a ship sinks, a SART (Search and Rescue Transponder) or AIS-SART to help searching units home in on survival craft, and a portable/fixed two-way VHF for on-scene and survival craft communication. Certified GMDSS radio operators (holding a GOC or ROC) must be carried and equipment tested regularly per SOLAS Chapter IV requirements."
       }
@@ -38,6 +50,19 @@
       {
         "heading": "SOLAS/UNCLOS master's duty to assist",
         "body": "Independently of the SAR Convention, SOLAS Chapter V (Regulation 33) and the UN Convention on the Law of the Sea both impose a direct duty on the master of any ship at sea, on receiving a distress signal or sighting persons in distress, to proceed with all speed to render assistance if in a position to do so, subject only to release by the relevant rescue coordination authority or the persons themselves, or where the master reasonably considers the ship, crew or passengers would be exposed to serious danger by doing so."
+      },
+      {
+        "heading": "Chapter Index (SAR Convention Annex)",
+        "table": {
+          "columns": ["Chapter", "Title", "Contents"],
+          "rows": [
+            ["1", "Terms and Definitions", "Defines the key terminology used throughout the Annex"],
+            ["2", "Organization and Coordination", "Requires Parties to establish SAR services and organize them into recognized SAR regions with Rescue Coordination Centres"],
+            ["3", "Cooperation Between States", "Cross-border cooperation, overflight/entry permissions for SAR units, coordination between adjacent SAR regions"],
+            ["4", "Operating Procedures", "Phases of a SAR operation (uncertainty, alert, distress), search planning and conduct of operations, termination"],
+            ["5", "Ship Reporting Systems", "Voluntary/mandatory ship reporting systems (e.g. AMVER) that help identify vessels able to assist nearby"]
+          ]
+        }
       },
       {
         "heading": "IAMSAR Manual",
@@ -63,6 +88,21 @@
         "body": "Dangerous goods are grouped into nine classes: Class 1 (Explosives), Class 2 (Gases — flammable, non-flammable/non-toxic, toxic), Class 3 (Flammable liquids), Class 4 (Flammable solids; substances liable to spontaneous combustion; substances that emit flammable gas when wet), Class 5 (Oxidizing substances; organic peroxides), Class 6 (Toxic and infectious substances), Class 7 (Radioactive material), Class 8 (Corrosive substances), and Class 9 (Miscellaneous dangerous substances/articles, including marine pollutants and, since recent amendments, provisions relevant to carriage of lithium batteries and vehicles with them)."
       },
       {
+        "heading": "Part Index",
+        "table": {
+          "columns": ["Part", "Title", "Contents"],
+          "rows": [
+            ["1", "General Provisions, Definitions and Training", "Application, definitions, general packing/consignment requirements, and personnel training requirements"],
+            ["2", "Classification", "Criteria and procedures for assigning each of the nine hazard classes (and sub-divisions/packing groups)"],
+            ["3", "Dangerous Goods List, Special Provisions and Exceptions", "The alphabetical/UN-number-ordered list of dangerous goods with their carriage requirements, special provisions, and limited/excepted quantity exemptions"],
+            ["4", "Packing and Tank Provisions", "Packing instructions and provisions for portable tanks/road tank vehicles by substance"],
+            ["5", "Consignment Procedures", "Marking, labelling, placarding, and required shipping documentation"],
+            ["6", "Construction and Testing of Packagings, IBCs, Tanks", "Technical construction and testing standards for packagings, intermediate bulk containers and tanks"],
+            ["7", "Provisions Concerning Transport Operations", "Stowage, segregation, handling and emergency response provisions specific to sea transport"]
+          ]
+        }
+      },
+      {
         "heading": "Documentation and segregation on board",
         "body": "Every consignment requires a Dangerous Goods Declaration, and the ship must have on board a Dangerous Goods Manifest or stowage plan identifying the class, UN number, proper shipping name and stowage location of each item, plus Emergency Response Procedures for Ships Carrying Dangerous Goods (EmS Guide) and a Medical First Aid Guide (MFAG). The Code's segregation tables dictate minimum separation between incompatible classes (e.g. keeping oxidizers away from flammables), and crew handling dangerous goods must be trained per STCW and company procedures."
       }
@@ -82,6 +122,18 @@
         "body": "Ships operating in the Arctic and Antarctic face hazards not fully addressed by the base conventions: ice, extreme low temperatures affecting equipment and survivability, remoteness from SAR and repair facilities, potential lack of up-to-date charting, and sensitive ecosystems. The Polar Code, adopted in 2014/2015 and entering into force on 1 January 2017, added mandatory provisions to both SOLAS (safety) and MARPOL (environmental protection, extending discharge restrictions on oil, noxious liquids, sewage and garbage in polar waters)."
       },
       {
+        "heading": "Part Index",
+        "table": {
+          "columns": ["Part", "Status", "Contents"],
+          "rows": [
+            ["I-A", "Mandatory (Safety, via SOLAS)", "Twelve chapters covering ship structure, subdivision/stability, watertight integrity, machinery, fire safety, life-saving appliances, safety of navigation, communication, voyage planning, and manning/training for polar operations"],
+            ["I-B", "Recommendatory guidance (Safety)", "Non-mandatory guidance supporting Part I-A"],
+            ["II-A", "Mandatory (Pollution prevention, via MARPOL)", "Extends oil, noxious liquid, sewage and garbage discharge restrictions specific to polar waters"],
+            ["II-B", "Recommendatory guidance (Pollution prevention)", "Non-mandatory guidance supporting Part II-A"]
+          ]
+        }
+      },
+      {
         "heading": "Key requirements",
         "body": "Ships intended to operate in defined polar waters must undergo an assessment and carry a Polar Ship Certificate (Category A, B or C depending on ice conditions the ship is designed for) and a Polar Water Operational Manual (PWOM) giving the master and crew operational, safety and environmental protection information and procedures specific to expected conditions on a given voyage. Additional requirements cover structural/stability standards for low temperature and ice loading, machinery reliability in cold conditions, enhanced life-saving appliance and survival equipment standards for prolonged exposure, and additional training for masters, chief mates and OOWs on ships operating in polar waters."
       }
@@ -99,6 +151,21 @@
       {
         "heading": "Purpose",
         "body": "Adopted in 1965, the FAL Convention is the primary instrument addressing the reduction of formalities and paperwork burden in international shipping, aiming to prevent unnecessary delays in maritime traffic, aid cooperation between governments, and secure the highest practicable degree of uniformity in formalities and procedures. It standardizes documents port authorities may require on arrival/departure (the IMO FAL Forms, e.g. General Declaration, Cargo Declaration, Ship's Stores Declaration, Crew Effects Declaration, Crew List, Passenger List, Dangerous Goods Manifest)."
+      },
+      {
+        "heading": "FAL Forms Index",
+        "table": {
+          "columns": ["Form", "Name", "Purpose"],
+          "rows": [
+            ["FAL 1", "General Declaration", "Basic particulars of the ship and voyage, submitted on arrival and departure"],
+            ["FAL 2", "Cargo Declaration", "Summary of cargo carried"],
+            ["FAL 3", "Ship's Stores Declaration", "Declares stores carried on board (subject to customs control)"],
+            ["FAL 4", "Crew's Effects Declaration", "Declares crew members' personal effects subject to customs control"],
+            ["FAL 5", "Crew List", "Particulars of all crew members on board"],
+            ["FAL 6", "Passenger List", "Particulars of all passengers on board"],
+            ["FAL 7", "Dangerous Goods", "Manifest/details of dangerous goods carried, aligning with IMDG Code documentation"]
+          ]
+        }
       },
       {
         "heading": "Electronic data exchange / Maritime Single Window",

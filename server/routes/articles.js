@@ -8,7 +8,7 @@ const CATEGORIES = db.prepare(`
   SELECT category, COUNT(*) AS count FROM articles GROUP BY category ORDER BY category
 `);
 const GET_BY_SLUG = db.prepare('SELECT * FROM articles WHERE slug = ?');
-const GET_SECTIONS = db.prepare('SELECT heading, anchor, order_idx, body FROM sections WHERE article_id = ? ORDER BY order_idx');
+const GET_SECTIONS = db.prepare('SELECT heading, anchor, order_idx, body, table_json FROM sections WHERE article_id = ? ORDER BY order_idx');
 
 router.get('/', (req, res) => {
   const category = (req.query.category || '').toString().trim();
@@ -26,7 +26,13 @@ router.get('/categories', (req, res) => {
 router.get('/:slug', (req, res) => {
   const article = GET_BY_SLUG.get(req.params.slug);
   if (!article) return res.status(404).json({ error: 'Not found' });
-  const sections = GET_SECTIONS.all(article.id);
+  const sections = GET_SECTIONS.all(article.id).map((s) => ({
+    heading: s.heading,
+    anchor: s.anchor,
+    order_idx: s.order_idx,
+    body: s.table_json ? null : s.body,
+    table: s.table_json ? JSON.parse(s.table_json) : null,
+  }));
   res.json({ ...article, sections });
 });
 

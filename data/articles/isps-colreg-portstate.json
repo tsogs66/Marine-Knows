@@ -17,6 +17,16 @@
         "body": "The Code establishes a three-tier security level system: Level 1 (normal, minimum appropriate protective measures maintained at all times), Level 2 (heightened, additional protective measures for a period of increased risk), and Level 3 (exceptional, further specific protective measures for a limited period when a security incident is probable or imminent). It creates three key roles: the Company Security Officer (CSO), responsible at the company level; the Ship Security Officer (SSO), responsible on board for implementing and maintaining the Ship Security Plan (SSP) and liaising with the CSO and Port Facility Security Officers (PFSO); and the PFSO, the equivalent role ashore for port facilities."
       },
       {
+        "heading": "Part Index",
+        "table": {
+          "columns": ["Part", "Status", "Contents"],
+          "rows": [
+            ["A", "Mandatory", "Security levels; Ship/Company/Port Facility Security Officer duties; Ship and Port Facility Security Assessments and Plans; International Ship Security Certificate (ISSC) requirements"],
+            ["B", "Recommendatory guidance", "Detailed, non-mandatory guidance on how to meet Part A's requirements — assessment methodology, plan content, training, drills and exercises, equipment"]
+          ]
+        }
+      },
+      {
         "heading": "Ship Security Plan and certification",
         "body": "Every applicable ship must carry an approved Ship Security Plan, developed following a Ship Security Assessment, covering measures to prevent unauthorized access, control of access to restricted areas, monitoring of deck and cargo handling areas, communication procedures, and response to security threats or breaches. Compliance is verified through initial, renewal and intermediate verifications leading to an International Ship Security Certificate (ISSC), checked by Port State Control alongside the ship's Continuous Synopsis Record (CSR)."
       },
@@ -44,6 +54,21 @@
         "body": "Rule 5 requires every vessel to maintain a proper look-out by sight and hearing, and by all available means, at all times. Rule 6 requires a safe speed. Rules 11–18 set out who must give way in various encounter situations between power-driven vessels (head-on, crossing, overtaking) and establish the general hierarchy of responsibility between vessel types (e.g. power-driven vessels give way to sailing vessels, vessels not under command, and vessels restricted in their ability to manoeuvre). Rule 19 covers conduct in restricted visibility, where no vessel is 'stand-on' and action must be taken in ample time based primarily on radar assessment."
       },
       {
+        "heading": "Part Index",
+        "table": {
+          "columns": ["Part", "Rules", "Title", "Contents"],
+          "rows": [
+            ["A", "1-3", "General", "Application, general definitions, and the Rule 2 overriding requirement to depart from the rules if needed to avoid immediate danger"],
+            ["B (Section I)", "4-10", "Conduct of Vessels in Any Condition of Visibility", "Look-out, safe speed, risk of collision, action to avoid collision, narrow channels, traffic separation schemes"],
+            ["B (Section II)", "11-18", "Conduct of Vessels in Sight of One Another", "Give-way/stand-on rules for head-on, crossing and overtaking situations; responsibilities between vessel types"],
+            ["B (Section III)", "19", "Conduct of Vessels in Restricted Visibility", "No vessel is 'stand-on'; action based primarily on radar assessment, taken in ample time"],
+            ["C", "20-31", "Lights and Shapes", "Which lights/shapes each vessel type and activity must show, by day and night"],
+            ["D", "32-37", "Sound and Light Signals", "Manoeuvring/warning signals and signals for restricted visibility"],
+            ["E", "38", "Exemptions", "Transitional exemptions for vessels built or already fitted out before the Rules applied to them"]
+          ]
+        }
+      },
+      {
         "heading": "Lights, shapes and sound signals",
         "body": "Part C prescribes the lights (masthead, sidelights, sternlight, all-round lights, towing lights) and shapes (e.g. ball, cone, diamond) a vessel must show depending on its type, activity and length, enabling other vessels to identify it and its status at a glance, day or night. Part D and Annex III prescribe whistle/sound signals for manoeuvring and warning (e.g. one short blast = altering course to starboard, five or more short blasts = danger/doubt signal) and signals for use in restricted visibility (e.g. one prolonged blast every two minutes for a power-driven vessel making way)."
       }
@@ -65,6 +90,23 @@
       {
         "heading": "Regional MoUs",
         "body": "PSC is coordinated regionally through Memoranda of Understanding (MoUs) that share inspection data and harmonize procedures, the largest being the Paris MoU (Europe and the North Atlantic) and the Tokyo MoU (Asia-Pacific), alongside others such as the Indian Ocean MoU, Caribbean MoU, Black Sea MoU, Abuja MoU, Viña del Mar Agreement and Riyadh MoU. Each MoU publishes an annual 'white/grey/black list' ranking flag States by detention performance, and a target factor calculation that determines how frequently a given ship is selected for inspection based on ship type, age, flag performance, recognized organization performance, company performance, and inspection history."
+      },
+      {
+        "heading": "Regional MoU Index",
+        "table": {
+          "columns": ["MoU", "Region", "Established"],
+          "rows": [
+            ["Paris MoU", "Europe and the North Atlantic", "1982"],
+            ["Tokyo MoU", "Asia-Pacific", "1993"],
+            ["Viña del Mar Agreement", "Latin America", "1992"],
+            ["Caribbean MoU", "Caribbean", "1996"],
+            ["Abuja MoU", "West and Central Africa", "1999"],
+            ["Black Sea MoU", "Black Sea region", "2000"],
+            ["Mediterranean MoU", "Mediterranean", "1997"],
+            ["Indian Ocean MoU", "Indian Ocean rim", "1998"],
+            ["Riyadh MoU", "Gulf states", "2004"]
+          ]
+        }
       },
       {
         "heading": "Inspections, deficiencies and detention",

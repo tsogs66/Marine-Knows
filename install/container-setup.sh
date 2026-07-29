@@ -15,6 +15,8 @@ INSTALL_DIR="${INSTALL_DIR:-/opt/marine-knows}"
 APP_PORT="${APP_PORT:-3000}"
 NODE_MAJOR="${NODE_MAJOR:-20}"
 SERVICE_USER="${SERVICE_USER:-marineknows}"
+ENABLE_AUTO_UPDATE="${ENABLE_AUTO_UPDATE:-1}"
+AUTO_UPDATE_SCHEDULE="${AUTO_UPDATE_SCHEDULE:-0 4 * * *}"
 
 log()  { echo -e "\033[1;36m[setup]\033[0m $*"; }
 die()  { echo -e "\033[1;31m[setup] ERROR:\033[0m $*" >&2; exit 1; }
@@ -123,6 +125,19 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 */30 * * * * ${SERVICE_USER} /usr/bin/node ${INSTALL_DIR}/scripts/update-news.js >> /var/log/marine-knows-news.log 2>&1
 17 3 * * * ${SERVICE_USER} /usr/bin/node ${INSTALL_DIR}/scripts/update-currency.js >> /var/log/marine-knows-currency.log 2>&1
 EOF
+
+if [ "${ENABLE_AUTO_UPDATE}" = "1" ]; then
+  log "Installing auto-update cron job (schedule: '${AUTO_UPDATE_SCHEDULE}')..."
+  # Runs as root (needs to restart the systemd service); the actual git/npm
+  # steps re-chown app files back to SERVICE_USER when done. See
+  # install/update.sh for the update logic itself, and README.md for how
+  # to change the schedule or disable this after install.
+  echo "${AUTO_UPDATE_SCHEDULE} root INSTALL_DIR=${INSTALL_DIR} MARINE_KNOWS_BRANCH=${MARINE_KNOWS_BRANCH} SERVICE_USER=${SERVICE_USER} /usr/bin/bash ${INSTALL_DIR}/install/update.sh >> /var/log/marine-knows-update.log 2>&1" >> /etc/cron.d/marine-knows
+  touch /var/log/marine-knows-update.log
+else
+  log "Auto-update disabled (ENABLE_AUTO_UPDATE=0) — update manually with install/update.sh."
+fi
+
 chmod 644 /etc/cron.d/marine-knows
 touch /var/log/marine-knows-news.log /var/log/marine-knows-currency.log
 chown "${SERVICE_USER}:${SERVICE_USER}" /var/log/marine-knows-news.log /var/log/marine-knows-currency.log

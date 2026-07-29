@@ -15,6 +15,15 @@ function slugifyAnchor(heading) {
     .replace(/(^-|-$)/g, '');
 }
 
+// Flattens a {columns, rows} table into plain text so FTS5 can still match
+// and snippet table content in search results, even though the table
+// itself renders structured (see table_json) rather than as prose.
+function flattenTableForSearch(table) {
+  const header = table.columns.join(' | ');
+  const lines = table.rows.map((row) => row.join(' — '));
+  return [header, ...lines].join('\n');
+}
+
 const UPSERT_ARTICLE = db.prepare(`
   INSERT INTO articles (slug, title, category, summary, source_name, source_url, tags, updated_at)
   VALUES (@slug, @title, @category, @summary, @source_name, @source_url, @tags, CURRENT_TIMESTAMP)
@@ -31,8 +40,8 @@ const UPSERT_ARTICLE = db.prepare(`
 const GET_ARTICLE_ID = db.prepare('SELECT id FROM articles WHERE slug = ?');
 const DELETE_SECTIONS = db.prepare('DELETE FROM sections WHERE article_id = ?');
 const INSERT_SECTION = db.prepare(`
-  INSERT INTO sections (article_id, heading, anchor, order_idx, body)
-  VALUES (@article_id, @heading, @anchor, @order_idx, @body)
+  INSERT INTO sections (article_id, heading, anchor, order_idx, body, table_json)
+  VALUES (@article_id, @heading, @anchor, @order_idx, @body, @table_json)
 `);
 
 const seedAll = db.transaction((articles) => {
@@ -54,7 +63,8 @@ const seedAll = db.transaction((articles) => {
         heading: section.heading,
         anchor: slugifyAnchor(section.heading),
         order_idx: idx,
-        body: section.body,
+        body: section.table ? flattenTableForSearch(section.table) : section.body,
+        table_json: section.table ? JSON.stringify(section.table) : null,
       });
     });
   }

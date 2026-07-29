@@ -17,6 +17,22 @@
         "body": "STCW certification is built around Certificates of Competency (CoC) for officers (deck and engine, by tonnage/power band and area of operation) and Certificates of Proficiency for specific functions (e.g. Basic Safety Training, Advanced Fire Fighting, Medical First Aid/Care, Survival Craft, GMDSS radio operator, Tanker familiarization). Certificates are issued or endorsed by the flag State (or a recognized institution on its behalf) once the seafarer has met the required sea service, training, and examination/assessment standards set out in the STCW Code Part A (mandatory) and guided by Part B (recommended)."
       },
       {
+        "heading": "Chapter Index",
+        "table": {
+          "columns": ["Chapter", "Title", "Contents"],
+          "rows": [
+            ["I", "General Provisions", "Definitions, application, and general certification/endorsement procedures"],
+            ["II", "Master and Deck Department", "Certification standards for masters and deck officers (OOW, chief mate, master by tonnage band); ratings forming part of a navigational watch/Able Seafarer Deck"],
+            ["III", "Engine Department", "Certification standards for chief/second engineers and engineer officers by propulsion power band; ratings forming part of an engineering watch/Able Seafarer Engine"],
+            ["IV", "Radiocommunication and Radio Personnel", "GMDSS radio operator certification (GOC/ROC) requirements"],
+            ["V", "Special Training Requirements", "Additional training for personnel on tankers, ro-ro/passenger ships, ships in polar waters, and ships using gases or low-flashpoint fuels"],
+            ["VI", "Emergency, Occupational Safety, Security, Medical Care and Survival Functions", "Basic Safety Training, Advanced Fire Fighting, Medical First Aid/Care, Proficiency in Survival Craft, security-related training (ISPS)"],
+            ["VII", "Alternative Certification", "Framework for flag States to issue alternative certificates covering combined functions, provided equivalent competence standards are met"],
+            ["VIII", "Watchkeeping", "General principles of safe watchkeeping and rest-hour requirements (Regulation VIII/1)"]
+          ]
+        }
+      },
+      {
         "heading": "Hours of rest",
         "body": "STCW Regulation VIII/1 sets minimum hours of rest to combat fatigue: seafarers must have at least 10 hours of rest in any 24-hour period and 77 hours in any 7-day period, with rest divisible into no more than two periods (one of which must be at least 6 hours), and no more than 14 hours between consecutive rest periods. Limited exceptions exist for emergencies and drills, but records of daily hours of rest must be maintained and are a standard Port State Control and audit check point."
       },
@@ -44,6 +60,30 @@
         "body": "Every company operating SOLAS ships must implement a documented SMS covering: a safety and environmental protection policy; instructions and procedures for safe ship operation and environmental protection compliant with international and flag State law; defined levels of authority and lines of communication between and among shore and shipboard personnel; procedures for reporting accidents and non-conformities; procedures for responding to emergencies; and procedures for internal audits and management review. The company must designate a Designated Person Ashore (DPA) with direct access to the highest level of management, providing a link between the company and those on board."
       },
       {
+        "heading": "Clause Index",
+        "table": {
+          "columns": ["Clause", "Title", "Contents"],
+          "rows": [
+            ["1", "General", "Definitions and objectives of the Code"],
+            ["2", "Safety and Environmental Protection Policy", "Company must have a stated policy and means to implement it at all levels"],
+            ["3", "Company Responsibilities and Authority", "Defines the 'Company' and requires clear authority/responsibility lines"],
+            ["4", "Designated Person(s)", "Requires a Designated Person Ashore (DPA) linking the company to shipboard operations"],
+            ["5", "Master's Responsibility and Authority", "Confirms the master's overriding authority on safety/pollution prevention matters"],
+            ["6", "Resources and Personnel", "Adequate qualified crew, familiarization, and understanding of relevant SMS procedures"],
+            ["7", "Shipboard Operations", "Procedures for key shipboard operations to be prepared and followed"],
+            ["8", "Emergency Preparedness", "Identification of potential emergencies and procedures/drills to respond to them"],
+            ["9", "Reports and Analysis of Non-Conformities, Accidents and Hazardous Occurrences", "Reporting, investigation and analysis to drive corrective/preventive action"],
+            ["10", "Maintenance of the Ship and Equipment", "Planned maintenance and inspection to keep the ship in compliance with rules and its own standards"],
+            ["11", "Documentation", "Control of SMS documents to ensure current versions are available where needed"],
+            ["12", "Company Verification, Review and Evaluation", "Internal audits and management review of the SMS"],
+            ["13", "Certification and Periodical Verification", "Flag State/RO verification leading to DOC and SMC issuance"],
+            ["14", "Interim Certification", "Provisions for interim DOC/SMC in defined circumstances (new company, new ship, change of flag/management)"],
+            ["15", "Verification", "General verification procedures supporting certification"],
+            ["16", "Forms of Certificates", "Prescribes the standard forms of the DOC, SMC and their interim equivalents"]
+          ]
+        }
+      },
+      {
         "heading": "Certification: DOC and SMC",
         "body": "Compliance is verified through two linked certificates: the Document of Compliance (DOC), issued to a company after audit showing its SMS meets the Code, and the Safety Management Certificate (SMC), issued to an individual ship showing the company and its shipboard management operate in accordance with the approved SMS. Both are subject to periodic external audits (typically annual/intermediate for DOC, and periodic for SMC) by the flag State or a Recognized Organization, in addition to internal audits the company itself must conduct."
       },
@@ -69,6 +109,36 @@
       {
         "heading": "Structure: Titles 1–5",
         "body": "MLC 2006 is organized into five Titles: Title 1 (Minimum requirements for seafarers to work on a ship — minimum age, medical certification, training, recruitment/placement); Title 2 (Conditions of employment — seafarers' employment agreements (SEA), wages, hours of work/rest, entitlement to leave, repatriation, career/skill development); Title 3 (Accommodation, recreational facilities, food and catering); Title 4 (Health protection, medical care, welfare and social security protection, including shipowner liability for sickness/injury and mandatory financial security for repatriation and contractual claims); and Title 5 (Compliance and enforcement — flag State and port State responsibilities, complaint-handling procedures)."
+      },
+      {
+        "heading": "Title & Regulation Index",
+        "table": {
+          "columns": ["Title", "Regulation", "Subject", "Contents"],
+          "rows": [
+            ["1", "1.1", "Minimum age", "No seafarer may work on a ship below the minimum age (generally 16, with tighter limits for hazardous work and night work)"],
+            ["1", "1.2", "Medical certificate", "Seafarers must hold a valid medical certificate attesting fitness for their duties"],
+            ["1", "1.3", "Training and qualifications", "Seafarers must be trained/certified (STCW-aligned) to perform their duties competently and safely"],
+            ["1", "1.4", "Recruitment and placement", "Regulates recruitment and placement services used to engage seafarers"],
+            ["2", "2.1", "Seafarers' employment agreements", "Written, signed SEA required, with minimum required content"],
+            ["2", "2.2", "Wages", "Regular, full payment of wages, at least monthly, with an account/allotment mechanism"],
+            ["2", "2.3", "Hours of work and hours of rest", "Sets minimum rest / maximum work hour limits (mirrors STCW VIII/1)"],
+            ["2", "2.4", "Entitlement to leave", "Minimum paid annual leave and shore leave rights"],
+            ["2", "2.5", "Repatriation", "Right to repatriation at no cost to the seafarer in defined circumstances"],
+            ["2", "2.6", "Seafarer compensation for ship's loss or foundering", "Compensation for unemployment arising from ship loss/foundering"],
+            ["2", "2.7", "Manning levels", "Sufficient, safe, and properly qualified crew numbers"],
+            ["2", "2.8", "Career and skill development", "Opportunities for skill development and employment career opportunities"],
+            ["3", "3.1", "Accommodation and recreational facilities", "Minimum standards for cabins, mess/recreation spaces, ventilation, heating, lighting"],
+            ["3", "3.2", "Food and catering", "Quality/quantity/free provision of food and drinking water; qualified ship's cook"],
+            ["4", "4.1", "Medical care on board and ashore", "Access to medical care comparable to that available to workers ashore"],
+            ["4", "4.2", "Shipowners' liability", "Shipowner liability for sickness/injury costs and mandatory financial security"],
+            ["4", "4.3", "Health and safety protection and accident prevention", "Occupational safety/health programme, risk assessment, reporting"],
+            ["4", "4.4", "Access to shore-based welfare facilities", "Access to welfare facilities/services in port"],
+            ["4", "4.5", "Social security", "Access to social security protection for seafarers and dependants"],
+            ["5", "5.1", "Flag State responsibilities", "Inspection/certification (DMLC, Maritime Labour Certificate) and complaint-handling by the flag State"],
+            ["5", "5.2", "Port State responsibilities", "Port State inspection of foreign ships' MLC compliance"],
+            ["5", "5.3", "Labour-supplying responsibilities", "Member State obligations regarding recruitment/placement services operating in its territory"]
+          ]
+        }
       },
       {
         "heading": "Certification: DMLC and Maritime Labour Certificate",

@@ -29,6 +29,20 @@
         "body": "Annex VI limits sulphur oxide (SOx), nitrogen oxide (NOx), and particulate matter emissions from ship exhausts, and prohibits deliberate emissions of ozone-depleting substances. It set the global sulphur cap on marine fuel at 0.50% m/m from 1 January 2020 (down from 3.50%), with a tighter 0.10% limit inside Emission Control Areas (ECAs) unless an approved equivalent (e.g. exhaust gas scrubber) is used. Annex VI is also the vehicle for IMO's decarbonization measures — the Energy Efficiency Design Index (EEDI) for new ships, the Ship Energy Efficiency Management Plan (SEEMP) all ships must carry, and, since 2023, the Energy Efficiency Existing Ship Index (EEXI) and annual Carbon Intensity Indicator (CII) rating (A–E) for existing ships above 5,000 GT."
       },
       {
+        "heading": "Annex Index",
+        "table": {
+          "columns": ["Annex", "Title", "Contents", "Force"],
+          "rows": [
+            ["I", "Prevention of Pollution by Oil", "Double hulls, discharge criteria, Oil Record Book, SOPEP, oily water separators", "1983"],
+            ["II", "Control of Pollution by Noxious Liquid Substances in Bulk", "Categorizes NLS cargoes (X/Y/Z/OS) by hazard; pre-wash and discharge procedures, P&A Manual, Cargo Record Book", "1983"],
+            ["III", "Prevention of Pollution by Harmful Substances Carried by Sea in Packaged Form", "Packing, marking, labelling, documentation and stowage; cross-references the IMDG Code", "1992"],
+            ["IV", "Prevention of Pollution by Sewage from Ships", "Sewage discharge distances/treatment; approved sewage treatment plant requirements", "2003"],
+            ["V", "Prevention of Pollution by Garbage from Ships", "Bans discharge of plastics; restricts other garbage by distance from land; Garbage Management Plan/Record Book", "1988"],
+            ["VI", "Prevention of Air Pollution from Ships", "SOx/NOx/particulate limits, ECAs, EEDI/EEXI/CII/SEEMP decarbonization measures", "2005"]
+          ]
+        }
+      },
+      {
         "heading": "Everyday compliance for the crew",
         "body": "For deck and engine officers, MARPOL translates into daily recordkeeping (Oil Record Book Parts I/II, Garbage Record Book, Cargo Record Book), correct operation and testing of the oily water separator and oil discharge monitoring equipment, segregation and correct disposal of garbage by category, bunker delivery notes confirming fuel sulphur content, and maintaining the SEEMP and, where applicable, the ship's CII data collection plan. Port State Control checks these records closely, and falsified Oil Record Book entries are among the most heavily sanctioned MARPOL violations worldwide."
       }

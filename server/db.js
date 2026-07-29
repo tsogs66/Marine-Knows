@@ -99,4 +99,12 @@ CREATE TABLE IF NOT EXISTS currency_rates (
 CREATE INDEX IF NOT EXISTS idx_currency_lookup ON currency_rates(base, quote, rate_date);
 `);
 
+// Migration: sections.table_json (added later than the rest of the schema
+// above) — ALTER TABLE so installs updating in place via install/update.sh
+// pick it up without having to delete their database.
+const sectionColumns = db.prepare("PRAGMA table_info(sections)").all().map((c) => c.name);
+if (!sectionColumns.includes('table_json')) {
+  db.exec('ALTER TABLE sections ADD COLUMN table_json TEXT');
+}
+
 module.exports = db;

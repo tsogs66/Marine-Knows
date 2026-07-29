@@ -1,0 +1,7 @@
+node_modules/
+data/marine-knows.db
+data/marine-knows.db-journal
+data/marine-knows.db-wal
+data/marine-knows.db-shm
+*.log
+.env

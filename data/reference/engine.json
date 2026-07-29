@@ -1,0 +1,397 @@
+{
+  "title": "Engine Room Reference",
+  "tables": [
+    {
+      "name": "ISO 8217 — Distillate Fuel Grades (Table 1)",
+      "columns": ["Grade", "Alt. designation", "Max viscosity", "Typical use"],
+      "rows": [
+        ["DMX", "-", "~5.5 cSt @ 40°C", "Emergency generators, lifeboat engines, very small high-speed diesels — not intended for main propulsion"],
+        ["DMA", "DFA", "~6.0 cSt @ 40°C", "Marine gas oil (MGO) — generators, ECA/port operation, low-sulphur trading, boiler pilot fuel"],
+        ["DMZ", "DFZ", "~6.0 cSt @ 40°C", "Similar to DMA with tighter cold-flow control; may include a permitted FAME (biodiesel) blend component"],
+        ["DMB", "DFB", "~11.0 cSt @ 40°C", "Marine diesel oil (MDO) — may contain trace residual content, used where DMA is unavailable"]
+      ]
+    },
+    {
+      "name": "ISO 8217 — Residual Fuel Grades (Table 2), by viscosity",
+      "columns": ["Viscosity grade", "Max viscosity @ 50°C (cSt)", "Common designations", "Typical use"],
+      "rows": [
+        ["10", "10", "RMA 10", "Lighter residual blend, less common"],
+        ["30", "30", "RMB 30", "Lower-viscosity HFO, older/smaller medium-speed plants"],
+        ["80", "80", "RMD 80", "Intermediate fuel oil (IFO 80)"],
+        ["180", "180", "RME 180 / RMF 180 / RMG 180 (IFO 180)", "Widely used HFO grade for medium/low-speed main engines"],
+        ["380", "380", "RMG 380 / RMK 380 (IFO 380)", "Most common HFO grade historically bunkered for large 2-stroke main engines"],
+        ["500", "500", "RMG 500 / RMK 500", "Higher-viscosity residual, requires more heating"],
+        ["700", "700", "RMH 700 / RMK 700", "Heaviest common grade, significant heating/handling requirements"]
+      ]
+    },
+    {
+      "name": "ISO 8217 — Key Fuel Quality Parameters Checked on a Bunker Test Report",
+      "columns": ["Parameter", "Why it matters"],
+      "rows": [
+        ["Density @ 15°C (kg/m3)", "Used with corrected volume to calculate bunkered mass; typical ISO 8217 max ~991.0 kg/m3 for most residual grades (up to ~1010.0 kg/m3 for RMK grades), ~890.0 kg/m3 for distillates"],
+        ["Kinematic viscosity", "Determines pumping and pre-injection heating requirements; too low or high versus the engine's design range risks injection pump/injector problems"],
+        ["Water content (% v/v)", "Typical residual grade limit ~0.5% v/v; excess water risks injection equipment damage, incomplete combustion and microbial growth in storage"],
+        ["Sulphur content (% m/m)", "Regulated under MARPOL Annex VI — 0.50% m/m global cap, 0.10% m/m inside ECAs (or use of an approved equivalent such as a scrubber)"],
+        ["CCAI (Calculated Carbon Aromaticity Index)", "Indicates ignition quality of residual fuel; higher CCAI means poorer ignition quality/longer ignition delay — values above roughly 870 are considered a concern for many engines"],
+        ["Flash point (°C)", "SOLAS Chapter II-2 sets a 60°C minimum for fuel oils used on board — a hard safety limit, not just a quality parameter"],
+        ["Pour point (°C)", "Lowest temperature at which the fuel remains pumpable; sets minimum storage/transfer temperature"],
+        ["CCR / MCR (Conradson / Micro Carbon Residue) (% m/m)", "Indicates coke-forming tendency in combustion, affecting deposits and ring/liner wear"],
+        ["Ash content (% m/m)", "Inorganic residue after combustion; contributes to abrasive wear and deposits"],
+        ["Vanadium (mg/kg)", "Trace metal from crude oil; contributes to high-temperature corrosion of exhaust valves and turbocharger components"],
+        ["Aluminium + Silicon 'cat fines' (mg/kg)", "Abrasive catalyst fines carried over from refinery processing; ISO 8217 sets a 60 mg/kg maximum as delivered — must be reduced further by onboard purification/settling before injection, as cat fines are a leading cause of severe cylinder liner and ring/piston wear"],
+        ["Acid number (mg KOH/g)", "Indicates fuel acidity/corrosivity"],
+        ["Total sediment, existing & potential (% m/m)", "Indicates fuel stability and the risk of sludge formation, especially when blending fuels from different sources"]
+      ]
+    },
+    {
+      "name": "Marine Fuel Sulphur Categories (post-2020, MARPOL Annex VI)",
+      "columns": ["Category", "Sulphur limit", "Notes"],
+      "rows": [
+        ["HSFO (High Sulphur Fuel Oil)", "> 0.50% m/m", "Only permitted with an approved equivalent means of compliance (typically an exhaust gas scrubber)"],
+        ["VLSFO (Very Low Sulphur Fuel Oil)", "≤ 0.50% m/m", "Default global-cap-compliant blend for use outside Emission Control Areas"],
+        ["ULSFO (Ultra Low Sulphur Fuel Oil)", "≤ 0.10% m/m", "Blend/residual-based product compliant for use inside Emission Control Areas without a scrubber"],
+        ["MGO/MDO (distillate, ECA-grade)", "≤ 0.10% m/m", "Distillate fuel meeting the ECA sulphur limit, also commonly used for boilers, generators and fuel changeover procedures"]
+      ]
+    },
+    {
+      "name": "Alternative & Future Marine Fuels — Overview",
+      "columns": ["Fuel", "Storage state", "Key handling/safety notes"],
+      "rows": [
+        ["LNG (Liquefied Natural Gas)", "Cryogenic liquid, ~-162°C", "Governed by the IGF Code; boil-off gas management, cryogenic burn hazard, gas detection and double-walled/inerted piping required"],
+        ["Methanol", "Ambient temperature liquid", "Toxic and burns with a nearly invisible flame; lower flash point than conventional fuel oil, needs dedicated fuel system and flame detection"],
+        ["Ammonia", "Liquid under pressure or refrigeration", "Toxic (inhalation hazard) and corrosive to some materials; combustion produces no CO2 but requires careful NOx and unburnt-ammonia (slip) control"],
+        ["Hydrogen", "Cryogenic liquid (~-253°C) or high-pressure gas", "Wide flammability range and very low ignition energy; leak detection and ventilation are critical; storage volume is a major design constraint"],
+        ["Biofuels / FAME blends", "Ambient temperature liquid, blended with conventional fuel", "Can be used as drop-in blends in existing fuel systems within blend limits; more prone to microbial growth and oxidation in long-term storage than fossil fuel"]
+      ]
+    },
+    {
+      "name": "Lubricating Oil — ISO VG Viscosity Grade Series (Standard)",
+      "columns": ["ISO VG", "Approx. SAE (crankcase)", "Typical application on board"],
+      "rows": [
+        ["15", "5W", "Some hydraulic systems, cold-climate applications"],
+        ["22", "10W (light)", "Hydraulic systems, control oil"],
+        ["32", "10W", "Hydraulic systems, light machinery, some turbine oils"],
+        ["46", "15W", "Hydraulic systems, turbine/turbocharger oil"],
+        ["68", "20W-20", "Hydraulic/general purpose, air compressors"],
+        ["100", "30", "Medium-speed diesel engine crankcase (system oil), some compressors"],
+        ["150", "40", "Medium/low-speed diesel crankcase, cylinder oils (varies by BN), some gear oils"],
+        ["220", "50", "Gear oils, some cylinder oils"],
+        ["320", "-", "Reduction gear oils (often EP-additised)"],
+        ["460", "-", "Heavy-duty gear oils"],
+        ["680", "-", "Very heavy-duty/low-speed gear applications"]
+      ]
+    },
+    {
+      "name": "Cylinder Oil — Base Number (BN) Selection Guide (general, follow engine maker's guidance)",
+      "columns": ["BN grade", "Typical fuel sulphur pairing"],
+      "rows": [
+        ["BN 15 - 25", "Very low sulphur fuel (< 0.10% S), e.g. ULSFO/MGO operation in ECAs"],
+        ["BN 40", "Low sulphur fuel (~0.50% S, VLSFO) — the common post-2020 default for most trading patterns"],
+        ["BN 70", "Legacy/traditional grade historically used for medium-sulphur HFO operation"],
+        ["BN 100 - 140", "Higher-sulphur HFO operation (e.g. with a scrubber, > 0.50% S) or per maker guidance for specific feed-rate strategies"]
+      ]
+    },
+    {
+      "name": "System (Crankcase) Oil — Trunk-Piston Engines, General Reference",
+      "columns": ["Fuel typically burned", "Typical TBN range"],
+      "rows": [
+        ["Distillate (MGO/MDO)", "~5 - 15 mg KOH/g"],
+        ["Residual (HFO) in trunk-piston medium-speed engines", "~20 - 40 mg KOH/g"]
+      ]
+    },
+    {
+      "name": "Lubricating Oil — Key Terms",
+      "columns": ["Term", "Meaning"],
+      "rows": [
+        ["TBN / BN (Total Base Number)", "Measure of an oil's reserve alkalinity (mg KOH/g), used to neutralise acidic combustion by-products formed from fuel sulphur — cylinder oil BN is selected to match the sulphur content of the fuel in use"],
+        ["Viscosity index (VI)", "Measure of how much an oil's viscosity changes with temperature — a higher VI means more stable viscosity across the engine's operating temperature range"],
+        ["API / ACEA classifications", "Industry performance classifications (e.g. API CF/CF-4/CI-4 for diesel engine oils) referenced by engine makers alongside their own specific lubricant approval lists"]
+      ]
+    },
+    {
+      "name": "Common SI Units in the Engine Room",
+      "columns": ["Quantity", "SI Unit", "Common alternates"],
+      "rows": [
+        ["Power", "kW", "1 kW = 1.34102 hp (metric hp/PS: 1 kW = 1.35962 PS)"],
+        ["Pressure", "kPa / bar", "1 bar = 14.5038 psi"],
+        ["Torque", "N·m", "1 N·m = 0.737562 lb·ft"],
+        ["Density", "kg/m3", "Fuel typically ~980-991 kg/m3 @ 15°C for HFO; ~830-890 for MGO/MDO"],
+        ["Specific fuel oil consumption (SFOC)", "g/kWh", "Typical modern 2-stroke main engine: approx. 165-190 g/kWh"],
+        ["Flow", "m3/h", "1 m3/h = 4.403 US gpm"]
+      ]
+    },
+    {
+      "name": "Power — Conversion Table",
+      "columns": ["kW", "Metric hp (PS)", "hp (mechanical)", "BTU/hr"],
+      "rows": [
+        ["1", "1.36", "1.34", "3,412"],
+        ["10", "13.60", "13.41", "34,121"],
+        ["100", "135.96", "134.10", "341,214"],
+        ["500", "679.81", "670.51", "1,706,070"],
+        ["1,000", "1,359.62", "1,341.02", "3,412,140"],
+        ["5,000", "6,798.10", "6,705.10", "17,060,700"],
+        ["10,000", "13,596.20", "13,410.20", "34,121,400"],
+        ["20,000", "27,192.40", "26,820.40", "68,242,800"],
+        ["50,000", "67,981.00", "67,051.00", "170,607,000"],
+        ["80,000", "108,769.60", "107,281.60", "272,971,200"]
+      ]
+    },
+    {
+      "name": "Torque — Conversion Table",
+      "columns": ["N·m", "kgf·m", "lb·ft"],
+      "rows": [
+        ["10", "1.02", "7.38"],
+        ["100", "10.20", "73.76"],
+        ["1,000", "101.97", "737.56"],
+        ["10,000", "1,019.72", "7,375.62"],
+        ["100,000", "10,197.16", "73,756.20"],
+        ["1,000,000", "101,971.60", "737,562.00"]
+      ]
+    },
+    {
+      "name": "Energy / Heat — Unit Definitions",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 kJ", "0.239006 kcal = 0.947817 BTU = 0.000277778 kWh"],
+        ["1 kWh", "3,600 kJ = 860.421 kcal = 3,412.14 BTU"],
+        ["1 kcal", "4.184 kJ = 3.96832 BTU"],
+        ["1 BTU", "1.05506 kJ = 0.252164 kcal"],
+        ["1 MJ", "0.277778 kWh = 947.817 BTU"]
+      ]
+    },
+    {
+      "name": "Flow Rate — Unit Definitions",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 m3/h", "16.667 L/min = 4.403 US gpm = 3.666 UK (imperial) gpm"],
+        ["1 US gpm", "3.785 L/min = 0.2271 m3/h"],
+        ["1 UK (imperial) gpm", "4.546 L/min = 0.2728 m3/h"],
+        ["1 L/min", "0.06 m3/h = 0.264 US gpm"]
+      ]
+    },
+    {
+      "name": "Fuel Net Calorific Value (LHV) — Typical, Approximate",
+      "columns": ["Fuel", "LHV (MJ/kg, approx.)"],
+      "rows": [
+        ["HFO (residual)", "~40.0 - 40.5"],
+        ["MGO / MDO (distillate)", "~42.7"],
+        ["LNG", "~49 - 50"],
+        ["LPG", "~46"],
+        ["Methanol", "~19.9"],
+        ["Ethanol", "~26.8"],
+        ["Ammonia", "~18.6"],
+        ["Hydrogen", "~120"],
+        ["Biodiesel (FAME)", "~37.5"]
+      ]
+    },
+    {
+      "name": "Specific Gravity ↔ API Gravity",
+      "columns": ["API gravity (60°F)", "Specific gravity (60°F/60°F)"],
+      "rows": [
+        ["10 (~water)", "1.0000"],
+        ["20", "0.9340"],
+        ["30", "0.8762"],
+        ["40", "0.8251"],
+        ["50", "0.7796"],
+        ["60", "0.7389"]
+      ]
+    },
+    {
+      "name": "Fuel Density/Volume Correction (concept)",
+      "columns": ["Step", "Notes"],
+      "rows": [
+        ["Observed density", "Measured at ambient temperature by hydrometer or densitometer"],
+        ["Density @ 15°C", "Observed density corrected to a standard reference temperature (15°C) using ASTM/API/ISO correction tables (VCF - Volume Correction Factor), essential for accurate bunker quantity accounting"],
+        ["Mass = Volume x Density", "Bunker mass (metric tonnes) is calculated from corrected volume (m3) and density @15°C (kg/m3), not raw sounded volume alone"],
+        ["API gravity", "API = (141.5 / SG at 60°F) - 131.5; SG = 141.5 / (API + 131.5) — an alternate way fuel/lube quality certificates express density"]
+      ]
+    },
+    {
+      "name": "Refrigeration Reference",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 ton of refrigeration (TR)", "3.517 kW = 12,000 BTU/h = 3,024 kcal/h"],
+        ["1 kW (refrigeration)", "0.2843 TR"]
+      ]
+    },
+    {
+      "name": "Electrical — Typical Shipboard Standards (general guidance, verify against class/flag rules and the ship's own drawings)",
+      "columns": ["System", "Typical value"],
+      "rows": [
+        ["Main LV distribution (European-influenced builds)", "400V / 690V, 50 Hz"],
+        ["Main LV distribution (US/American-influenced builds)", "440V, 60 Hz"],
+        ["Lighting / domestic sockets", "220-230V, single phase, 50/60 Hz"],
+        ["Control & emergency circuits", "24V DC (common)"],
+        ["High-voltage distribution (large ships, e.g. cruise/LNG/large container)", "3.3 kV, 6.6 kV or 11 kV, 50/60 Hz"],
+        ["Frequency tolerance (typical class guidance)", "±5% continuous, ±10% transient"],
+        ["Voltage tolerance (typical class guidance)", "±2.5% continuous, +20%/-15% transient"]
+      ]
+    },
+    {
+      "name": "Electrical — Quick Formulas",
+      "columns": ["Quantity", "Formula"],
+      "rows": [
+        ["Ohm's law", "V = I x R"],
+        ["DC power", "P (W) = V x I"],
+        ["AC single-phase real power", "P (W) = V x I x cos(phi)"],
+        ["AC three-phase real power", "P (W) = sqrt(3) x V(line) x I(line) x cos(phi)"],
+        ["Apparent power (single-phase)", "S (VA) = V x I"],
+        ["Apparent power (three-phase)", "S (VA) = sqrt(3) x V(line) x I(line)"],
+        ["Power factor", "cos(phi) = P (real, kW) / S (apparent, kVA)"]
+      ]
+    },
+    {
+      "name": "Insulation Resistance — General Guidance",
+      "columns": ["Item", "Notes"],
+      "rows": [
+        ["Common rule-of-thumb minimum (rotating machinery)", "Often cited as 1 MΩ, or (rated voltage in kV + 1) MΩ, measured with a megger at the machine's rated DC test voltage"],
+        ["Important caveat", "This is a general industry rule of thumb only — always follow the maker's manual, class society requirements and the ship's PMS/SMS acceptance criteria, which take precedence"]
+      ]
+    },
+    {
+      "name": "Engine Performance — Key Terms & Formulas",
+      "columns": ["Term", "Meaning"],
+      "rows": [
+        ["IHP (Indicated Horsepower)", "Power developed inside the cylinder, derived from the indicator diagram (mean indicated pressure x length x area x speed, summed per cylinder)"],
+        ["BHP (Brake Horsepower)", "Power actually delivered at the crankshaft/output flange, measured by a brake, dynamometer or torsion meter"],
+        ["MEP (Mean Effective Pressure)", "Average effective cylinder pressure over one working cycle; IMEP from the indicator diagram, BMEP back-calculated from measured BHP"],
+        ["Mechanical efficiency", "BHP / IHP — the fraction of indicated power that reaches the output shaft after friction losses"],
+        ["SFOC (Specific Fuel Oil Consumption)", "Fuel mass burned per unit of power per hour (g/kWh) — lower SFOC means better fuel efficiency"],
+        ["Thermal efficiency", "Useful work output / heat energy supplied by the fuel; large modern low-speed 2-stroke marine diesels typically reach roughly 50%"]
+      ]
+    },
+    {
+      "name": "Watchkeeping / PMS Checklist Themes (engine room)",
+      "columns": ["Area", "Typical routine checks"],
+      "rows": [
+        ["Main engine", "Cylinder exhaust temps, jacket cooling water temp/pressure, lube oil pressure/temp, turbocharger rpm/exhaust, crankcase oil mist detector status"],
+        ["Auxiliary engines/generators", "Load sharing, cooling water/lube oil parameters, exhaust temps, running hours vs PMS due dates"],
+        ["Boiler", "Water level/gauge glass, steam pressure, water treatment (chemical dosing/TDS blowdown), safety valve test dates"],
+        ["Purifiers/separators", "Bowl condition, interface, sludge discharge, back-flush intervals"],
+        ["Oily water separator / ODMCS", "15 ppm alarm function test, valid calibration, bilge log entries matching Oil Record Book"],
+        ["Fire & safety systems", "Fixed fire-fighting system pressure/readiness, emergency fire pump, quick-closing valves/dampers free to operate"]
+      ]
+    },
+    {
+      "name": "Watchkeeping Parameters — Read This First",
+      "columns": ["Notice"],
+      "rows": [
+        ["The tables below give general, typical/indicative operating ranges seen across the industry, for orientation and training purposes only. They are NOT the approved operating limits or alarm/trip setpoints for any specific vessel or machine. Actual parameters vary significantly by machinery maker, model, size, age and installation. Always take live limits from the machinery maker's manual, the ship's approved PMS/alarm & monitoring system parameters, class society requirements, and the Chief Engineer's standing orders — those always take precedence over any figure shown here."]
+      ]
+    },
+    {
+      "name": "Main Engine (Low-Speed 2-Stroke Diesel) — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Jacket cooling water outlet temperature", "~75-90°C (high-temp alarm commonly ~90-95°C)"],
+        ["Jacket cooling water pressure", "~2.5-4.0 bar"],
+        ["Main bearing / crosshead lube oil inlet temperature", "~45-55°C"],
+        ["Main lube oil pressure", "~2.5-4.0 bar (engine-size dependent)"],
+        ["Piston cooling oil outlet temperature", "~45-60°C; per-cylinder deviation alarm typically flags a spread of roughly 10-15°C from the mean"],
+        ["Cylinder exhaust gas outlet temperature", "~300-400°C at MCR; per-cylinder deviation alarm typically flags roughly >50°C from the mean"],
+        ["Turbocharger exhaust gas inlet temperature", "~350-450°C"],
+        ["Scavenge air pressure", "~1.5-3.5 bar, load-dependent"],
+        ["Scavenge air temperature (after cooler)", "~40-50°C"],
+        ["Fuel oil viscosity at engine inlet (HFO, via viscosity control)", "~12-15 cSt"],
+        ["Fuel oil pressure at engine inlet (booster pump)", "~7-10 bar"],
+        ["Starting air receiver pressure", "~25-30 bar (working range)"],
+        ["Crankcase oil mist concentration", "Continuously monitored; trip level set per the oil mist detector manufacturer, commonly in the low single-digit mg/L range"]
+      ]
+    },
+    {
+      "name": "Auxiliary Engines / Diesel Generators (Medium-Speed Trunk Piston) — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Jacket cooling water outlet temperature", "~75-85°C (high-temp alarm commonly ~90°C)"],
+        ["Lube oil pressure", "~4-6 bar"],
+        ["Lube oil temperature", "~65-80°C"],
+        ["Exhaust gas temperature per cylinder", "~350-450°C at rated load; deviation alarm typically flags roughly >50-60°C from the mean cylinder"],
+        ["Turbocharger exhaust gas inlet temperature", "~450-550°C"],
+        ["Starting air pressure", "~25-30 bar (larger gensets, shared system), or lower-pressure/electric start on smaller units"],
+        ["Generator frequency", "50 Hz or 60 Hz, typically ±5% continuous tolerance"],
+        ["Generator voltage", "400V (50 Hz ships) or 450-460V (60 Hz ships) typical LV output, per the ship's electrical standard"]
+      ]
+    },
+    {
+      "name": "Boiler / Steam Plant — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Working steam pressure", "~7-18 bar, depending on plant design (auxiliary boilers commonly ~7-10 bar)"],
+        ["Safety valve lift setting", "Typically set at roughly 110% of working pressure, per class rules"],
+        ["Feed water temperature", "~80-90°C"],
+        ["Boiler water TDS (total dissolved solids)", "Commonly kept below roughly 3,000-3,500 ppm — follow the water-treatment chemical supplier's and maker's limits"],
+        ["Boiler water pH", "Typically maintained alkaline, roughly 10.5-11.5, per the water treatment programme"],
+        ["Blowdown", "Bottom blowdown per watch/daily routine; surface blowdown continuous or as indicated by water test results"]
+      ]
+    },
+    {
+      "name": "Air Compressors & Starting Air System — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Starting air receiver working pressure", "~25-30 bar"],
+        ["Control/service air pressure", "~7-9 bar"],
+        ["Intercooler/aftercooler outlet temperature", "Typically well below 90°C; excessive temperature indicates a cooling water-side problem"],
+        ["Safety valve setting", "Typically set roughly 10% above the system's maximum working pressure"]
+      ]
+    },
+    {
+      "name": "Purifiers / Separators — Typical Operating Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["HFO purifier operating temperature", "~95-98°C"],
+        ["MGO/MDO purifier operating temperature", "~35-50°C (little or no pre-heating usually needed)"],
+        ["Lube oil purifier operating temperature", "~85-90°C"],
+        ["Purifier back-pressure", "~1.5-2.5 bar, maker-dependent"],
+        ["Throughput / feed rate", "Set per the maker's capacity chart — lower throughput generally improves separation efficiency"]
+      ]
+    },
+    {
+      "name": "Fresh Water Generator (Vacuum Evaporator) — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Vacuum (absolute pressure)", "Deep vacuum, roughly 90-95%, giving an absolute pressure on the order of 0.03-0.09 bar(a)"],
+        ["Evaporating temperature", "~40-60°C (achievable using ~80°C jacket cooling water as the heat source, thanks to the vacuum)"],
+        ["Distillate salinity", "Typically alarms and auto-dumps to bilge/drain at around 10 ppm — always confirm the ship's own alarm setpoint"]
+      ]
+    },
+    {
+      "name": "Refrigeration & Air Conditioning — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Provisions chill room target temperature", "~0 to +4°C"],
+        ["Provisions freezer room target temperature", "~-18 to -20°C"],
+        ["Evaporating refrigerant temperature (chill service)", "~-10 to -5°C"],
+        ["Evaporating refrigerant temperature (freezer service)", "~-30 to -25°C"],
+        ["Condensing temperature", "~35-45°C, strongly dependent on seawater/ambient temperature"],
+        ["Superheat at the expansion valve", "~5-8°C"],
+        ["Subcooling at the condenser outlet", "~4-6°C"]
+      ]
+    },
+    {
+      "name": "Sea Water Cooling System — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Sea water pump discharge pressure", "~2-3 bar"],
+        ["HT (jacket water) cooling loop outlet temperature", "~80-90°C"],
+        ["LT (central cooler) fresh water loop outlet temperature", "~36-38°C"],
+        ["Design sea water inlet temperature", "Coolers are commonly rated for tropical seawater up to around 32°C"]
+      ]
+    },
+    {
+      "name": "Steering Gear — Key Parameters",
+      "columns": ["Parameter", "Notes"],
+      "rows": [
+        ["Hydraulic system working pressure", "Design-dependent, commonly on the order of 100-150 bar for rotary-vane or ram-type systems — refer to the maker's manual"],
+        ["Rudder movement performance (SOLAS)", "Capable of putting the rudder over from 35° on one side to 30° on the other in 28 seconds, with the ship at maximum ahead service speed and deepest seagoing draught"]
+      ]
+    },
+    {
+      "name": "Emergency Equipment — Key Readiness Parameters",
+      "columns": ["Item", "Requirement / typical value"],
+      "rows": [
+        ["Emergency generator", "Must automatically start and be capable of supplying the emergency switchboard within 45 seconds of a main power failure (SOLAS Chapter II-1)"],
+        ["Emergency fire pump", "Must be capable of delivering the required jets of water at the required pressure independent of the main engine room — refer to SOLAS Chapter II-2 Regulation 10 and the ship's fire control plan for the exact pressure/capacity figures for the vessel"]
+      ]
+    }
+  ]
+}

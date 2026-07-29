@@ -1,0 +1,75 @@
+[
+  {
+    "slug": "isps-code",
+    "title": "ISPS Code — International Ship and Port Facility Security Code",
+    "category": "ISPS",
+    "summary": "The security framework for ships and port facilities adopted after the 9/11 attacks, made mandatory under SOLAS Chapter XI-2, built around security levels and ship/facility security plans.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "ISPS, security level, SSP, CSO, SSO, PFSO, ISSC, maritime security",
+    "sections": [
+      {
+        "heading": "Background",
+        "body": "The ISPS Code was adopted in December 2002 and entered into force on 1 July 2004, in direct response to heightened concern about maritime security following the September 2001 terrorist attacks. It is given mandatory effect through SOLAS Chapter XI-2 and applies to passenger ships, cargo ships of 500 GT and above on international voyages, mobile offshore drilling units, and the port facilities serving such ships."
+      },
+      {
+        "heading": "Security levels and roles",
+        "body": "The Code establishes a three-tier security level system: Level 1 (normal, minimum appropriate protective measures maintained at all times), Level 2 (heightened, additional protective measures for a period of increased risk), and Level 3 (exceptional, further specific protective measures for a limited period when a security incident is probable or imminent). It creates three key roles: the Company Security Officer (CSO), responsible at the company level; the Ship Security Officer (SSO), responsible on board for implementing and maintaining the Ship Security Plan (SSP) and liaising with the CSO and Port Facility Security Officers (PFSO); and the PFSO, the equivalent role ashore for port facilities."
+      },
+      {
+        "heading": "Ship Security Plan and certification",
+        "body": "Every applicable ship must carry an approved Ship Security Plan, developed following a Ship Security Assessment, covering measures to prevent unauthorized access, control of access to restricted areas, monitoring of deck and cargo handling areas, communication procedures, and response to security threats or breaches. Compliance is verified through initial, renewal and intermediate verifications leading to an International Ship Security Certificate (ISSC), checked by Port State Control alongside the ship's Continuous Synopsis Record (CSR)."
+      },
+      {
+        "heading": "Practical shipboard requirements",
+        "body": "Day to day, ISPS is why gangway watches log visitors, restricted areas are marked and monitored, a Declaration of Security (DoS) may be completed for certain ship/port interfaces or ship-to-ship activities, and drills/exercises testing the SSP are conducted at prescribed intervals (security drills at least every three months, and exercises at least once per calendar year, involving substantial participation of CSO/PFSO/relevant authorities where practicable)."
+      }
+    ]
+  },
+  {
+    "slug": "colreg-1972",
+    "title": "COLREG 1972 — International Regulations for Preventing Collisions at Sea",
+    "category": "COLREG",
+    "summary": "The 'rules of the road' at sea: steering and sailing rules, lights and shapes, and sound and light signals used by every vessel to avoid collision.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "COLREG, rules of the road, give-way, stand-on, lights, shapes, sound signals, lookout",
+    "sections": [
+      {
+        "heading": "Scope and structure",
+        "body": "COLREG 1972 entered into force in 1977 and applies to all vessels on the high seas and connected waters navigable by seagoing vessels. It is organized into five Parts and four Annexes: Part A (General, including Rule 2's overriding requirement to depart from the rules where necessary to avoid immediate danger), Part B (Steering and Sailing Rules, split into conduct in any condition of visibility, conduct of vessels in sight of one another, and conduct in restricted visibility), Part C (Lights and Shapes), Part D (Sound and Light Signals), and Part E (Exemptions), with Annexes covering technical details of lights/shapes, sound signal appliances, and distress signals."
+      },
+      {
+        "heading": "Core steering and sailing rules",
+        "body": "Rule 5 requires every vessel to maintain a proper look-out by sight and hearing, and by all available means, at all times. Rule 6 requires a safe speed. Rules 11–18 set out who must give way in various encounter situations between power-driven vessels (head-on, crossing, overtaking) and establish the general hierarchy of responsibility between vessel types (e.g. power-driven vessels give way to sailing vessels, vessels not under command, and vessels restricted in their ability to manoeuvre). Rule 19 covers conduct in restricted visibility, where no vessel is 'stand-on' and action must be taken in ample time based primarily on radar assessment."
+      },
+      {
+        "heading": "Lights, shapes and sound signals",
+        "body": "Part C prescribes the lights (masthead, sidelights, sternlight, all-round lights, towing lights) and shapes (e.g. ball, cone, diamond) a vessel must show depending on its type, activity and length, enabling other vessels to identify it and its status at a glance, day or night. Part D and Annex III prescribe whistle/sound signals for manoeuvring and warning (e.g. one short blast = altering course to starboard, five or more short blasts = danger/doubt signal) and signals for use in restricted visibility (e.g. one prolonged blast every two minutes for a power-driven vessel making way)."
+      }
+    ]
+  },
+  {
+    "slug": "port-state-control",
+    "title": "Port State Control — Paris MoU, Tokyo MoU and PSC Inspections",
+    "category": "Port State Control",
+    "summary": "The system by which port States inspect foreign-flagged ships calling at their ports to verify compliance with international conventions, and detain substandard ships.",
+    "source_name": "Paris MoU / Tokyo MoU / IMO",
+    "source_url": "https://www.imo.org",
+    "tags": "PSC, Paris MoU, Tokyo MoU, deficiency, detention, targeting factor, no more favourable treatment",
+    "sections": [
+      {
+        "heading": "Legal basis and 'no more favourable treatment'",
+        "body": "Port State Control (PSC) is the inspection of foreign ships in national ports by PSC officers (PSCOs) to verify that the condition of the ship and its equipment comply with the requirements of international conventions (SOLAS, MARPOL, STCW, MLC, Load Lines, COLREG, etc.) and that the ship is manned and operated in compliance with applicable law. It is a 'second line of defence' behind flag State control. Under the principle of 'no more favourable treatment', ships of non-Parties to a convention can also be inspected against its requirements, so that Parties are not disadvantaged."
+      },
+      {
+        "heading": "Regional MoUs",
+        "body": "PSC is coordinated regionally through Memoranda of Understanding (MoUs) that share inspection data and harmonize procedures, the largest being the Paris MoU (Europe and the North Atlantic) and the Tokyo MoU (Asia-Pacific), alongside others such as the Indian Ocean MoU, Caribbean MoU, Black Sea MoU, Abuja MoU, Viña del Mar Agreement and Riyadh MoU. Each MoU publishes an annual 'white/grey/black list' ranking flag States by detention performance, and a target factor calculation that determines how frequently a given ship is selected for inspection based on ship type, age, flag performance, recognized organization performance, company performance, and inspection history."
+      },
+      {
+        "heading": "Inspections, deficiencies and detention",
+        "body": "A PSC inspection typically begins with a review of certificates and documents (safety, security, MLC, pollution prevention certificates, SMC/DOC, crew certificates) and a general walk-round; if there are 'clear grounds' (e.g. expired certificates, evident structural or equipment deficiencies, or a poor previous inspection history), a more detailed inspection follows. Deficiencies found are recorded and must be rectified, sometimes before departure; deficiencies serious enough to pose a danger to ship, crew, or the environment result in detention of the ship in port until they are rectified, which is publicly recorded and affects the ship's, company's and flag's future targeting factor."
+      }
+    ]
+  }
+]

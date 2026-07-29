@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "imo-overview",
+    "title": "IMO — The International Maritime Organization",
+    "category": "IMO",
+    "summary": "The United Nations specialized agency responsible for the safety and security of shipping and the prevention of marine and atmospheric pollution by ships.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "IMO, United Nations, IMO Assembly, MSC, MEPC, flag state, port state",
+    "sections": [
+      {
+        "heading": "What the IMO is",
+        "body": "The International Maritime Organization (IMO) is the specialized United Nations agency responsible for regulating shipping, with a mandate covering safety, security, and environmental performance of international shipping. Headquartered in London, IMO was established by a convention adopted in 1948 and first met in 1959. It currently has over 170 Member States and three Associate Members.\n\nIMO does not enforce its own regulations directly. Instead, it develops and adopts conventions, codes and recommendations that Member States ratify and implement through their own national law, and then enforce as flag States (over ships flying their flag), port States (over foreign ships calling at their ports) and coastal States."
+      },
+      {
+        "heading": "Structure: Assembly, Council and Committees",
+        "body": "The Assembly is IMO's highest governing body, meeting every two years with all Member States, and approves the work programme and budget. The Council acts as the executive organ between Assembly sessions.\n\nTechnical work is carried out by five main Committees: the Maritime Safety Committee (MSC), the Marine Environment Protection Committee (MEPC), the Legal Committee, the Technical Co-operation Committee, and the Facilitation Committee (FAL), supported by a number of sub-committees covering areas such as human element/training/watchkeeping (HTW), pollution prevention and response (PPR), ship systems and equipment (SSE), navigation/communication/search and rescue (NCSR), ship design and construction (SDC), and carriage of cargoes and containers (CCC)."
+      },
+      {
+        "heading": "The major IMO conventions at a glance",
+        "body": "IMO administers around 50 international conventions and protocols, alongside hundreds of codes, guidelines and resolutions. The instruments a working seafarer will encounter most often are: SOLAS (safety of life at sea), MARPOL (pollution prevention), STCW (training, certification and watchkeeping), COLREG (collision regulations), the Load Lines Convention, the Tonnage Convention, the ISM Code (safety management), the ISPS Code (ship and port facility security), the BWM Convention (ballast water), the AFS Convention (anti-fouling systems), the FAL Convention (facilitation of traffic) and the SAR Convention (search and rescue). The Maritime Labour Convention (MLC 2006) covering seafarers' working and living conditions is administered by the International Labour Organization (ILO), not IMO, but is treated by the industry as a 'fourth pillar' alongside SOLAS, MARPOL and STCW."
+      },
+      {
+        "heading": "How amendments enter into force",
+        "body": "Most modern IMO conventions use 'tacit acceptance' procedures: an amendment adopted by the relevant committee is deemed accepted on a specified date unless a set percentage of Parties formally object, and it then enters into force for all Parties (except those which objected) a fixed period later. This is why SOLAS, MARPOL, STCW and the Load Lines Convention are updated relatively frequently through amendment cycles rather than renegotiation of the whole treaty."
+      }
+    ]
+  },
+  {
+    "slug": "solas-1974",
+    "title": "SOLAS 1974 — International Convention for the Safety of Life at Sea",
+    "category": "SOLAS",
+    "summary": "The principal international treaty governing the construction, equipment and operation of merchant ships for the safety of life at sea, in force since 1980 and amended continuously since.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "SOLAS, safety, fire protection, life-saving appliances, navigation, ISM, ISPS, GMDSS, bulk carriers, tankers",
+    "sections": [
+      {
+        "heading": "History and scope",
+        "body": "SOLAS is generally regarded as the most important of all international treaties concerning the safety of merchant ships. The first version was adopted in 1914 following the Titanic disaster; the current version was adopted in 1974 and entered into force in 1980, and has been kept up to date through a continuous cycle of amendments. SOLAS applies to ships engaged on international voyages, with the level of requirement generally scaled to ship size, cargo carried and voyage type. It sets minimum standards for construction, equipment and operation, and requires flag States to ensure ships under their flag comply and to issue certificates as evidence."
+      },
+      {
+        "heading": "Chapter structure",
+        "body": "SOLAS is organized into chapters, each addressing a specific safety topic: Chapter I (General provisions, surveys and certificates); Chapter II-1 (Construction — subdivision and stability, machinery and electrical installations); Chapter II-2 (Fire protection, detection and extinction); Chapter III (Life-saving appliances and arrangements); Chapter IV (Radiocommunications, including GMDSS); Chapter V (Safety of navigation, applicable to all ships including non-SOLAS vessels in some respects); Chapter VI (Carriage of cargoes and oil fuels); Chapter VII (Carriage of dangerous goods, incorporating the IMDG and IBC/IGC Codes by reference); Chapter VIII (Nuclear ships); Chapter IX (Management for the Safe Operation of Ships — gives the ISM Code mandatory force); Chapter X (Safety measures for high-speed craft); Chapter XI-1 (Special measures to enhance maritime safety); Chapter XI-2 (Special measures to enhance maritime security — gives the ISPS Code mandatory force); and Chapter XII (Additional safety measures for bulk carriers)."
+      },
+      {
+        "heading": "Key day-to-day requirements for crew",
+        "body": "For a working seafarer, SOLAS is the source of many familiar shipboard requirements: the muster list and emergency drills schedule (abandon ship and fire drills at prescribed intervals, Chapter III), the maintenance and inspection regime for lifeboats, liferafts, lifejackets and immersion suits, the fire control plan and fixed fire-fighting systems, the passage planning and bridge watchkeeping requirements of Chapter V (including carriage of up-to-date charts/ECDIS, AIS, VDR and LRIT), and the survey and certification regime (Cargo Ship Safety Construction/Equipment/Radio Certificates or the Passenger Ship Safety Certificate) that a ship must hold to trade internationally."
+      },
+      {
+        "heading": "Certification and surveys",
+        "body": "Compliance is verified through a scheme of periodic, intermediate, renewal and additional surveys carried out by or on behalf of the flag State (often delegated to a Recognized Organization / classification society). Certificates issued under SOLAS are checked during Port State Control inspections; deficiencies can result in detention of the ship until rectified."
+      }
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "marpol-73-78",
+    "title": "MARPOL 73/78 — International Convention for the Prevention of Pollution from Ships",
+    "category": "MARPOL",
+    "summary": "The main international treaty covering prevention of pollution of the marine environment by ships from operational or accidental causes, structured in six technical Annexes.",
+    "source_name": "International Maritime Organization (IMO)",
+    "source_url": "https://www.imo.org",
+    "tags": "MARPOL, pollution, oil record book, garbage management, sewage, air emissions, SOPEP, annex I, annex II, annex III, annex IV, annex V, annex VI",
+    "sections": [
+      {
+        "heading": "Background and structure",
+        "body": "MARPOL was adopted in 1973 and modified by the 1978 Protocol (hence '73/78'), entering into force in 1983. It is the main international convention covering prevention of pollution of the marine environment by ships from both operational and accidental causes, and combines the 1973 Convention with its 1978 and 1997 Protocols, updated by amendments over the years. MARPOL comprises six technical Annexes, each dealing with a different pollution source, and each with its own entry-into-force history."
+      },
+      {
+        "heading": "Annex I — Oil",
+        "body": "Annex I covers prevention of pollution by oil from operational measures and accidental discharges, including requirements for double hulls on tankers, the Oil Record Book, discharge criteria, Shipboard Oil Pollution Emergency Plans (SOPEP), and oily water separators for machinery space bilges. Discharge of oil or oily mixtures is prohibited except under narrowly defined conditions (e.g. instantaneous rate of discharge, distance from land, total quantity, and use of an oil discharge monitoring and control system)."
+      },
+      {
+        "heading": "Annex II — Noxious Liquid Substances",
+        "body": "Annex II details discharge criteria and measures for the control of pollution by noxious liquid substances (NLS) carried in bulk, categorizing substances (X, Y, Z, OS) by hazard and prescribing pre-wash and discharge procedures, tied to the ship's Procedures and Arrangements (P&A) Manual and Cargo Record Book."
+      },
+      {
+        "heading": "Annex III, IV and V — Packaged goods, sewage, garbage",
+        "body": "Annex III covers prevention of pollution by harmful substances carried in packaged form, cross-referencing the IMDG Code. Annex IV covers sewage discharge (prohibited within specified distances of land unless treated by an approved sewage treatment plant). Annex V covers garbage, prohibiting the discharge of plastics at sea entirely and heavily restricting discharge of other garbage types by distance from land; ships of 100 GT and above and those certified to carry 15+ persons must carry a Garbage Management Plan and Garbage Record Book."
+      },
+      {
+        "heading": "Annex VI — Air pollution and greenhouse gases",
+        "body": "Annex VI limits sulphur oxide (SOx), nitrogen oxide (NOx), and particulate matter emissions from ship exhausts, and prohibits deliberate emissions of ozone-depleting substances. It set the global sulphur cap on marine fuel at 0.50% m/m from 1 January 2020 (down from 3.50%), with a tighter 0.10% limit inside Emission Control Areas (ECAs) unless an approved equivalent (e.g. exhaust gas scrubber) is used. Annex VI is also the vehicle for IMO's decarbonization measures — the Energy Efficiency Design Index (EEDI) for new ships, the Ship Energy Efficiency Management Plan (SEEMP) all ships must carry, and, since 2023, the Energy Efficiency Existing Ship Index (EEXI) and annual Carbon Intensity Indicator (CII) rating (A–E) for existing ships above 5,000 GT."
+      },
+      {
+        "heading": "Everyday compliance for the crew",
+        "body": "For deck and engine officers, MARPOL translates into daily recordkeeping (Oil Record Book Parts I/II, Garbage Record Book, Cargo Record Book), correct operation and testing of the oily water separator and oil discharge monitoring equipment, segregation and correct disposal of garbage by category, bunker delivery notes confirming fuel sulphur content, and maintaining the SEEMP and, where applicable, the ship's CII data collection plan. Port State Control checks these records closely, and falsified Oil Record Book entries are among the most heavily sanctioned MARPOL violations worldwide."
+      }
+    ]
+  }
+]

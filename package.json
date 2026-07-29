@@ -1,0 +1,21 @@
+{
+  "name": "marine-knows",
+  "version": "1.0.0",
+  "description": "Maritime publications, regulations, reference tables, news and currency tools for seafarers.",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed/seed.js",
+    "update-news": "node scripts/update-news.js",
+    "update-currency": "node scripts/update-currency.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.21.0",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -48,10 +48,42 @@ curl -fsSL https://raw.githubusercontent.com/tsogs66/marine-knows/main/install/p
 | `CT_NET_CONFIG` | `name=eth0,bridge=$CT_BRIDGE,ip=dhcp` | Full `pct` net string, override for static IP/VLAN |
 | `CT_UNPRIVILEGED` | `1` | Unprivileged container |
 | `MARINE_KNOWS_BRANCH` | `main` | Branch to install |
+| `ENABLE_AUTO_UPDATE` | `1` | Set to `0` to skip installing the daily auto-update cron job (see [Updating](#updating)) |
+| `AUTO_UPDATE_SCHEDULE` | `0 4 * * *` | Cron schedule for auto-update, if enabled |
 
-Re-running `install/container-setup.sh` **inside** an existing container
-(`bash /opt/marine-knows/install/container-setup.sh`, or re-download it)
-pulls the latest code and restarts the service — that's the update path.
+## Updating
+
+**Automatic:** every install runs `install/update.sh` from a daily cron
+job by default (4am container time) — it fetches the tracked branch,
+and if there's anything new, pulls it, reinstalls npm dependencies only
+if `package.json`/`package-lock.json` changed, re-seeds the database
+(safe to re-run — it upserts by slug), and restarts the service. If
+there's nothing new it exits immediately without touching anything.
+Logs go to `/var/log/marine-knows-update.log` inside the container.
+
+Turn it off at install time with `ENABLE_AUTO_UPDATE=0` before the
+one-liner, or change how often it runs with e.g.
+`AUTO_UPDATE_SCHEDULE="0 */6 * * *"` (standard 5-field cron syntax,
+container-local time). To change it on an already-running install, edit
+`/etc/cron.d/marine-knows` inside the container directly (or remove its
+`update.sh` line to disable).
+
+**Manual:** run it yourself anytime, from inside the container:
+
+```bash
+sudo bash /opt/marine-knows/install/update.sh
+```
+
+It's the same script the cron job calls, so the same safety behavior
+applies: it refuses to run (and tells you so) if the checkout has local
+modifications, rather than silently discarding them — pass
+`FORCE_UPDATE=1` if you're sure you want to discard them and continue.
+
+`install/container-setup.sh` can also still be re-run in full
+(`bash /opt/marine-knows/install/container-setup.sh`) — it does
+everything `update.sh` does plus reinstalling system packages, so it's
+the heavier option, mainly useful if you need to pick up a change to the
+install script itself, not just the app.
 
 ## What's inside
 
@@ -127,6 +159,8 @@ public/             Static frontend (no build step): vanilla HTML/CSS/JS, hash-r
 install/
   proxmox-install.sh   run on the Proxmox HOST — creates & provisions the LXC
   container-setup.sh   run INSIDE the LXC — installs Node/nginx/cron, clones repo, starts service
+  update.sh            run INSIDE the LXC (manually or via cron) — pulls, reinstalls deps if
+                        needed, re-seeds, restarts the service; see "Updating" below
 ```
 
 Data lives in a single SQLite file (`data/marine-knows.db`, git-ignored).

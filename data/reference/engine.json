@@ -271,6 +271,127 @@
         ["Oily water separator / ODMCS", "15 ppm alarm function test, valid calibration, bilge log entries matching Oil Record Book"],
         ["Fire & safety systems", "Fixed fire-fighting system pressure/readiness, emergency fire pump, quick-closing valves/dampers free to operate"]
       ]
+    },
+    {
+      "name": "Watchkeeping Parameters — Read This First",
+      "columns": ["Notice"],
+      "rows": [
+        ["The tables below give general, typical/indicative operating ranges seen across the industry, for orientation and training purposes only. They are NOT the approved operating limits or alarm/trip setpoints for any specific vessel or machine. Actual parameters vary significantly by machinery maker, model, size, age and installation. Always take live limits from the machinery maker's manual, the ship's approved PMS/alarm & monitoring system parameters, class society requirements, and the Chief Engineer's standing orders — those always take precedence over any figure shown here."]
+      ]
+    },
+    {
+      "name": "Main Engine (Low-Speed 2-Stroke Diesel) — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Jacket cooling water outlet temperature", "~75-90°C (high-temp alarm commonly ~90-95°C)"],
+        ["Jacket cooling water pressure", "~2.5-4.0 bar"],
+        ["Main bearing / crosshead lube oil inlet temperature", "~45-55°C"],
+        ["Main lube oil pressure", "~2.5-4.0 bar (engine-size dependent)"],
+        ["Piston cooling oil outlet temperature", "~45-60°C; per-cylinder deviation alarm typically flags a spread of roughly 10-15°C from the mean"],
+        ["Cylinder exhaust gas outlet temperature", "~300-400°C at MCR; per-cylinder deviation alarm typically flags roughly >50°C from the mean"],
+        ["Turbocharger exhaust gas inlet temperature", "~350-450°C"],
+        ["Scavenge air pressure", "~1.5-3.5 bar, load-dependent"],
+        ["Scavenge air temperature (after cooler)", "~40-50°C"],
+        ["Fuel oil viscosity at engine inlet (HFO, via viscosity control)", "~12-15 cSt"],
+        ["Fuel oil pressure at engine inlet (booster pump)", "~7-10 bar"],
+        ["Starting air receiver pressure", "~25-30 bar (working range)"],
+        ["Crankcase oil mist concentration", "Continuously monitored; trip level set per the oil mist detector manufacturer, commonly in the low single-digit mg/L range"]
+      ]
+    },
+    {
+      "name": "Auxiliary Engines / Diesel Generators (Medium-Speed Trunk Piston) — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Jacket cooling water outlet temperature", "~75-85°C (high-temp alarm commonly ~90°C)"],
+        ["Lube oil pressure", "~4-6 bar"],
+        ["Lube oil temperature", "~65-80°C"],
+        ["Exhaust gas temperature per cylinder", "~350-450°C at rated load; deviation alarm typically flags roughly >50-60°C from the mean cylinder"],
+        ["Turbocharger exhaust gas inlet temperature", "~450-550°C"],
+        ["Starting air pressure", "~25-30 bar (larger gensets, shared system), or lower-pressure/electric start on smaller units"],
+        ["Generator frequency", "50 Hz or 60 Hz, typically ±5% continuous tolerance"],
+        ["Generator voltage", "400V (50 Hz ships) or 450-460V (60 Hz ships) typical LV output, per the ship's electrical standard"]
+      ]
+    },
+    {
+      "name": "Boiler / Steam Plant — Typical Watchkeeping Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Working steam pressure", "~7-18 bar, depending on plant design (auxiliary boilers commonly ~7-10 bar)"],
+        ["Safety valve lift setting", "Typically set at roughly 110% of working pressure, per class rules"],
+        ["Feed water temperature", "~80-90°C"],
+        ["Boiler water TDS (total dissolved solids)", "Commonly kept below roughly 3,000-3,500 ppm — follow the water-treatment chemical supplier's and maker's limits"],
+        ["Boiler water pH", "Typically maintained alkaline, roughly 10.5-11.5, per the water treatment programme"],
+        ["Blowdown", "Bottom blowdown per watch/daily routine; surface blowdown continuous or as indicated by water test results"]
+      ]
+    },
+    {
+      "name": "Air Compressors & Starting Air System — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Starting air receiver working pressure", "~25-30 bar"],
+        ["Control/service air pressure", "~7-9 bar"],
+        ["Intercooler/aftercooler outlet temperature", "Typically well below 90°C; excessive temperature indicates a cooling water-side problem"],
+        ["Safety valve setting", "Typically set roughly 10% above the system's maximum working pressure"]
+      ]
+    },
+    {
+      "name": "Purifiers / Separators — Typical Operating Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["HFO purifier operating temperature", "~95-98°C"],
+        ["MGO/MDO purifier operating temperature", "~35-50°C (little or no pre-heating usually needed)"],
+        ["Lube oil purifier operating temperature", "~85-90°C"],
+        ["Purifier back-pressure", "~1.5-2.5 bar, maker-dependent"],
+        ["Throughput / feed rate", "Set per the maker's capacity chart — lower throughput generally improves separation efficiency"]
+      ]
+    },
+    {
+      "name": "Fresh Water Generator (Vacuum Evaporator) — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Vacuum (absolute pressure)", "Deep vacuum, roughly 90-95%, giving an absolute pressure on the order of 0.03-0.09 bar(a)"],
+        ["Evaporating temperature", "~40-60°C (achievable using ~80°C jacket cooling water as the heat source, thanks to the vacuum)"],
+        ["Distillate salinity", "Typically alarms and auto-dumps to bilge/drain at around 10 ppm — always confirm the ship's own alarm setpoint"]
+      ]
+    },
+    {
+      "name": "Refrigeration & Air Conditioning — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Provisions chill room target temperature", "~0 to +4°C"],
+        ["Provisions freezer room target temperature", "~-18 to -20°C"],
+        ["Evaporating refrigerant temperature (chill service)", "~-10 to -5°C"],
+        ["Evaporating refrigerant temperature (freezer service)", "~-30 to -25°C"],
+        ["Condensing temperature", "~35-45°C, strongly dependent on seawater/ambient temperature"],
+        ["Superheat at the expansion valve", "~5-8°C"],
+        ["Subcooling at the condenser outlet", "~4-6°C"]
+      ]
+    },
+    {
+      "name": "Sea Water Cooling System — Typical Parameters",
+      "columns": ["Parameter", "Typical range (indicative)"],
+      "rows": [
+        ["Sea water pump discharge pressure", "~2-3 bar"],
+        ["HT (jacket water) cooling loop outlet temperature", "~80-90°C"],
+        ["LT (central cooler) fresh water loop outlet temperature", "~36-38°C"],
+        ["Design sea water inlet temperature", "Coolers are commonly rated for tropical seawater up to around 32°C"]
+      ]
+    },
+    {
+      "name": "Steering Gear — Key Parameters",
+      "columns": ["Parameter", "Notes"],
+      "rows": [
+        ["Hydraulic system working pressure", "Design-dependent, commonly on the order of 100-150 bar for rotary-vane or ram-type systems — refer to the maker's manual"],
+        ["Rudder movement performance (SOLAS)", "Capable of putting the rudder over from 35° on one side to 30° on the other in 28 seconds, with the ship at maximum ahead service speed and deepest seagoing draught"]
+      ]
+    },
+    {
+      "name": "Emergency Equipment — Key Readiness Parameters",
+      "columns": ["Item", "Requirement / typical value"],
+      "rows": [
+        ["Emergency generator", "Must automatically start and be capable of supplying the emergency switchboard within 45 seconds of a main power failure (SOLAS Chapter II-1)"],
+        ["Emergency fire pump", "Must be capable of delivering the required jets of water at the required pressure independent of the main engine room — refer to SOLAS Chapter II-2 Regulation 10 and the ship's fire control plan for the exact pressure/capacity figures for the vessel"]
+      ]
     }
   ]
 }

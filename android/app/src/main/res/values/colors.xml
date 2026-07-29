@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy">#0B2545</color>
+    <color name="navy_2">#13315C</color>
+    <color name="teal">#0F9B8E</color>
+    <color name="teal_light">#2EC4B6</color>
+    <color name="accent">#FFB703</color>
+    <color name="bg">#EEF4F8</color>
+    <color name="text_primary">#1A2433</color>
+    <color name="text_muted">#5B6B7C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="danger">#C0392B</color>
+</resources>

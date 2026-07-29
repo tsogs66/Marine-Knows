@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b2545">
 <title>Marine Knows — Maritime Publications, Reference &amp; News</title>
 <link rel="stylesheet" href="/css/style.css">
 <script>
@@ -16,21 +17,28 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="#/"><span class="brand-icon">⚓</span> Marine&nbsp;Knows</a>
-    <nav class="main-nav">
-      <a href="#/publications">Publications</a>
-      <a href="#/explore">Explore</a>
-      <a href="#/reference">Reference</a>
-      <a href="#/news">News</a>
-      <a href="#/currency">Currency</a>
-    </nav>
-    <div class="theme-switcher" id="theme-switcher" role="group" aria-label="Theme">
-      <button type="button" data-theme-choice="deep-sea" title="Deep Sea theme">🌊</button>
-      <button type="button" data-theme-choice="lighthouse" title="Lighthouse theme">🏖️</button>
-      <button type="button" data-theme-choice="old-chart" title="Old Chart theme">🗺️</button>
+
+    <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav class="main-nav">
+        <a href="#/publications"><span class="nav-icon">📚</span>Publications</a>
+        <a href="#/explore"><span class="nav-icon">🧭</span>Explore</a>
+        <a href="#/reference"><span class="nav-icon">📐</span>Reference</a>
+        <a href="#/news"><span class="nav-icon">📰</span>News</a>
+        <a href="#/currency"><span class="nav-icon">💱</span>Currency</a>
+      </nav>
+      <div class="theme-switcher" id="theme-switcher" role="group" aria-label="Theme">
+        <button type="button" data-theme-choice="deep-sea" title="Deep Sea theme">🌊</button>
+        <button type="button" data-theme-choice="lighthouse" title="Lighthouse theme">🏖️</button>
+        <button type="button" data-theme-choice="old-chart" title="Old Chart theme">🗺️</button>
+      </div>
+      <form class="header-search" id="header-search-form">
+        <input type="search" id="header-search-input" placeholder="Search SOLAS, MARPOL, STCW…" autocomplete="off">
+      </form>
     </div>
-    <form class="header-search" id="header-search-form">
-      <input type="search" id="header-search-input" placeholder="Search SOLAS, MARPOL, STCW…" autocomplete="off">
-    </form>
   </div>
   <div class="wave-divider" aria-hidden="true">
     <svg viewBox="0 0 1200 40" preserveAspectRatio="none">
@@ -40,6 +48,7 @@
     </svg>
   </div>
 </header>
+<div class="menu-backdrop" id="menu-backdrop"></div>
 
 <main id="app" class="wrap"></main>
 

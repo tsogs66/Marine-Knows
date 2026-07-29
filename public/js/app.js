@@ -61,6 +61,28 @@
     apply(current);
   }
 
+  // ---------- Mobile menu ----------
+
+  function initMobileMenu() {
+    const toggle = document.getElementById('nav-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const backdrop = document.getElementById('menu-backdrop');
+    if (!toggle || !menu || !backdrop) return;
+
+    function setOpen(open) {
+      menu.classList.toggle('open', open);
+      backdrop.classList.toggle('open', open);
+      toggle.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
+    }
+
+    toggle.addEventListener('click', () => setOpen(!menu.classList.contains('open')));
+    backdrop.addEventListener('click', () => setOpen(false));
+    menu.querySelectorAll('.main-nav a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    window.addEventListener('hashchange', () => setOpen(false));
+  }
+
   const HERO_SCENE = `
     <div class="hero-scene" aria-hidden="true">
       <svg class="compass-rose" viewBox="0 0 100 100">
@@ -590,6 +612,69 @@
       panDrag = null;
     });
 
+    // ----- touch: one finger drags a node or pans, two fingers pinch-zoom -----
+    let touchMode = null; // 'node' | 'pan' | 'pinch'
+    let touchNodeId = null;
+    let touchMoved = false;
+    let pinchStartDist = 0;
+    let pinchStartScale = 1;
+    let touchPanStart = null;
+
+    function touchDist(t1, t2) {
+      return Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
+    }
+
+    svg.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        touchMode = 'pinch';
+        pinchStartDist = touchDist(e.touches[0], e.touches[1]);
+        pinchStartScale = view.scale;
+      } else if (e.touches.length === 1) {
+        const t = e.touches[0];
+        const targetNode = e.target.closest('.graph-node');
+        if (targetNode) {
+          touchMode = 'node';
+          touchNodeId = targetNode.dataset.id;
+          touchMoved = false;
+        } else {
+          touchMode = 'pan';
+          touchPanStart = { x: t.clientX, y: t.clientY, origX: view.x, origY: view.y };
+        }
+      }
+    }, { passive: false });
+
+    svg.addEventListener('touchmove', (e) => {
+      if (touchMode) e.preventDefault();
+      if (touchMode === 'pinch' && e.touches.length === 2) {
+        const dist = touchDist(e.touches[0], e.touches[1]);
+        view.scale = Math.min(3, Math.max(0.4, pinchStartScale * (dist / pinchStartDist)));
+        applyView();
+      } else if (touchMode === 'node' && e.touches.length === 1) {
+        touchMoved = true;
+        const t = e.touches[0];
+        const pt = svgPoint(t.clientX, t.clientY);
+        positions.set(touchNodeId, pt);
+        const g = svg.querySelector(`.graph-node[data-id="${CSS.escape(touchNodeId)}"]`);
+        if (g) g.setAttribute('transform', `translate(${pt.x.toFixed(1)},${pt.y.toFixed(1)})`);
+        adjacency.get(touchNodeId).forEach(({ edgeIndex }) => {
+          const path = document.getElementById(`mk-edge-${edgeIndex}`);
+          if (path) path.setAttribute('d', edgePathD(edges[edgeIndex]));
+        });
+      } else if (touchMode === 'pan' && e.touches.length === 1) {
+        const t = e.touches[0];
+        view.x = touchPanStart.origX + (t.clientX - touchPanStart.x);
+        view.y = touchPanStart.origY + (t.clientY - touchPanStart.y);
+        applyView();
+      }
+    }, { passive: false });
+
+    svg.addEventListener('touchend', () => {
+      if (touchMode === 'node' && !touchMoved) selectNode(touchNodeId);
+      touchMode = null;
+      touchNodeId = null;
+    });
+
     // ----- selection / highlight -----
     let selectedId = null;
     function clearHighlight() {
@@ -721,6 +806,7 @@
   });
 
   initThemeSwitcher();
+  initMobileMenu();
   window.addEventListener('hashchange', route);
   route();
 })();

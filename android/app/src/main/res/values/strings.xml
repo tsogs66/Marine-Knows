@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marine Knows</string>
+
+    <string name="setup_title">⚓ Marine Knows</string>
+    <string name="setup_subtitle">Connect to your ship\'s Marine Knows server</string>
+    <string name="setup_hint">e.g. 192.168.0.220 or marineknows.example.com</string>
+    <string name="setup_help">Enter the address of your Marine Knows install. This is the IP or hostname printed when it was installed on the Proxmox host (see install/proxmox-install.sh) — no need to type "http://" unless it uses HTTPS.</string>
+    <string name="setup_connect">Connect</string>
+    <string name="setup_error_empty">Enter a server address</string>
+    <string name="setup_error_invalid">Enter a valid address, e.g. 192.168.0.220</string>
+
+    <string name="menu_change_server">Change server…</string>
+    <string name="menu_reload">Reload</string>
+
+    <string name="error_title">Couldn\'t reach the server</string>
+    <string name="error_body">Check that this device is on the same network as %1$s and that the Marine Knows service is running.</string>
+    <string name="error_retry">Retry</string>
+    <string name="error_change_server">Change server</string>
+</resources>

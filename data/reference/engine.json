@@ -50,12 +50,143 @@
       ]
     },
     {
+      "name": "Power — Conversion Table",
+      "columns": ["kW", "Metric hp (PS)", "hp (mechanical)", "BTU/hr"],
+      "rows": [
+        ["1", "1.36", "1.34", "3,412"],
+        ["10", "13.60", "13.41", "34,121"],
+        ["100", "135.96", "134.10", "341,214"],
+        ["500", "679.81", "670.51", "1,706,070"],
+        ["1,000", "1,359.62", "1,341.02", "3,412,140"],
+        ["5,000", "6,798.10", "6,705.10", "17,060,700"],
+        ["10,000", "13,596.20", "13,410.20", "34,121,400"],
+        ["20,000", "27,192.40", "26,820.40", "68,242,800"],
+        ["50,000", "67,981.00", "67,051.00", "170,607,000"],
+        ["80,000", "108,769.60", "107,281.60", "272,971,200"]
+      ]
+    },
+    {
+      "name": "Torque — Conversion Table",
+      "columns": ["N·m", "kgf·m", "lb·ft"],
+      "rows": [
+        ["10", "1.02", "7.38"],
+        ["100", "10.20", "73.76"],
+        ["1,000", "101.97", "737.56"],
+        ["10,000", "1,019.72", "7,375.62"],
+        ["100,000", "10,197.16", "73,756.20"],
+        ["1,000,000", "101,971.60", "737,562.00"]
+      ]
+    },
+    {
+      "name": "Energy / Heat — Unit Definitions",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 kJ", "0.239006 kcal = 0.947817 BTU = 0.000277778 kWh"],
+        ["1 kWh", "3,600 kJ = 860.421 kcal = 3,412.14 BTU"],
+        ["1 kcal", "4.184 kJ = 3.96832 BTU"],
+        ["1 BTU", "1.05506 kJ = 0.252164 kcal"],
+        ["1 MJ", "0.277778 kWh = 947.817 BTU"]
+      ]
+    },
+    {
+      "name": "Flow Rate — Unit Definitions",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 m3/h", "16.667 L/min = 4.403 US gpm = 3.666 UK (imperial) gpm"],
+        ["1 US gpm", "3.785 L/min = 0.2271 m3/h"],
+        ["1 UK (imperial) gpm", "4.546 L/min = 0.2728 m3/h"],
+        ["1 L/min", "0.06 m3/h = 0.264 US gpm"]
+      ]
+    },
+    {
+      "name": "Fuel Net Calorific Value (LHV) — Typical, Approximate",
+      "columns": ["Fuel", "LHV (MJ/kg, approx.)"],
+      "rows": [
+        ["HFO (residual)", "~40.0 - 40.5"],
+        ["MGO / MDO (distillate)", "~42.7"],
+        ["LNG", "~49 - 50"],
+        ["LPG", "~46"],
+        ["Methanol", "~19.9"],
+        ["Ethanol", "~26.8"],
+        ["Ammonia", "~18.6"],
+        ["Hydrogen", "~120"],
+        ["Biodiesel (FAME)", "~37.5"]
+      ]
+    },
+    {
+      "name": "Specific Gravity ↔ API Gravity",
+      "columns": ["API gravity (60°F)", "Specific gravity (60°F/60°F)"],
+      "rows": [
+        ["10 (~water)", "1.0000"],
+        ["20", "0.9340"],
+        ["30", "0.8762"],
+        ["40", "0.8251"],
+        ["50", "0.7796"],
+        ["60", "0.7389"]
+      ]
+    },
+    {
       "name": "Fuel Density/Volume Correction (concept)",
       "columns": ["Step", "Notes"],
       "rows": [
         ["Observed density", "Measured at ambient temperature by hydrometer or densitometer"],
         ["Density @ 15°C", "Observed density corrected to a standard reference temperature (15°C) using ASTM/API/ISO correction tables (VCF - Volume Correction Factor), essential for accurate bunker quantity accounting"],
-        ["Mass = Volume x Density", "Bunker mass (metric tonnes) is calculated from corrected volume (m3) and density @15°C (kg/m3), not raw sounded volume alone"]
+        ["Mass = Volume x Density", "Bunker mass (metric tonnes) is calculated from corrected volume (m3) and density @15°C (kg/m3), not raw sounded volume alone"],
+        ["API gravity", "API = (141.5 / SG at 60°F) - 131.5; SG = 141.5 / (API + 131.5) — an alternate way fuel/lube quality certificates express density"]
+      ]
+    },
+    {
+      "name": "Refrigeration Reference",
+      "columns": ["Unit", "Equals"],
+      "rows": [
+        ["1 ton of refrigeration (TR)", "3.517 kW = 12,000 BTU/h = 3,024 kcal/h"],
+        ["1 kW (refrigeration)", "0.2843 TR"]
+      ]
+    },
+    {
+      "name": "Electrical — Typical Shipboard Standards (general guidance, verify against class/flag rules and the ship's own drawings)",
+      "columns": ["System", "Typical value"],
+      "rows": [
+        ["Main LV distribution (European-influenced builds)", "400V / 690V, 50 Hz"],
+        ["Main LV distribution (US/American-influenced builds)", "440V, 60 Hz"],
+        ["Lighting / domestic sockets", "220-230V, single phase, 50/60 Hz"],
+        ["Control & emergency circuits", "24V DC (common)"],
+        ["High-voltage distribution (large ships, e.g. cruise/LNG/large container)", "3.3 kV, 6.6 kV or 11 kV, 50/60 Hz"],
+        ["Frequency tolerance (typical class guidance)", "±5% continuous, ±10% transient"],
+        ["Voltage tolerance (typical class guidance)", "±2.5% continuous, +20%/-15% transient"]
+      ]
+    },
+    {
+      "name": "Electrical — Quick Formulas",
+      "columns": ["Quantity", "Formula"],
+      "rows": [
+        ["Ohm's law", "V = I x R"],
+        ["DC power", "P (W) = V x I"],
+        ["AC single-phase real power", "P (W) = V x I x cos(phi)"],
+        ["AC three-phase real power", "P (W) = sqrt(3) x V(line) x I(line) x cos(phi)"],
+        ["Apparent power (single-phase)", "S (VA) = V x I"],
+        ["Apparent power (three-phase)", "S (VA) = sqrt(3) x V(line) x I(line)"],
+        ["Power factor", "cos(phi) = P (real, kW) / S (apparent, kVA)"]
+      ]
+    },
+    {
+      "name": "Insulation Resistance — General Guidance",
+      "columns": ["Item", "Notes"],
+      "rows": [
+        ["Common rule-of-thumb minimum (rotating machinery)", "Often cited as 1 MΩ, or (rated voltage in kV + 1) MΩ, measured with a megger at the machine's rated DC test voltage"],
+        ["Important caveat", "This is a general industry rule of thumb only — always follow the maker's manual, class society requirements and the ship's PMS/SMS acceptance criteria, which take precedence"]
+      ]
+    },
+    {
+      "name": "Engine Performance — Key Terms & Formulas",
+      "columns": ["Term", "Meaning"],
+      "rows": [
+        ["IHP (Indicated Horsepower)", "Power developed inside the cylinder, derived from the indicator diagram (mean indicated pressure x length x area x speed, summed per cylinder)"],
+        ["BHP (Brake Horsepower)", "Power actually delivered at the crankshaft/output flange, measured by a brake, dynamometer or torsion meter"],
+        ["MEP (Mean Effective Pressure)", "Average effective cylinder pressure over one working cycle; IMEP from the indicator diagram, BMEP back-calculated from measured BHP"],
+        ["Mechanical efficiency", "BHP / IHP — the fraction of indicated power that reaches the output shaft after friction losses"],
+        ["SFOC (Specific Fuel Oil Consumption)", "Fuel mass burned per unit of power per hour (g/kWh) — lower SFOC means better fuel efficiency"],
+        ["Thermal efficiency", "Useful work output / heat energy supplied by the fuel; large modern low-speed 2-stroke marine diesels typically reach roughly 50%"]
       ]
     },
     {

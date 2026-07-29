@@ -2,17 +2,37 @@
   "title": "General Conversions",
   "tables": [
     {
-      "name": "Distance / Length",
+      "name": "Distance / Length — Unit Definitions",
       "columns": ["Unit", "Equals"],
       "rows": [
-        ["1 nautical mile (nm)", "1.852 km = 1.15078 statute miles = 6,076.12 ft"],
+        ["1 nautical mile (nm)", "1.852 km = 1.15078 statute miles = 6,076.12 ft = 10 cables"],
         ["1 cable", "1/10 nm = 185.2 m = 608 ft (UK) / 100 fathoms (US, approx.)"],
         ["1 fathom", "6 ft = 1.8288 m"],
+        ["1 chain", "22 yd = 20.1168 m = 100 links (found on some older charts/surveys)"],
         ["1 statute mile", "1.60934 km = 0.868976 nm"],
-        ["1 metre", "3.28084 ft = 1.09361 yd"],
+        ["1 metre", "3.28084 ft = 1.09361 yd = 0.546807 fathom"],
         ["1 foot", "0.3048 m = 12 in"],
         ["1 yard", "0.9144 m = 3 ft"],
+        ["1 inch", "2.54 cm = 25.4 mm"],
         ["1 kilometre", "0.539957 nm = 0.621371 statute miles"]
+      ]
+    },
+    {
+      "name": "Length — Quick Conversion Table",
+      "columns": ["Metres", "Feet", "Fathoms", "Cables", "Nautical miles"],
+      "rows": [
+        ["1", "3.28", "0.55", "0.005", "0.0005"],
+        ["5", "16.40", "2.73", "0.027", "0.0027"],
+        ["10", "32.81", "5.47", "0.054", "0.0054"],
+        ["20", "65.62", "10.94", "0.108", "0.0108"],
+        ["50", "164.04", "27.34", "0.270", "0.0270"],
+        ["100", "328.08", "54.68", "0.540", "0.0540"],
+        ["200", "656.17", "109.36", "1.080", "0.1080"],
+        ["500", "1,640.42", "273.40", "2.700", "0.2700"],
+        ["1,000", "3,280.84", "546.81", "5.400", "0.5400"],
+        ["1,852 (= 1 nm)", "6,076.12", "1,012.68", "10.00", "1.0000"],
+        ["5,000", "16,404.20", "2,734.03", "27.00", "2.700"],
+        ["10,000", "32,808.40", "5,468.07", "54.00", "5.400"]
       ]
     },
     {
@@ -23,6 +43,26 @@
         ["1 km/h", "0.539957 kn = 0.277778 m/s = 0.621371 mph"],
         ["1 mph", "0.868976 kn = 1.60934 km/h"],
         ["1 m/s", "1.94384 kn = 3.6 km/h"]
+      ]
+    },
+    {
+      "name": "Wind / Boat Speed — Unit Conversion Table",
+      "columns": ["Knots", "m/s", "km/h", "mph", "Approx. Beaufort force"],
+      "rows": [
+        ["0", "0.0", "0.0", "0.0", "0"],
+        ["5", "2.6", "9.3", "5.8", "2"],
+        ["10", "5.1", "18.5", "11.5", "3"],
+        ["15", "7.7", "27.8", "17.3", "4"],
+        ["20", "10.3", "37.0", "23.0", "5"],
+        ["25", "12.9", "46.3", "28.8", "6"],
+        ["30", "15.4", "55.6", "34.5", "7"],
+        ["35", "18.0", "64.8", "40.3", "8"],
+        ["40", "20.6", "74.1", "46.0", "8"],
+        ["45", "23.1", "83.3", "51.8", "9"],
+        ["50", "25.7", "92.6", "57.5", "10"],
+        ["55", "28.3", "101.9", "63.3", "10"],
+        ["60", "30.9", "111.1", "69.1", "11"],
+        ["65", "33.4", "120.4", "74.8", "12"]
       ]
     },
     {
@@ -48,22 +88,61 @@
       ]
     },
     {
-      "name": "Pressure",
+      "name": "Pressure — Unit Definitions",
       "columns": ["Unit", "Equals"],
       "rows": [
-        ["1 bar", "100 kPa = 14.5038 psi = 0.986923 atm"],
+        ["1 bar", "1,000 hPa/mbar = 100 kPa = 14.5038 psi = 0.986923 atm"],
+        ["1 hPa (= 1 mbar)", "0.001 bar = 0.02953 inHg = 0.750062 mmHg"],
         ["1 psi", "6.89476 kPa = 0.0689476 bar"],
-        ["1 atm", "101.325 kPa = 1.01325 bar = 14.6959 psi"],
-        ["1 kPa", "0.01 bar = 0.145038 psi"]
+        ["1 atm", "101.325 kPa = 1.01325 bar = 14.6959 psi = 760 mmHg"],
+        ["1 kPa", "0.01 bar = 0.145038 psi"],
+        ["1 inHg", "33.8639 hPa = 0.491154 psi"]
       ]
     },
     {
-      "name": "Temperature",
+      "name": "Barometric Pressure — Quick Reference (weather glass)",
+      "columns": ["hPa / mbar", "inHg", "mmHg", "psi", "atm"],
+      "rows": [
+        ["950 (deep low)", "28.05", "712.6", "13.78", "0.938"],
+        ["970", "28.64", "727.6", "14.07", "0.957"],
+        ["990", "29.23", "742.6", "14.36", "0.977"],
+        ["1000", "29.53", "750.1", "14.50", "0.987"],
+        ["1013.25 (standard atm.)", "29.92", "760.0", "14.70", "1.000"],
+        ["1020", "30.12", "765.1", "14.79", "1.007"],
+        ["1030", "30.42", "772.6", "14.94", "1.017"],
+        ["1040 (strong high)", "30.71", "780.1", "15.09", "1.026"]
+      ]
+    },
+    {
+      "name": "Temperature — Formulas",
       "columns": ["Conversion", "Formula"],
       "rows": [
         ["Celsius to Fahrenheit", "F = (C x 9/5) + 32"],
         ["Fahrenheit to Celsius", "C = (F - 32) x 5/9"],
         ["Celsius to Kelvin", "K = C + 273.15"]
+      ]
+    },
+    {
+      "name": "Temperature — Quick Reference Table",
+      "columns": ["°C", "°F", "K"],
+      "rows": [
+        ["-40", "-40.0", "233.15"],
+        ["-30", "-22.0", "243.15"],
+        ["-20", "-4.0", "253.15"],
+        ["-10", "14.0", "263.15"],
+        ["-5", "23.0", "268.15"],
+        ["0 (freezing point of water)", "32.0", "273.15"],
+        ["5", "41.0", "278.15"],
+        ["10", "50.0", "283.15"],
+        ["15", "59.0", "288.15"],
+        ["20", "68.0", "293.15"],
+        ["25", "77.0", "298.15"],
+        ["30", "86.0", "303.15"],
+        ["35", "95.0", "308.15"],
+        ["37 (average body temp.)", "98.6", "310.15"],
+        ["40", "104.0", "313.15"],
+        ["50", "122.0", "323.15"],
+        ["100 (boiling point of water)", "212.0", "373.15"]
       ]
     },
     {
@@ -83,6 +162,76 @@
         ["10", "48-55", "Storm", "Very high waves, sea surface white, heavy tumbling"],
         ["11", "56-63", "Violent storm", "Exceptionally high waves, visibility poor"],
         ["12", "64+", "Hurricane", "Air filled with foam and spray, visibility greatly reduced"]
+      ]
+    },
+    {
+      "name": "Douglas Sea State Scale (wind sea)",
+      "columns": ["Code", "Wave height", "Description"],
+      "rows": [
+        ["0", "0 m", "Calm (glassy)"],
+        ["1", "0 - 0.10 m", "Calm (rippled)"],
+        ["2", "0.10 - 0.50 m", "Smooth (wavelets)"],
+        ["3", "0.50 - 1.25 m", "Slight"],
+        ["4", "1.25 - 2.5 m", "Moderate"],
+        ["5", "2.5 - 4.0 m", "Rough"],
+        ["6", "4.0 - 6.0 m", "Very rough"],
+        ["7", "6.0 - 9.0 m", "High"],
+        ["8", "9.0 - 14.0 m", "Very high"],
+        ["9", "> 14.0 m", "Phenomenal"]
+      ]
+    },
+    {
+      "name": "Douglas Swell Scale",
+      "columns": ["Code", "Description"],
+      "rows": [
+        ["0", "No swell"],
+        ["1", "Low swell, short wavelength"],
+        ["2", "Low swell, long wavelength"],
+        ["3", "Moderate swell, short wavelength"],
+        ["4", "Moderate swell, average wavelength"],
+        ["5", "Moderate swell, long wavelength"],
+        ["6", "Heavy swell, short wavelength"],
+        ["7", "Heavy swell, average wavelength"],
+        ["8", "Heavy swell, long wavelength"],
+        ["9", "Confused swell (crossing systems)"]
+      ]
+    },
+    {
+      "name": "Visibility Descriptors (at sea, general guidance)",
+      "columns": ["Descriptor", "Approx. range"],
+      "rows": [
+        ["Dense fog", "< 0.1 nm (< 200 m)"],
+        ["Thick fog", "0.1 - 0.3 nm (200 - 500 m)"],
+        ["Fog", "0.3 - 0.5 nm (500 m - 1 km)"],
+        ["Poor visibility", "0.5 - 2 nm"],
+        ["Moderate visibility", "2 - 5 nm"],
+        ["Good visibility", "5 - 10 nm"],
+        ["Very good visibility", "10 - 30 nm"],
+        ["Excellent visibility", "> 30 nm"]
+      ]
+    },
+    {
+      "name": "Depth / Soundings",
+      "columns": ["Fathoms", "Metres", "Feet"],
+      "rows": [
+        ["1", "1.83", "6"],
+        ["2", "3.66", "12"],
+        ["3", "5.49", "18"],
+        ["5", "9.14", "30"],
+        ["10", "18.29", "60"],
+        ["20", "36.58", "120"],
+        ["30", "54.86", "180"],
+        ["50", "91.44", "300"],
+        ["100", "182.88", "600"]
+      ]
+    },
+    {
+      "name": "Nautical Time Zone Letters",
+      "columns": ["Zone letter", "Offset from UTC", "Notes"],
+      "rows": [
+        ["Z", "UTC (0)", "'Zulu time' — Greenwich zone, 7.5°W to 7.5°E"],
+        ["A - M (J omitted)", "+1 to +12 hours", "Zones east of Greenwich; J is reserved to denote local (ship's) time rather than a fixed zone"],
+        ["N - Y", "-1 to -12 hours", "Zones west of Greenwich (N = -1h ... Y = -12h)"]
       ]
     },
     {
